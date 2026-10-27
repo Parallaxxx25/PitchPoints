@@ -3,7 +3,10 @@ name = "pitchpoints-simulator"
 version = "0.1.0"
 description = "Deterministic synthetic football match simulator."
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pitchpoints-contracts",
+    "pyyaml>=6.0.3",
+]
 
 [build-system]
 requires = ["uv_build>=0.10.8,<0.11.0"]
@@ -11,3 +14,6 @@ build-backend = "uv_build"
 
 [tool.uv.build-backend]
 module-name = "simulator"
+
+[tool.uv.sources]
+pitchpoints-contracts = { workspace = true }

@@ -1,0 +1,7 @@
+# Demo match: early opener, a booking, a penalty equaliser, a red card, and a late winner.
+moments:
+  - {minute: 12, type: goal, team: home, shirt: 10}
+  - {minute: 34, type: yellow_card, team: away, shirt: 4}
+  - {minute: 58, type: penalty, team: away, shirt: 9, outcome: goal}
+  - {minute: 70, type: red_card, team: home, shirt: 3}
+  - {minute: 88, type: goal, team: away, shirt: 10}

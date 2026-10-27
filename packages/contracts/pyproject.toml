@@ -3,7 +3,9 @@ name = "pitchpoints-contracts"
 version = "0.1.0"
 description = "Pydantic data contracts shared by every PitchPoints component."
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pydantic>=2.11",
+]
 
 [build-system]
 requires = ["uv_build>=0.10.8,<0.11.0"]

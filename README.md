@@ -16,6 +16,17 @@ make check          # lint, type-check, and test everything
 cd web && pnpm dev  # frontend dev server
 ```
 
+Simulate a match (fictional clubs, deterministic per seed):
+
+```bash
+uv run python -m simulator --seed 7 --out match.jsonl       # metadata, events, position frames as JSONL
+uv run python -m simulator --seed 7 --stream --speed 18     # replay live to stdout (90 minutes in ~5)
+uv run python -m simulator --seed 7 --script packages/simulator/director/demo.yaml --out demo.jsonl
+uv run python -m simulator --validate 300                   # realism report over 300 seeds
+```
+
+Director mode scripts force key moments (goals, penalties, cards) at given minutes so a demo always has drama; see `packages/simulator/director/demo.yaml`.
+
 ## Repository layout
 
 | Path | Contents |

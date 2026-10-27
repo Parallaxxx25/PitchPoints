@@ -5,6 +5,9 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 
+# Simulator output written to the repo root by the README examples
+/*.jsonl
+
 # Secrets and local settings
 .env
 .env.*

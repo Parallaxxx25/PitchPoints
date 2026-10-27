@@ -31,15 +31,18 @@ Update this section as the project takes shape.
 
 ```bash
 make install        # uv sync + pnpm install
-make check          # lint + type-check + all tests (backend and frontend)
+make check          # lint + type-check + all tests (backend and frontend), ~70 s
+make contracts      # regenerate JSON Schema + TypeScript types after changing contracts
 uv run pytest       # backend tests
 cd web && pnpm dev  # frontend dev server
+uv run python -m simulator --seed 7 --script packages/simulator/director/demo.yaml --out match.jsonl
+uv run python -m simulator --seed 7 --stream --speed 18   # live JSONL to stdout
+uv run python -m simulator --validate 300                 # realism report
 ```
 
 Planned (not yet implemented):
 
 ```bash
-uv run python -m simulator --validate 300   # realism report (Phase 1)
 uv run devserver    # local live pipeline, PITCHPOINTS_MODE=local (Phase 3)
 azd up              # deploy to Azure (Phase 6)
 ```
