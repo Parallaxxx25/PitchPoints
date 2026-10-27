@@ -20,7 +20,7 @@ from contracts import (
     KeyMoment,
     MatchEvent,
     MatchMetadata,
-    MomentKind,
+    MomentType,
     OverlayCue,
     Period,
     PlayerStats,
@@ -573,7 +573,7 @@ class InsightsEngine:
     # ---------- moments and cues ----------
     def _moment(
         self,
-        kind: MomentKind,
+        kind: MomentType,
         at: At,
         team_id: str,
         player_ids: list[str],
@@ -587,7 +587,7 @@ class InsightsEngine:
             period=at[0],
             clock_s=at[1],
             minute=int(at[1] // 60),
-            kind=kind,
+            type=kind,
             importance=round(max(win_swing, c.BASE_IMPORTANCE[kind]), 3),
             team_id=team_id,
             player_ids=player_ids,
@@ -613,7 +613,7 @@ class InsightsEngine:
 
     def _announce(self, moment: KeyMoment, template: CueTemplate = "key_moment") -> Insights:
         """The moment plus the overlay cue that shows it."""
-        data: Facts = {"moment_kind": moment.kind, **moment.facts}
+        data: Facts = {"moment_type": moment.type, **moment.facts}
         anchor = moment.player_ids[0] if moment.player_ids else None
         at: At = (moment.period, moment.clock_s)
         cue = self._cue(template, at, data, moment.source_event_ids, anchor, [moment.id])

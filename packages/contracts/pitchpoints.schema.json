@@ -4,22 +4,22 @@
       "$ref": "#/$defs/SimulatorMessage"
     },
     {
-      "$ref": "#/$defs/StatSnapshot"
-    },
-    {
-      "$ref": "#/$defs/TacticalState"
-    },
-    {
-      "$ref": "#/$defs/KeyMoment"
-    },
-    {
-      "$ref": "#/$defs/OverlayCue"
-    },
-    {
-      "$ref": "#/$defs/LedgerEntry"
+      "$ref": "#/$defs/LiveMessage"
     },
     {
       "$ref": "#/$defs/FantasySquad"
+    },
+    {
+      "$ref": "#/$defs/NewProfile"
+    },
+    {
+      "$ref": "#/$defs/ViewerProfile"
+    },
+    {
+      "$ref": "#/$defs/StartMatch"
+    },
+    {
+      "$ref": "#/$defs/MatchControl"
     }
   ],
   "$defs": {
@@ -52,8 +52,13 @@
     },
     "KeyMoment": {
       "additionalProperties": false,
-      "description": "A moment worth explaining. `importance` (0 to 1) is the win-probability swing it caused,\nor the kind's base importance when that is larger. `facts` holds every number an agent\nmay quote about it.",
+      "description": "A moment worth explaining. `importance` (0 to 1) is the win-probability swing it caused,\nor the type's base importance when that is larger. `facts` holds every number an agent\nmay quote about it.",
       "properties": {
+        "kind": {
+          "const": "moment",
+          "default": "moment",
+          "type": "string"
+        },
         "id": {
           "type": "integer"
         },
@@ -73,7 +78,7 @@
         "minute": {
           "type": "integer"
         },
-        "kind": {
+        "type": {
           "enum": [
             "goal",
             "big_chance",
@@ -125,12 +130,13 @@
         }
       },
       "required": [
+        "kind",
         "id",
         "match_id",
         "period",
         "clock_s",
         "minute",
-        "kind",
+        "type",
         "importance",
         "team_id",
         "player_ids",
@@ -144,6 +150,11 @@
       "additionalProperties": false,
       "description": "One change to a player's fantasy points.\n\nEntries that can still change (clean sheet, goals conceded, bonus) are\n`provisional` and keep a stable `id`: a later entry with the same id replaces\nthe earlier one, and its `running_total` already reflects the replacement.\nAt full time every provisional entry is issued again with `provisional` false.",
       "properties": {
+        "kind": {
+          "const": "ledger_entry",
+          "default": "ledger_entry",
+          "type": "string"
+        },
         "id": {
           "type": "string"
         },
@@ -180,6 +191,7 @@
         }
       },
       "required": [
+        "kind",
         "id",
         "match_id",
         "player_id",
@@ -192,6 +204,109 @@
         "provisional"
       ],
       "title": "LedgerEntry",
+      "type": "object"
+    },
+    "LiveMessage": {
+      "discriminator": {
+        "mapping": {
+          "event": "#/$defs/MatchEvent",
+          "ledger_entry": "#/$defs/LedgerEntry",
+          "match_state": "#/$defs/MatchState",
+          "metadata": "#/$defs/MatchMetadata",
+          "moment": "#/$defs/KeyMoment",
+          "overlay_cue": "#/$defs/OverlayCue",
+          "positions": "#/$defs/PositionFrame",
+          "squad_total": "#/$defs/SquadTotal",
+          "stats": "#/$defs/StatSnapshot",
+          "tactical_state": "#/$defs/TacticalState"
+        },
+        "propertyName": "kind"
+      },
+      "oneOf": [
+        {
+          "$ref": "#/$defs/MatchMetadata"
+        },
+        {
+          "$ref": "#/$defs/MatchState"
+        },
+        {
+          "$ref": "#/$defs/MatchEvent"
+        },
+        {
+          "$ref": "#/$defs/PositionFrame"
+        },
+        {
+          "$ref": "#/$defs/StatSnapshot"
+        },
+        {
+          "$ref": "#/$defs/TacticalState"
+        },
+        {
+          "$ref": "#/$defs/KeyMoment"
+        },
+        {
+          "$ref": "#/$defs/LedgerEntry"
+        },
+        {
+          "$ref": "#/$defs/OverlayCue"
+        },
+        {
+          "$ref": "#/$defs/SquadTotal"
+        }
+      ]
+    },
+    "MatchControl": {
+      "additionalProperties": false,
+      "description": "Change a running match; unset fields stay as they are. A seek is applied first.",
+      "properties": {
+        "seek_minute": {
+          "anyOf": [
+            {
+              "maximum": 120,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "paused": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "speed": {
+          "anyOf": [
+            {
+              "enum": [
+                1,
+                6,
+                18,
+                60
+              ],
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "seek_minute",
+        "paused",
+        "speed"
+      ],
+      "title": "MatchControl",
       "type": "object"
     },
     "MatchEvent": {
@@ -587,10 +702,168 @@
       "title": "MatchMetadata",
       "type": "object"
     },
+    "MatchState": {
+      "additionalProperties": false,
+      "description": "Where a live match is: playback status and speed, clock, and score.",
+      "properties": {
+        "kind": {
+          "const": "match_state",
+          "default": "match_state",
+          "type": "string"
+        },
+        "match_id": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "running",
+            "paused",
+            "finished"
+          ],
+          "type": "string"
+        },
+        "speed": {
+          "enum": [
+            1,
+            6,
+            18,
+            60
+          ],
+          "type": "integer"
+        },
+        "revision": {
+          "type": "integer"
+        },
+        "period": {
+          "enum": [
+            1,
+            2
+          ],
+          "type": "integer"
+        },
+        "clock_s": {
+          "type": "number"
+        },
+        "minute": {
+          "type": "integer"
+        },
+        "score_home": {
+          "type": "integer"
+        },
+        "score_away": {
+          "type": "integer"
+        },
+        "last_event_id": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "kind",
+        "match_id",
+        "status",
+        "speed",
+        "revision",
+        "period",
+        "clock_s",
+        "minute",
+        "score_home",
+        "score_away",
+        "last_event_id"
+      ],
+      "title": "MatchState",
+      "type": "object"
+    },
+    "NewProfile": {
+      "additionalProperties": false,
+      "description": "What a viewer chooses; the server adds the id.",
+      "properties": {
+        "display_name": {
+          "maxLength": 40,
+          "minLength": 1,
+          "type": "string"
+        },
+        "mode": {
+          "default": "casual",
+          "enum": [
+            "analyst",
+            "casual",
+            "fantasy",
+            "player_focus",
+            "club"
+          ],
+          "type": "string"
+        },
+        "language": {
+          "default": "en",
+          "enum": [
+            "en",
+            "es",
+            "pt",
+            "th"
+          ],
+          "type": "string"
+        },
+        "favourite_club_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "favourite_player_ids": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "focus_metric": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "fantasy_squad": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/FantasySquad"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "display_name",
+        "mode",
+        "language",
+        "favourite_club_id",
+        "favourite_player_ids",
+        "focus_metric",
+        "fantasy_squad"
+      ],
+      "title": "NewProfile",
+      "type": "object"
+    },
     "OverlayCue": {
       "additionalProperties": false,
       "description": "A timed broadcast graphic. Timing and `data` come from the insights engine; `text`\n(language code to text) is filled later by templates or fact-checked agents.",
       "properties": {
+        "kind": {
+          "const": "overlay_cue",
+          "default": "overlay_cue",
+          "type": "string"
+        },
         "id": {
           "type": "integer"
         },
@@ -676,6 +949,7 @@
         }
       },
       "required": [
+        "kind",
         "id",
         "match_id",
         "period",
@@ -894,10 +1168,87 @@
         }
       ]
     },
+    "SquadTotal": {
+      "additionalProperties": false,
+      "description": "One viewer's fantasy squad points with the captain doubled; sent to that viewer only.",
+      "properties": {
+        "kind": {
+          "const": "squad_total",
+          "default": "squad_total",
+          "type": "string"
+        },
+        "match_id": {
+          "type": "string"
+        },
+        "profile_id": {
+          "type": "string"
+        },
+        "total": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "kind",
+        "match_id",
+        "profile_id",
+        "total"
+      ],
+      "title": "SquadTotal",
+      "type": "object"
+    },
+    "StartMatch": {
+      "additionalProperties": false,
+      "description": "Start a simulated match. `script` names a director script, such as `demo`.",
+      "properties": {
+        "seed": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "script": {
+          "anyOf": [
+            {
+              "pattern": "^[a-z0-9_-]+$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "speed": {
+          "default": 18,
+          "enum": [
+            1,
+            6,
+            18,
+            60
+          ],
+          "type": "integer"
+        },
+        "paused": {
+          "default": false,
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "seed",
+        "script",
+        "speed",
+        "paused"
+      ],
+      "title": "StartMatch",
+      "type": "object"
+    },
     "StatSnapshot": {
       "additionalProperties": false,
       "description": "Match stats up to and including `last_event_id`; players who have not appeared are omitted.",
       "properties": {
+        "kind": {
+          "const": "stats",
+          "default": "stats",
+          "type": "string"
+        },
         "match_id": {
           "type": "string"
         },
@@ -931,6 +1282,7 @@
         }
       },
       "required": [
+        "kind",
         "match_id",
         "period",
         "clock_s",
@@ -947,6 +1299,11 @@
       "additionalProperties": false,
       "description": "Rolling-window tactical indices; windows and formulas live in `insights.constants`.",
       "properties": {
+        "kind": {
+          "const": "tactical_state",
+          "default": "tactical_state",
+          "type": "string"
+        },
         "match_id": {
           "type": "string"
         },
@@ -983,6 +1340,7 @@
         }
       },
       "required": [
+        "kind",
         "match_id",
         "period",
         "clock_s",
@@ -1136,6 +1494,91 @@
         "red_cards"
       ],
       "title": "TeamStats",
+      "type": "object"
+    },
+    "ViewerProfile": {
+      "additionalProperties": false,
+      "properties": {
+        "display_name": {
+          "maxLength": 40,
+          "minLength": 1,
+          "type": "string"
+        },
+        "mode": {
+          "default": "casual",
+          "enum": [
+            "analyst",
+            "casual",
+            "fantasy",
+            "player_focus",
+            "club"
+          ],
+          "type": "string"
+        },
+        "language": {
+          "default": "en",
+          "enum": [
+            "en",
+            "es",
+            "pt",
+            "th"
+          ],
+          "type": "string"
+        },
+        "favourite_club_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "favourite_player_ids": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "focus_metric": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "fantasy_squad": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/FantasySquad"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "display_name",
+        "mode",
+        "language",
+        "favourite_club_id",
+        "favourite_player_ids",
+        "focus_metric",
+        "fantasy_squad",
+        "id"
+      ],
+      "title": "ViewerProfile",
       "type": "object"
     },
     "WinProbability": {

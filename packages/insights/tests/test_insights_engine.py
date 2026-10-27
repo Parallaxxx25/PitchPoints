@@ -31,7 +31,7 @@ def frame(clock_s: float, speeds: dict[str, float], period: Period = 1) -> Posit
 
 
 def milestones(out: Insights, name: str) -> list[KeyMoment]:
-    return [m for m in out.moments if m.kind == "milestone" and m.facts["milestone"] == name]
+    return [m for m in out.moments if m.type == "milestone" and m.facts["milestone"] == name]
 
 
 def player(engine: InsightsEngine, player_id: str) -> dict[str, object]:
@@ -170,7 +170,7 @@ def test_goal_moment_importance_is_the_win_probability_swing() -> None:
     b.at(10).add("pass", "HOM-6")
     goal = b.at(88).goal("HOM-9", assist="HOM-6", xg=0.4)
     out = play(b)[1]
-    [m] = [x for x in out.moments if x.kind == "goal"]
+    [m] = [x for x in out.moments if x.type == "goal"]
     assert m.importance == m.facts["win_prob_swing"] and m.importance > 0.3
     assert m.facts["score_home"] == 1 and m.facts["first_goal"] is True and m.facts["xg"] == 0.4
     assert (m.player_ids, m.source_event_ids) == (["HOM-9", "HOM-6"], [goal.id - 1, goal.id])
@@ -181,7 +181,7 @@ def test_a_late_goal_matters_more_than_an_early_one() -> None:
     def importance(minute: float) -> float:
         b = MatchBuilder().start()
         b.at(minute).goal("HOM-9")
-        return next(m.importance for m in play(b)[1].moments if m.kind == "goal")
+        return next(m.importance for m in play(b)[1].moments if m.type == "goal")
 
     assert importance(85) > importance(5)
 
@@ -189,7 +189,7 @@ def test_a_late_goal_matters_more_than_an_early_one() -> None:
 def test_own_goal_is_a_goal_moment_for_the_other_team() -> None:
     b = MatchBuilder().start()
     b.at(30).own_goal("AWY-2")
-    [m] = [x for x in play(b)[1].moments if x.kind == "goal"]
+    [m] = [x for x in play(b)[1].moments if x.type == "goal"]
     assert (m.team_id, m.facts["own_goal"], m.facts["score_home"]) == ("HOM", True, 1)
 
 
@@ -197,7 +197,7 @@ def test_big_chance_is_a_missed_high_xg_shot() -> None:
     b = MatchBuilder().start()
     b.at(10).add("shot", "HOM-9", xg=0.05, outcome="off_target")
     miss = b.at(11).add("shot", "HOM-9", xg=0.45, outcome="off_target")
-    [m] = [x for x in play(b)[1].moments if x.kind == "big_chance"]
+    [m] = [x for x in play(b)[1].moments if x.type == "big_chance"]
     assert (m.source_event_ids, m.facts["xg"]) == ([miss.id], 0.45)
 
 
@@ -208,9 +208,9 @@ def test_save_from_a_good_chance_is_a_moment() -> None:
     shot = b.at(20).add("shot", "HOM-9", xg=0.35, outcome="saved")
     save = b.add("save", "AWY-1", opponent_id="HOM-9")
     out = play(b)[1]
-    [m] = [x for x in out.moments if x.kind == "save"]
+    [m] = [x for x in out.moments if x.type == "save"]
     assert (m.player_ids, m.source_event_ids) == (["AWY-1", "HOM-9"], [shot.id, save.id])
-    assert not any(x.kind == "big_chance" for x in out.moments)
+    assert not any(x.type == "big_chance" for x in out.moments)
 
 
 def test_card_moment_cites_the_foul_and_a_red_matters_more() -> None:
@@ -219,7 +219,7 @@ def test_card_moment_cites_the_foul_and_a_red_matters_more() -> None:
     card = b.add("card", "HOM-4")
     b.at(25).add("foul", "AWY-5")
     b.add("card", "AWY-5", card="red")
-    yellow, red = [m for m in play(b)[1].moments if m.kind == "card"]
+    yellow, red = [m for m in play(b)[1].moments if m.type == "card"]
     assert (yellow.player_ids, yellow.source_event_ids) == (["HOM-4", "AWY-9"], [foul.id, card.id])
     assert red.importance > yellow.importance
     assert float(red.facts["win_prob_home"]) > float(yellow.facts["win_prob_home"])
@@ -230,12 +230,12 @@ def test_momentum_swing_when_a_team_takes_over() -> None:
     for i in range(c.MOMENTUM_MIN_ACTIONS + 5):
         b.at(1 + i / 10).add("pass", "HOM-9", x=80.0)
     out = play(b)[1]
-    [m] = [x for x in out.moments if x.kind == "momentum_swing"]
+    [m] = [x for x in out.moments if x.type == "momentum_swing"]
     assert m.team_id == "HOM" and len(m.source_event_ids) == c.MOMENTUM_MIN_ACTIONS
     assert [x.template for x in out.cues if x.source_moment_ids == [m.id]] == ["momentum_bar"]
     for i in range(40):
         b.at(4 + i / 10).add("pass", "AWY-9", x=80.0)
-    swings = [x for x in play(b)[1].moments if x.kind == "momentum_swing"]
+    swings = [x for x in play(b)[1].moments if x.type == "momentum_swing"]
     assert [x.team_id for x in swings] == ["HOM", "AWY"]
 
 
@@ -245,7 +245,7 @@ def test_pressure_spell_once_per_spell() -> None:
     b.at(10).add("pressure", "AWY-9")  # the spell has ended
     for i in range(c.PRESSURE_SPELL_COUNT):
         b.at(10.1 + i / 10).add("pressure", "AWY-9")
-    spells = [m for m in play(b)[1].moments if m.kind == "pressure_spell"]
+    spells = [m for m in play(b)[1].moments if m.type == "pressure_spell"]
     assert len(spells) == 2
     assert spells[0].source_event_ids == [e.id for e in spell[: c.PRESSURE_SPELL_COUNT]]
 
@@ -345,7 +345,7 @@ def test_half_time_and_full_time_cards() -> None:
     recaps = [x for x in out.cues if x.template == "recap_card"]
     assert [x.data["period"] for x in compare] == [1, 2] == [x.data["period"] for x in recaps]
     assert (compare[1].data["goals_home"], compare[1].data["goals_away"]) == (1, 1)
-    goals = {m.id for m in out.moments if m.kind == "goal"}
+    goals = {m.id for m in out.moments if m.type == "goal"}
     assert goals <= set(recaps[1].source_moment_ids)
 
 

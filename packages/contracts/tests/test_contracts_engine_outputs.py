@@ -14,7 +14,7 @@ MOMENT = {
     "period": 1,
     "clock_s": 60.0,
     "minute": 1,
-    "kind": "goal",
+    "type": "goal",
     "importance": 0.2,
     "team_id": "HOM",
     "player_ids": [],

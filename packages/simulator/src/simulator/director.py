@@ -18,6 +18,9 @@ from typing import Literal
 import yaml
 from pydantic import BaseModel, ConfigDict, Field
 
+SCRIPTS_DIR = Path(__file__).parents[2] / "director"
+"""Bundled director scripts, such as `demo.yaml`."""
+
 
 class Moment(BaseModel):
     model_config = ConfigDict(extra="forbid", frozen=True)

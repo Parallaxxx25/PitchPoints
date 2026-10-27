@@ -1,6 +1,6 @@
 """Contracts produced by the fantasy scoring engine."""
 
-from typing import Self
+from typing import Literal, Self
 
 from pydantic import Field, model_validator
 
@@ -16,6 +16,7 @@ class LedgerEntry(Contract):
     At full time every provisional entry is issued again with `provisional` false.
     """
 
+    kind: Literal["ledger_entry"] = "ledger_entry"
     id: str
     match_id: str
     player_id: str

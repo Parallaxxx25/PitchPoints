@@ -27,6 +27,25 @@ uv run python -m simulator --validate 300                   # realism report ove
 
 Director mode scripts force key moments (goals, penalties, cards) at given minutes so a demo always has drama; see `packages/simulator/director/demo.yaml`.
 
+Play a match live through the whole pipeline (no Azure needed):
+
+```bash
+uv run devserver                                                    # http://127.0.0.1:8000, API docs at /docs
+uv run python -m devserver.watch --seed 7 --script demo --speed 18  # in a second terminal: prints the match as it happens
+```
+
+| Endpoint | Purpose |
+|---|---|
+| `POST /matches` | Start a match: `{seed, script?, speed (1, 6, 18, 60), paused?}` |
+| `GET /matches/{id}` | Playback status, clock, and score |
+| `POST /matches/{id}/control` | Pause, resume, change speed, or seek: `{paused?, speed?, seek_minute?}` |
+| `GET /matches/{id}/stats`, `/moments`, `/overlay-cues` | Latest stats, key moments, and the overlay cue export |
+| `GET /matches/{id}/ledger/{player_id}` | A player's fantasy points ledger |
+| `POST /profiles` | Create a viewer profile (mode, language, favourites, fantasy squad) |
+| `WS /live/{id}?profile={profile_id}` | Live messages: a snapshot first, then every event, stat, moment, cue, and ledger update |
+
+The devserver wires the pipeline through ports (`EventBus`, `Store`, `LivePush`) with in-memory adapters; Azure adapters replace them in Phase 6.
+
 ## Engines
 
 Two deterministic engines turn the event stream into numbers; agents only ever explain them.

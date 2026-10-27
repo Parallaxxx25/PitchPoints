@@ -5,7 +5,7 @@ Coordinates are in the acting team's perspective: attacking left to right on a
 Reference values were calibrated on simulated matches (`--validate`).
 """
 
-from contracts import CueTemplate, MomentKind
+from contracts import CueTemplate, MomentType
 
 # ---------- pitch zones ----------
 FINAL_THIRD_X = 70.0  # an action at x >= this is in the final third
@@ -79,7 +79,7 @@ MAX_GOALS = 10  # Poisson tail cut-off per team
 # ---------- key moments ----------
 # importance = max(win-probability swing, BASE_IMPORTANCE[kind]); the swing is half the
 # summed absolute change in home, draw, and away probabilities.
-BASE_IMPORTANCE: dict[MomentKind, float] = {
+BASE_IMPORTANCE: dict[MomentType, float] = {
     "goal": 0.15,
     "big_chance": 0.08,
     "save": 0.08,

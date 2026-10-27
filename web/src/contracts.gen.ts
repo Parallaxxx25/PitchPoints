@@ -1,8 +1,19 @@
 // Generated from packages/contracts by `make contracts`. Do not edit.
 
 export type PitchPointsContract =
-  SimulatorMessage | StatSnapshot | TacticalState | KeyMoment | OverlayCue | LedgerEntry | FantasySquad;
+  SimulatorMessage | LiveMessage | FantasySquad | NewProfile | ViewerProfile | StartMatch | MatchControl;
 export type SimulatorMessage = MatchMetadata | MatchEvent | PositionFrame;
+export type LiveMessage =
+  | MatchMetadata
+  | MatchState
+  | MatchEvent
+  | PositionFrame
+  | StatSnapshot
+  | TacticalState
+  | KeyMoment
+  | LedgerEntry
+  | OverlayCue
+  | SquadTotal;
 
 /**
  * Fixture details, sent once before the first event. All names are fictional.
@@ -119,9 +130,26 @@ export interface PlayerPosition {
   speed_kmh: number;
 }
 /**
+ * Where a live match is: playback status and speed, clock, and score.
+ */
+export interface MatchState {
+  kind: "match_state";
+  match_id: string;
+  status: "running" | "paused" | "finished";
+  speed: 1 | 6 | 18 | 60;
+  revision: number;
+  period: 1 | 2;
+  clock_s: number;
+  minute: number;
+  score_home: number;
+  score_away: number;
+  last_event_id: number;
+}
+/**
  * Match stats up to and including `last_event_id`; players who have not appeared are omitted.
  */
 export interface StatSnapshot {
+  kind: "stats";
   match_id: string;
   period: 1 | 2;
   clock_s: number;
@@ -175,6 +203,7 @@ export interface PlayerStats {
  * Rolling-window tactical indices; windows and formulas live in `insights.constants`.
  */
 export interface TacticalState {
+  kind: "tactical_state";
   match_id: string;
   period: 1 | 2;
   clock_s: number;
@@ -197,16 +226,17 @@ export interface WinProbability {
 }
 /**
  * A moment worth explaining. `importance` (0 to 1) is the win-probability swing it caused,
- * or the kind's base importance when that is larger. `facts` holds every number an agent
+ * or the type's base importance when that is larger. `facts` holds every number an agent
  * may quote about it.
  */
 export interface KeyMoment {
+  kind: "moment";
   id: number;
   match_id: string;
   period: 1 | 2;
   clock_s: number;
   minute: number;
-  kind: "goal" | "big_chance" | "save" | "card" | "momentum_swing" | "pressure_spell" | "milestone";
+  type: "goal" | "big_chance" | "save" | "card" | "momentum_swing" | "pressure_spell" | "milestone";
   importance: number;
   team_id: string;
   player_ids: string[];
@@ -219,10 +249,35 @@ export interface KeyMoment {
   source_event_ids: [number, ...number[]];
 }
 /**
+ * One change to a player's fantasy points.
+ *
+ * Entries that can still change (clean sheet, goals conceded, bonus) are
+ * `provisional` and keep a stable `id`: a later entry with the same id replaces
+ * the earlier one, and its `running_total` already reflects the replacement.
+ * At full time every provisional entry is issued again with `provisional` false.
+ */
+export interface LedgerEntry {
+  kind: "ledger_entry";
+  id: string;
+  match_id: string;
+  player_id: string;
+  minute: number;
+  delta: number;
+  running_total: number;
+  rule_id: string;
+  reason: string;
+  /**
+   * @minItems 1
+   */
+  source_event_ids: [number, ...number[]];
+  provisional: boolean;
+}
+/**
  * A timed broadcast graphic. Timing and `data` come from the insights engine; `text`
  * (language code to text) is filled later by templates or fact-checked agents.
  */
 export interface OverlayCue {
+  kind: "overlay_cue";
   id: number;
   match_id: string;
   period: 1 | 2;
@@ -245,27 +300,13 @@ export interface OverlayCue {
   source_event_ids: [number, ...number[]];
 }
 /**
- * One change to a player's fantasy points.
- *
- * Entries that can still change (clean sheet, goals conceded, bonus) are
- * `provisional` and keep a stable `id`: a later entry with the same id replaces
- * the earlier one, and its `running_total` already reflects the replacement.
- * At full time every provisional entry is issued again with `provisional` false.
+ * One viewer's fantasy squad points with the captain doubled; sent to that viewer only.
  */
-export interface LedgerEntry {
-  id: string;
+export interface SquadTotal {
+  kind: "squad_total";
   match_id: string;
-  player_id: string;
-  minute: number;
-  delta: number;
-  running_total: number;
-  rule_id: string;
-  reason: string;
-  /**
-   * @minItems 1
-   */
-  source_event_ids: [number, ...number[]];
-  provisional: boolean;
+  profile_id: string;
+  total: number;
 }
 /**
  * Eleven players from the match; the captain's points count twice.
@@ -278,4 +319,43 @@ export interface FantasySquad {
   players: [string, string, string, string, string, string, string, string, string, string, string];
   captain_id: string;
   vice_captain_id: string;
+}
+/**
+ * What a viewer chooses; the server adds the id.
+ */
+export interface NewProfile {
+  display_name: string;
+  mode: "analyst" | "casual" | "fantasy" | "player_focus" | "club";
+  language: "en" | "es" | "pt" | "th";
+  favourite_club_id: string | null;
+  favourite_player_ids: string[];
+  focus_metric: string | null;
+  fantasy_squad: FantasySquad | null;
+}
+export interface ViewerProfile {
+  display_name: string;
+  mode: "analyst" | "casual" | "fantasy" | "player_focus" | "club";
+  language: "en" | "es" | "pt" | "th";
+  favourite_club_id: string | null;
+  favourite_player_ids: string[];
+  focus_metric: string | null;
+  fantasy_squad: FantasySquad | null;
+  id: string;
+}
+/**
+ * Start a simulated match. `script` names a director script, such as `demo`.
+ */
+export interface StartMatch {
+  seed: number;
+  script: string | null;
+  speed: 1 | 6 | 18 | 60;
+  paused: boolean;
+}
+/**
+ * Change a running match; unset fields stay as they are. A seek is applied first.
+ */
+export interface MatchControl {
+  seek_minute: number | null;
+  paused: boolean | null;
+  speed: (1 | 6 | 18 | 60) | null;
 }

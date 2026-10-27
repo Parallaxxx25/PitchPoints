@@ -9,12 +9,20 @@ from collections.abc import Iterator
 from dataclasses import dataclass
 
 from contracts import MatchEvent, MatchMetadata, PositionFrame
-from simulator.director import DirectorScript, Moment, load_script
+from simulator.director import SCRIPTS_DIR, DirectorScript, Moment, load_script
 from simulator.engine import MatchEngine
 from simulator.positions import position_frames
 from simulator.teams import CLUBS, fixture, make_metadata
 
-__all__ = ["CLUBS", "DirectorScript", "Moment", "SimulatedMatch", "load_script", "simulate"]
+__all__ = [
+    "CLUBS",
+    "SCRIPTS_DIR",
+    "DirectorScript",
+    "Moment",
+    "SimulatedMatch",
+    "load_script",
+    "simulate",
+]
 
 
 @dataclass(frozen=True)

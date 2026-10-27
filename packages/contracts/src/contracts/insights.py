@@ -57,6 +57,7 @@ class PlayerStats(Contract):
 class StatSnapshot(Contract):
     """Match stats up to and including `last_event_id`; players who have not appeared are omitted."""
 
+    kind: Literal["stats"] = "stats"
     match_id: str
     period: Period
     clock_s: float
@@ -81,6 +82,7 @@ class TeamPair(Contract):
 class TacticalState(Contract):
     """Rolling-window tactical indices; windows and formulas live in `insights.constants`."""
 
+    kind: Literal["tactical_state"] = "tactical_state"
     match_id: str
     period: Period
     clock_s: float
@@ -93,22 +95,23 @@ class TacticalState(Contract):
     win_probability: WinProbability
 
 
-MomentKind = Literal[
+MomentType = Literal[
     "goal", "big_chance", "save", "card", "momentum_swing", "pressure_spell", "milestone"
 ]
 
 
 class KeyMoment(Contract):
     """A moment worth explaining. `importance` (0 to 1) is the win-probability swing it caused,
-    or the kind's base importance when that is larger. `facts` holds every number an agent
+    or the type's base importance when that is larger. `facts` holds every number an agent
     may quote about it."""
 
+    kind: Literal["moment"] = "moment"
     id: int
     match_id: str
     period: Period
     clock_s: float
     minute: int
-    kind: MomentKind
+    type: MomentType
     importance: float
     team_id: str
     player_ids: list[str]
@@ -131,6 +134,7 @@ class OverlayCue(Contract):
     """A timed broadcast graphic. Timing and `data` come from the insights engine; `text`
     (language code to text) is filled later by templates or fact-checked agents."""
 
+    kind: Literal["overlay_cue"] = "overlay_cue"
     id: int
     match_id: str
     period: Period
