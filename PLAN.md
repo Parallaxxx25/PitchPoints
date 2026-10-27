@@ -338,4 +338,4 @@ Start each session with a prompt like:
 | Date | Phase | Status | Notes |
 |---|---|---|---|
 | 2026-10-27 | – | done | Plan reframed from fantasy-points companion to match insights engine for the "Synthetic Match Insights Engine for Premier League Studio" challenge. Fantasy is now one viewing mode. |
-| 2026-10-27 | 0 | done locally, CI pending | uv workspace with 6 members and a workspace import smoke test; Vite 8 + React 19 + Tailwind 4 skeleton in `web/`; ruff, mypy strict, pytest, oxlint (Vite template default, replaces eslint), prettier, vitest; `Makefile`; GitHub Actions running `make install check`. `make check` passes locally from Git Bash and PowerShell. CI green pending first push to a GitHub remote. |
+| 2026-10-27 | 0 | done | uv workspace with 6 members and a workspace import smoke test; Vite 8 + React 19 + Tailwind 4 skeleton in `web/`; ruff, mypy strict, pytest, oxlint (Vite template default, replaces eslint), prettier, vitest; `Makefile`; GitHub Actions running `make install check`. `make check` passes locally from Git Bash and PowerShell; CI green on first push (public repo Parallaxxx25/PitchPoints). |
