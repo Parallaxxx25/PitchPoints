@@ -1,0 +1,48 @@
+# Fantasy point values for the PitchPoints scoring engine.
+# Starting point from PLAN.md section 5: verify every value against the official
+# current-season Fantasy Premier League rules before the demo.
+# Per-position values are keyed GK, DEF, MID, FWD; 0 means the rule does not apply.
+
+points:
+  appearance:             {GK: 1, DEF: 1, MID: 1, FWD: 1}      # played at least 1 minute
+  sixty_minutes:          {GK: 1, DEF: 1, MID: 1, FWD: 1}      # extra point at 60 minutes (2 in total)
+  goal:                   {GK: 10, DEF: 6, MID: 5, FWD: 4}
+  assist:                 {GK: 3, DEF: 3, MID: 3, FWD: 3}
+  clean_sheet:            {GK: 4, DEF: 4, MID: 1, FWD: 0}      # 60+ minutes, nothing conceded while on the pitch
+  saves:                  {GK: 1, DEF: 0, MID: 0, FWD: 0}      # per `saves_per_point` saves
+  penalty_save:           {GK: 5, DEF: 0, MID: 0, FWD: 0}
+  penalty_miss:           {GK: -2, DEF: -2, MID: -2, FWD: -2}
+  goals_conceded:         {GK: -1, DEF: -1, MID: 0, FWD: 0}    # per `goals_conceded_per_point` goals
+  yellow_card:            {GK: -1, DEF: -1, MID: -1, FWD: -1}
+  red_card:               {GK: -3, DEF: -3, MID: -3, FWD: -3}  # includes an earlier yellow (second yellow)
+  own_goal:               {GK: -2, DEF: -2, MID: -2, FWD: -2}
+  defensive_contribution: {GK: 0, DEF: 2, MID: 2, FWD: 2}      # once, at the position's threshold
+
+sixty_minutes: 60
+clean_sheet_minutes: 60
+saves_per_point: 3
+goals_conceded_per_point: 2
+
+defensive_contribution:
+  threshold: {GK: 0, DEF: 10, MID: 12, FWD: 12}
+  actions:
+    GK: []
+    DEF: [tackle, interception, clearance, block]
+    MID: [tackle, interception, clearance, block, ball_recovery]
+    FWD: [tackle, interception, clearance, block, ball_recovery]
+
+# "PitchPoints bonus (simplified)": a documented stand-in for the official bonus points
+# system. Players who have appeared are ranked by bonus score (positive scores only);
+# ranks 1, 2, 3 get `points`, and tied players share the higher rank.
+bonus:
+  points: [3, 2, 1]
+  score:
+    goal: {GK: 12, DEF: 12, MID: 18, FWD: 24}
+    assist: 9
+    save: 2
+    penalty_save: 15
+    defensive_action: 1  # each tackle, interception, clearance, or block
+    yellow_card: -3
+    red_card: -9         # also for a second yellow
+    own_goal: -6
+    penalty_miss: -6

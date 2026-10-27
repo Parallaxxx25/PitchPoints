@@ -27,6 +27,15 @@ uv run python -m simulator --validate 300                   # realism report ove
 
 Director mode scripts force key moments (goals, penalties, cards) at given minutes so a demo always has drama; see `packages/simulator/director/demo.yaml`.
 
+## Engines
+
+Two deterministic engines turn the event stream into numbers; agents only ever explain them.
+
+- `packages/insights`: `InsightsEngine` produces team and player stats, tactical state (momentum, control vs chaos, pressing, tempo, win probability), key moments, and timed overlay cues. Every threshold and weight is a documented constant in `insights/constants.py`.
+- `packages/scoring`: `ScoringEngine` produces the fantasy points ledger from `packages/scoring/rules.yaml`. Clean sheets, goals conceded, and the simplified PitchPoints bonus are provisional until full time.
+
+Every key moment, overlay cue, and ledger entry cites the events that caused it. Golden matches in `tests/golden/` pin the full output for three seeds; after an intended change, run `UPDATE_GOLDEN=1 uv run pytest tests/test_engine_pipeline.py` and review the diff.
+
 ## Repository layout
 
 | Path | Contents |

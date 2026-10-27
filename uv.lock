@@ -354,11 +354,27 @@ source = { editable = "services/devserver" }
 name = "pitchpoints-insights"
 version = "0.1.0"
 source = { editable = "packages/insights" }
+dependencies = [
+    { name = "pitchpoints-contracts" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "pitchpoints-contracts", editable = "packages/contracts" }]
 
 [[package]]
 name = "pitchpoints-scoring"
 version = "0.1.0"
 source = { editable = "packages/scoring" }
+dependencies = [
+    { name = "pitchpoints-contracts" },
+    { name = "pyyaml" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "pitchpoints-contracts", editable = "packages/contracts" },
+    { name = "pyyaml", specifier = ">=6.0.3" },
+]
 
 [[package]]
 name = "pitchpoints-simulator"

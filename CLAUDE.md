@@ -38,6 +38,7 @@ cd web && pnpm dev  # frontend dev server
 uv run python -m simulator --seed 7 --script packages/simulator/director/demo.yaml --out match.jsonl
 uv run python -m simulator --seed 7 --stream --speed 18   # live JSONL to stdout
 uv run python -m simulator --validate 300                 # realism report
+UPDATE_GOLDEN=1 uv run pytest tests/test_engine_pipeline.py  # regenerate golden matches after an intended engine change; review the diff
 ```
 
 Planned (not yet implemented):

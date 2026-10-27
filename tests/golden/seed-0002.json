@@ -1,0 +1,4089 @@
+{
+ "stats": {
+  "match_id": "match-0002",
+  "period": 2,
+  "clock_s": 5571.2,
+  "minute": 92,
+  "last_event_id": 1648,
+  "home": {
+   "team_id": "HLA",
+   "goals": 2,
+   "possession": 0.523,
+   "passes": 454,
+   "pass_accuracy": 0.835,
+   "shots": 9,
+   "shots_on_target": 3,
+   "xg": 0.99,
+   "field_tilt": 0.539,
+   "pressures": 69,
+   "ppda": 10.7,
+   "corners": 5,
+   "fouls": 11,
+   "yellow_cards": 2,
+   "red_cards": 0
+  },
+  "away": {
+   "team_id": "PTH",
+   "goals": 0,
+   "possession": 0.477,
+   "passes": 414,
+   "pass_accuracy": 0.819,
+   "shots": 14,
+   "shots_on_target": 4,
+   "xg": 1.31,
+   "field_tilt": 0.461,
+   "pressures": 80,
+   "ppda": 10.5,
+   "corners": 4,
+   "fouls": 14,
+   "yellow_cards": 4,
+   "red_cards": 1
+  },
+  "players": [
+   {
+    "player_id": "HLA-1",
+    "team_id": "HLA",
+    "minutes": 90,
+    "passes": 15,
+    "pass_accuracy": 1.0,
+    "avg_pass_difficulty": 19.2,
+    "distance_km": 7.36,
+    "top_speed_kmh": 18.1,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 0,
+    "pressures": 0
+   },
+   {
+    "player_id": "HLA-2",
+    "team_id": "HLA",
+    "minutes": 59,
+    "passes": 6,
+    "pass_accuracy": 0.667,
+    "avg_pass_difficulty": 19.3,
+    "distance_km": 5.92,
+    "top_speed_kmh": 30.9,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 4,
+    "pressures": 8
+   },
+   {
+    "player_id": "HLA-3",
+    "team_id": "HLA",
+    "minutes": 90,
+    "passes": 3,
+    "pass_accuracy": 1.0,
+    "avg_pass_difficulty": 12.2,
+    "distance_km": 9.16,
+    "top_speed_kmh": 31.4,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 7,
+    "pressures": 8
+   },
+   {
+    "player_id": "HLA-4",
+    "team_id": "HLA",
+    "minutes": 90,
+    "passes": 5,
+    "pass_accuracy": 0.8,
+    "avg_pass_difficulty": 22.9,
+    "distance_km": 8.99,
+    "top_speed_kmh": 31.1,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 9,
+    "pressures": 4
+   },
+   {
+    "player_id": "HLA-5",
+    "team_id": "HLA",
+    "minutes": 90,
+    "passes": 7,
+    "pass_accuracy": 1.0,
+    "avg_pass_difficulty": 26.5,
+    "distance_km": 9.04,
+    "top_speed_kmh": 31.9,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 5,
+    "pressures": 5
+   },
+   {
+    "player_id": "HLA-6",
+    "team_id": "HLA",
+    "minutes": 90,
+    "passes": 47,
+    "pass_accuracy": 0.872,
+    "avg_pass_difficulty": 26.6,
+    "distance_km": 10.28,
+    "top_speed_kmh": 32.9,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 16,
+    "pressures": 7
+   },
+   {
+    "player_id": "HLA-7",
+    "team_id": "HLA",
+    "minutes": 90,
+    "passes": 49,
+    "pass_accuracy": 0.878,
+    "avg_pass_difficulty": 21.4,
+    "distance_km": 10.14,
+    "top_speed_kmh": 33.4,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 18,
+    "pressures": 2
+   },
+   {
+    "player_id": "HLA-8",
+    "team_id": "HLA",
+    "minutes": 60,
+    "passes": 47,
+    "pass_accuracy": 0.894,
+    "avg_pass_difficulty": 24.8,
+    "distance_km": 6.68,
+    "top_speed_kmh": 30.6,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 14,
+    "pressures": 4
+   },
+   {
+    "player_id": "HLA-9",
+    "team_id": "HLA",
+    "minutes": 90,
+    "passes": 63,
+    "pass_accuracy": 0.778,
+    "avg_pass_difficulty": 28.5,
+    "distance_km": 10.63,
+    "top_speed_kmh": 31.2,
+    "shots": 2,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 1,
+    "xg": 0.12,
+    "defensive_actions": 11,
+    "pressures": 8
+   },
+   {
+    "player_id": "HLA-10",
+    "team_id": "HLA",
+    "minutes": 90,
+    "passes": 92,
+    "pass_accuracy": 0.717,
+    "avg_pass_difficulty": 32.9,
+    "distance_km": 11.11,
+    "top_speed_kmh": 32.2,
+    "shots": 6,
+    "shots_on_target": 3,
+    "goals": 1,
+    "assists": 0,
+    "xg": 0.86,
+    "defensive_actions": 2,
+    "pressures": 14
+   },
+   {
+    "player_id": "HLA-11",
+    "team_id": "HLA",
+    "minutes": 90,
+    "passes": 88,
+    "pass_accuracy": 0.864,
+    "avg_pass_difficulty": 29.1,
+    "distance_km": 11.19,
+    "top_speed_kmh": 32.2,
+    "shots": 1,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.01,
+    "defensive_actions": 5,
+    "pressures": 5
+   },
+   {
+    "player_id": "HLA-12",
+    "team_id": "HLA",
+    "minutes": 30,
+    "passes": 9,
+    "pass_accuracy": 0.667,
+    "avg_pass_difficulty": 41.3,
+    "distance_km": 3.37,
+    "top_speed_kmh": 31.7,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 0,
+    "pressures": 0
+   },
+   {
+    "player_id": "HLA-13",
+    "team_id": "HLA",
+    "minutes": 25,
+    "passes": 19,
+    "pass_accuracy": 1.0,
+    "avg_pass_difficulty": 26.5,
+    "distance_km": 2.77,
+    "top_speed_kmh": 32.2,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 7,
+    "pressures": 4
+   },
+   {
+    "player_id": "HLA-14",
+    "team_id": "HLA",
+    "minutes": 4,
+    "passes": 4,
+    "pass_accuracy": 1.0,
+    "avg_pass_difficulty": 25.4,
+    "distance_km": 0.77,
+    "top_speed_kmh": 28.6,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 3,
+    "pressures": 0
+   },
+   {
+    "player_id": "PTH-1",
+    "team_id": "PTH",
+    "minutes": 90,
+    "passes": 8,
+    "pass_accuracy": 0.875,
+    "avg_pass_difficulty": 32.8,
+    "distance_km": 7.4,
+    "top_speed_kmh": 21.5,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 0,
+    "pressures": 0
+   },
+   {
+    "player_id": "PTH-2",
+    "team_id": "PTH",
+    "minutes": 90,
+    "passes": 24,
+    "pass_accuracy": 0.792,
+    "avg_pass_difficulty": 24.6,
+    "distance_km": 9.43,
+    "top_speed_kmh": 31.6,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 14,
+    "pressures": 11
+   },
+   {
+    "player_id": "PTH-3",
+    "team_id": "PTH",
+    "minutes": 60,
+    "passes": 8,
+    "pass_accuracy": 1.0,
+    "avg_pass_difficulty": 14.0,
+    "distance_km": 6.04,
+    "top_speed_kmh": 29.6,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 7,
+    "pressures": 4
+   },
+   {
+    "player_id": "PTH-4",
+    "team_id": "PTH",
+    "minutes": 90,
+    "passes": 2,
+    "pass_accuracy": 0.5,
+    "avg_pass_difficulty": 26.4,
+    "distance_km": 9.04,
+    "top_speed_kmh": 30.6,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 5,
+    "pressures": 2
+   },
+   {
+    "player_id": "PTH-5",
+    "team_id": "PTH",
+    "minutes": 90,
+    "passes": 10,
+    "pass_accuracy": 0.6,
+    "avg_pass_difficulty": 23.6,
+    "distance_km": 9.08,
+    "top_speed_kmh": 31.2,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 9,
+    "pressures": 6
+   },
+   {
+    "player_id": "PTH-6",
+    "team_id": "PTH",
+    "minutes": 22,
+    "passes": 13,
+    "pass_accuracy": 0.923,
+    "avg_pass_difficulty": 21.4,
+    "distance_km": 2.55,
+    "top_speed_kmh": 32.1,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 2,
+    "pressures": 3
+   },
+   {
+    "player_id": "PTH-7",
+    "team_id": "PTH",
+    "minutes": 90,
+    "passes": 65,
+    "pass_accuracy": 0.831,
+    "avg_pass_difficulty": 26.0,
+    "distance_km": 10.33,
+    "top_speed_kmh": 32.1,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 38,
+    "pressures": 4
+   },
+   {
+    "player_id": "PTH-8",
+    "team_id": "PTH",
+    "minutes": 69,
+    "passes": 42,
+    "pass_accuracy": 0.81,
+    "avg_pass_difficulty": 24.6,
+    "distance_km": 7.61,
+    "top_speed_kmh": 30.3,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 13,
+    "pressures": 2
+   },
+   {
+    "player_id": "PTH-9",
+    "team_id": "PTH",
+    "minutes": 90,
+    "passes": 63,
+    "pass_accuracy": 0.841,
+    "avg_pass_difficulty": 26.8,
+    "distance_km": 11.18,
+    "top_speed_kmh": 32.1,
+    "shots": 7,
+    "shots_on_target": 1,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.53,
+    "defensive_actions": 12,
+    "pressures": 20
+   },
+   {
+    "player_id": "PTH-10",
+    "team_id": "PTH",
+    "minutes": 90,
+    "passes": 93,
+    "pass_accuracy": 0.774,
+    "avg_pass_difficulty": 31.6,
+    "distance_km": 11.35,
+    "top_speed_kmh": 33.6,
+    "shots": 3,
+    "shots_on_target": 1,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.59,
+    "defensive_actions": 5,
+    "pressures": 15
+   },
+   {
+    "player_id": "PTH-11",
+    "team_id": "PTH",
+    "minutes": 90,
+    "passes": 67,
+    "pass_accuracy": 0.851,
+    "avg_pass_difficulty": 30.1,
+    "distance_km": 10.43,
+    "top_speed_kmh": 31.8,
+    "shots": 4,
+    "shots_on_target": 2,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.19,
+    "defensive_actions": 4,
+    "pressures": 9
+   },
+   {
+    "player_id": "PTH-12",
+    "team_id": "PTH",
+    "minutes": 29,
+    "passes": 2,
+    "pass_accuracy": 1.0,
+    "avg_pass_difficulty": 19.8,
+    "distance_km": 3.19,
+    "top_speed_kmh": 31.0,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 7,
+    "pressures": 4
+   },
+   {
+    "player_id": "PTH-13",
+    "team_id": "PTH",
+    "minutes": 15,
+    "passes": 7,
+    "pass_accuracy": 1.0,
+    "avg_pass_difficulty": 28.5,
+    "distance_km": 1.62,
+    "top_speed_kmh": 29.9,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 1,
+    "pressures": 0
+   },
+   {
+    "player_id": "PTH-14",
+    "team_id": "PTH",
+    "minutes": 5,
+    "passes": 10,
+    "pass_accuracy": 0.7,
+    "avg_pass_difficulty": 17.6,
+    "distance_km": 0.95,
+    "top_speed_kmh": 29.0,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 3,
+    "pressures": 0
+   }
+  ]
+ },
+ "tactical_state": {
+  "match_id": "match-0002",
+  "period": 2,
+  "clock_s": 5571.2,
+  "minute": 92,
+  "last_event_id": 1648,
+  "momentum": 6.7,
+  "control_chaos_index": -67.0,
+  "pressing_intensity": {
+   "home": 0.14,
+   "away": 0.67
+  },
+  "tempo": 9.0,
+  "win_probability": {
+   "home": 1.0,
+   "draw": 0.0,
+   "away": 0.0
+  }
+ },
+ "moments": [
+  {
+   "id": 1,
+   "match_id": "match-0002",
+   "period": 1,
+   "clock_s": 180.0,
+   "minute": 3,
+   "kind": "momentum_swing",
+   "importance": 0.06,
+   "team_id": "PTH",
+   "player_ids": [],
+   "facts": {
+    "momentum": -100.0,
+    "final_third_actions": 12,
+    "opponent_final_third_actions": 0
+   },
+   "source_event_ids": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    22,
+    23,
+    43,
+    46,
+    57
+   ]
+  },
+  {
+   "id": 2,
+   "match_id": "match-0002",
+   "period": 1,
+   "clock_s": 398.0,
+   "minute": 6,
+   "kind": "milestone",
+   "importance": 0.03,
+   "team_id": "HLA",
+   "player_ids": [
+    "HLA-7"
+   ],
+   "facts": {
+    "milestone": "top_speed",
+    "speed_kmh": 33.4
+   },
+   "source_event_ids": [
+    119
+   ]
+  },
+  {
+   "id": 3,
+   "match_id": "match-0002",
+   "period": 1,
+   "clock_s": 456.1,
+   "minute": 7,
+   "kind": "momentum_swing",
+   "importance": 0.06,
+   "team_id": "HLA",
+   "player_ids": [],
+   "facts": {
+    "momentum": 60.0,
+    "final_third_actions": 16,
+    "opponent_final_third_actions": 4
+   },
+   "source_event_ids": [
+    66,
+    67,
+    69,
+    90,
+    91,
+    92,
+    93,
+    128,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141
+   ]
+  },
+  {
+   "id": 4,
+   "match_id": "match-0002",
+   "period": 1,
+   "clock_s": 672.0,
+   "minute": 11,
+   "kind": "milestone",
+   "importance": 0.03,
+   "team_id": "PTH",
+   "player_ids": [
+    "PTH-10"
+   ],
+   "facts": {
+    "milestone": "top_speed",
+    "speed_kmh": 33.6
+   },
+   "source_event_ids": [
+    194
+   ]
+  },
+  {
+   "id": 5,
+   "match_id": "match-0002",
+   "period": 1,
+   "clock_s": 1096.6,
+   "minute": 18,
+   "kind": "card",
+   "importance": 0.04,
+   "team_id": "PTH",
+   "player_ids": [
+    "PTH-6",
+    "HLA-10"
+   ],
+   "facts": {
+    "card": "yellow",
+    "win_prob_home": 0.374,
+    "win_prob_draw": 0.372,
+    "win_prob_away": 0.255,
+    "win_prob_swing": 0.0
+   },
+   "source_event_ids": [
+    335,
+    336
+   ]
+  },
+  {
+   "id": 6,
+   "match_id": "match-0002",
+   "period": 1,
+   "clock_s": 1341.8,
+   "minute": 22,
+   "kind": "card",
+   "importance": 0.139,
+   "team_id": "PTH",
+   "player_ids": [
+    "PTH-6",
+    "HLA-8"
+   ],
+   "facts": {
+    "card": "second_yellow",
+    "win_prob_home": 0.526,
+    "win_prob_draw": 0.285,
+    "win_prob_away": 0.19,
+    "win_prob_swing": 0.139
+   },
+   "source_event_ids": [
+    397,
+    398
+   ]
+  },
+  {
+   "id": 7,
+   "match_id": "match-0002",
+   "period": 1,
+   "clock_s": 1869.3,
+   "minute": 31,
+   "kind": "pressure_spell",
+   "importance": 0.05,
+   "team_id": "PTH",
+   "player_ids": [],
+   "facts": {
+    "pressures": 8,
+    "window_minutes": 3.0
+   },
+   "source_event_ids": [
+    512,
+    514,
+    516,
+    536,
+    539,
+    562,
+    564,
+    575
+   ]
+  },
+  {
+   "id": 8,
+   "match_id": "match-0002",
+   "period": 1,
+   "clock_s": 1906.7,
+   "minute": 31,
+   "kind": "goal",
+   "importance": 0.268,
+   "team_id": "HLA",
+   "player_ids": [
+    "HLA-10",
+    "HLA-9"
+   ],
+   "facts": {
+    "score_home": 1,
+    "score_away": 0,
+    "own_goal": false,
+    "first_goal": true,
+    "xg": 0.24,
+    "shot_speed_kmh": 100.8,
+    "penalty": false,
+    "win_prob_home": 0.854,
+    "win_prob_draw": 0.112,
+    "win_prob_away": 0.034,
+    "win_prob_swing": 0.268
+   },
+   "source_event_ids": [
+    587,
+    588
+   ]
+  },
+  {
+   "id": 9,
+   "match_id": "match-0002",
+   "period": 1,
+   "clock_s": 2201.8,
+   "minute": 36,
+   "kind": "momentum_swing",
+   "importance": 0.06,
+   "team_id": "PTH",
+   "player_ids": [],
+   "facts": {
+    "momentum": -66.7,
+    "final_third_actions": 10,
+    "opponent_final_third_actions": 2
+   },
+   "source_event_ids": [
+    603,
+    622,
+    623,
+    625,
+    626,
+    627,
+    629,
+    630,
+    632,
+    633
+   ]
+  },
+  {
+   "id": 10,
+   "match_id": "match-0002",
+   "period": 1,
+   "clock_s": 2592.8,
+   "minute": 43,
+   "kind": "card",
+   "importance": 0.04,
+   "team_id": "PTH",
+   "player_ids": [
+    "PTH-9",
+    "HLA-8"
+   ],
+   "facts": {
+    "card": "yellow",
+    "win_prob_home": 0.826,
+    "win_prob_draw": 0.141,
+    "win_prob_away": 0.034,
+    "win_prob_swing": 0.0
+   },
+   "source_event_ids": [
+    774,
+    775
+   ]
+  },
+  {
+   "id": 11,
+   "match_id": "match-0002",
+   "period": 1,
+   "clock_s": 2682.8,
+   "minute": 44,
+   "kind": "big_chance",
+   "importance": 0.08,
+   "team_id": "HLA",
+   "player_ids": [
+    "HLA-10"
+   ],
+   "facts": {
+    "xg": 0.42,
+    "outcome": "off_target",
+    "penalty": false
+   },
+   "source_event_ids": [
+    799
+   ]
+  },
+  {
+   "id": 12,
+   "match_id": "match-0002",
+   "period": 1,
+   "clock_s": 2746.9,
+   "minute": 45,
+   "kind": "momentum_swing",
+   "importance": 0.06,
+   "team_id": "HLA",
+   "player_ids": [],
+   "facts": {
+    "momentum": 66.7,
+    "final_third_actions": 10,
+    "opponent_final_third_actions": 2
+   },
+   "source_event_ids": [
+    747,
+    748,
+    749,
+    750,
+    797,
+    798,
+    799,
+    816,
+    817,
+    818
+   ]
+  },
+  {
+   "id": 13,
+   "match_id": "match-0002",
+   "period": 2,
+   "clock_s": 3231.8,
+   "minute": 53,
+   "kind": "card",
+   "importance": 0.04,
+   "team_id": "PTH",
+   "player_ids": [
+    "PTH-7",
+    "HLA-10"
+   ],
+   "facts": {
+    "card": "yellow",
+    "win_prob_home": 0.897,
+    "win_prob_draw": 0.09,
+    "win_prob_away": 0.013,
+    "win_prob_swing": 0.0
+   },
+   "source_event_ids": [
+    1010,
+    1011
+   ]
+  },
+  {
+   "id": 14,
+   "match_id": "match-0002",
+   "period": 2,
+   "clock_s": 4014.4,
+   "minute": 66,
+   "kind": "milestone",
+   "importance": 0.03,
+   "team_id": "PTH",
+   "player_ids": [],
+   "facts": {
+    "milestone": "team_shots",
+    "shots": 10
+   },
+   "source_event_ids": [
+    1224
+   ]
+  },
+  {
+   "id": 15,
+   "match_id": "match-0002",
+   "period": 2,
+   "clock_s": 4194.8,
+   "minute": 69,
+   "kind": "card",
+   "importance": 0.04,
+   "team_id": "HLA",
+   "player_ids": [
+    "HLA-13",
+    "PTH-7"
+   ],
+   "facts": {
+    "card": "yellow",
+    "win_prob_home": 0.835,
+    "win_prob_draw": 0.147,
+    "win_prob_away": 0.018,
+    "win_prob_swing": 0.0
+   },
+   "source_event_ids": [
+    1262,
+    1263
+   ]
+  },
+  {
+   "id": 16,
+   "match_id": "match-0002",
+   "period": 2,
+   "clock_s": 4524.1,
+   "minute": 75,
+   "kind": "milestone",
+   "importance": 0.03,
+   "team_id": "PTH",
+   "player_ids": [
+    "PTH-10"
+   ],
+   "facts": {
+    "milestone": "passes",
+    "passes": 80
+   },
+   "source_event_ids": [
+    1356
+   ]
+  },
+  {
+   "id": 17,
+   "match_id": "match-0002",
+   "period": 2,
+   "clock_s": 4691.9,
+   "minute": 78,
+   "kind": "momentum_swing",
+   "importance": 0.06,
+   "team_id": "PTH",
+   "player_ids": [],
+   "facts": {
+    "momentum": -60.0,
+    "final_third_actions": 16,
+    "opponent_final_third_actions": 4
+   },
+   "source_event_ids": [
+    1315,
+    1316,
+    1332,
+    1333,
+    1334,
+    1336,
+    1345,
+    1353,
+    1354,
+    1355,
+    1356,
+    1357,
+    1358,
+    1359,
+    1411,
+    1413
+   ]
+  },
+  {
+   "id": 18,
+   "match_id": "match-0002",
+   "period": 2,
+   "clock_s": 4728.4,
+   "minute": 78,
+   "kind": "milestone",
+   "importance": 0.03,
+   "team_id": "HLA",
+   "player_ids": [
+    "HLA-10"
+   ],
+   "facts": {
+    "milestone": "passes",
+    "passes": 80
+   },
+   "source_event_ids": [
+    1429
+   ]
+  },
+  {
+   "id": 19,
+   "match_id": "match-0002",
+   "period": 2,
+   "clock_s": 4750.6,
+   "minute": 79,
+   "kind": "milestone",
+   "importance": 0.03,
+   "team_id": "HLA",
+   "player_ids": [
+    "HLA-11"
+   ],
+   "facts": {
+    "milestone": "passes",
+    "passes": 80
+   },
+   "source_event_ids": [
+    1440
+   ]
+  },
+  {
+   "id": 20,
+   "match_id": "match-0002",
+   "period": 2,
+   "clock_s": 4801.0,
+   "minute": 80,
+   "kind": "milestone",
+   "importance": 0.03,
+   "team_id": "HLA",
+   "player_ids": [],
+   "facts": {
+    "milestone": "clean_sheet",
+    "minute": 80
+   },
+   "source_event_ids": [
+    1450
+   ]
+  },
+  {
+   "id": 21,
+   "match_id": "match-0002",
+   "period": 2,
+   "clock_s": 4825.8,
+   "minute": 80,
+   "kind": "momentum_swing",
+   "importance": 0.06,
+   "team_id": "HLA",
+   "player_ids": [],
+   "facts": {
+    "momentum": 67.7,
+    "final_third_actions": 26,
+    "opponent_final_third_actions": 5
+   },
+   "source_event_ids": [
+    1384,
+    1385,
+    1386,
+    1388,
+    1426,
+    1427,
+    1428,
+    1429,
+    1430,
+    1431,
+    1432,
+    1438,
+    1439,
+    1440,
+    1441,
+    1442,
+    1443,
+    1445,
+    1446,
+    1448,
+    1450,
+    1451,
+    1452,
+    1453,
+    1454,
+    1455
+   ]
+  },
+  {
+   "id": 22,
+   "match_id": "match-0002",
+   "period": 2,
+   "clock_s": 5011.8,
+   "minute": 83,
+   "kind": "big_chance",
+   "importance": 0.08,
+   "team_id": "PTH",
+   "player_ids": [
+    "PTH-10"
+   ],
+   "facts": {
+    "xg": 0.36,
+    "outcome": "off_target",
+    "penalty": false
+   },
+   "source_event_ids": [
+    1497
+   ]
+  },
+  {
+   "id": 23,
+   "match_id": "match-0002",
+   "period": 2,
+   "clock_s": 5114.4,
+   "minute": 85,
+   "kind": "momentum_swing",
+   "importance": 0.06,
+   "team_id": "PTH",
+   "player_ids": [],
+   "facts": {
+    "momentum": -73.3,
+    "final_third_actions": 13,
+    "opponent_final_third_actions": 2
+   },
+   "source_event_ids": [
+    1482,
+    1484,
+    1488,
+    1489,
+    1490,
+    1492,
+    1493,
+    1494,
+    1496,
+    1497,
+    1507,
+    1512,
+    1513
+   ]
+  },
+  {
+   "id": 24,
+   "match_id": "match-0002",
+   "period": 2,
+   "clock_s": 5209.8,
+   "minute": 86,
+   "kind": "card",
+   "importance": 0.04,
+   "team_id": "HLA",
+   "player_ids": [
+    "HLA-10",
+    "PTH-7"
+   ],
+   "facts": {
+    "card": "yellow",
+    "win_prob_home": 0.95,
+    "win_prob_draw": 0.049,
+    "win_prob_away": 0.001,
+    "win_prob_swing": 0.0
+   },
+   "source_event_ids": [
+    1539,
+    1540
+   ]
+  },
+  {
+   "id": 25,
+   "match_id": "match-0002",
+   "period": 2,
+   "clock_s": 5282.5,
+   "minute": 88,
+   "kind": "goal",
+   "importance": 0.15,
+   "team_id": "HLA",
+   "player_ids": [
+    "PTH-2"
+   ],
+   "facts": {
+    "score_home": 2,
+    "score_away": 0,
+    "own_goal": true,
+    "first_goal": false,
+    "xg": 0.01,
+    "shot_speed_kmh": 92.1,
+    "penalty": false,
+    "win_prob_home": 0.999,
+    "win_prob_draw": 0.001,
+    "win_prob_away": 0.0,
+    "win_prob_swing": 0.031
+   },
+   "source_event_ids": [
+    1563,
+    1564
+   ]
+  },
+  {
+   "id": 26,
+   "match_id": "match-0002",
+   "period": 2,
+   "clock_s": 5374.0,
+   "minute": 89,
+   "kind": "milestone",
+   "importance": 0.03,
+   "team_id": "PTH",
+   "player_ids": [
+    "PTH-10"
+   ],
+   "facts": {
+    "milestone": "distance",
+    "distance_km": 11.0
+   },
+   "source_event_ids": [
+    1585
+   ]
+  },
+  {
+   "id": 27,
+   "match_id": "match-0002",
+   "period": 2,
+   "clock_s": 5431.6,
+   "minute": 90,
+   "kind": "momentum_swing",
+   "importance": 0.06,
+   "team_id": "HLA",
+   "player_ids": [],
+   "facts": {
+    "momentum": 66.7,
+    "final_third_actions": 10,
+    "opponent_final_third_actions": 2
+   },
+   "source_event_ids": [
+    1532,
+    1533,
+    1534,
+    1551,
+    1553,
+    1563,
+    1579,
+    1581,
+    1582,
+    1606
+   ]
+  },
+  {
+   "id": 28,
+   "match_id": "match-0002",
+   "period": 2,
+   "clock_s": 5468.0,
+   "minute": 91,
+   "kind": "milestone",
+   "importance": 0.03,
+   "team_id": "HLA",
+   "player_ids": [
+    "HLA-11"
+   ],
+   "facts": {
+    "milestone": "distance",
+    "distance_km": 11.0
+   },
+   "source_event_ids": [
+    1622
+   ]
+  },
+  {
+   "id": 29,
+   "match_id": "match-0002",
+   "period": 2,
+   "clock_s": 5470.0,
+   "minute": 91,
+   "kind": "milestone",
+   "importance": 0.03,
+   "team_id": "PTH",
+   "player_ids": [
+    "PTH-9"
+   ],
+   "facts": {
+    "milestone": "distance",
+    "distance_km": 11.0
+   },
+   "source_event_ids": [
+    1623
+   ]
+  },
+  {
+   "id": 30,
+   "match_id": "match-0002",
+   "period": 2,
+   "clock_s": 5494.0,
+   "minute": 91,
+   "kind": "milestone",
+   "importance": 0.03,
+   "team_id": "HLA",
+   "player_ids": [
+    "HLA-10"
+   ],
+   "facts": {
+    "milestone": "distance",
+    "distance_km": 11.0
+   },
+   "source_event_ids": [
+    1631
+   ]
+  },
+  {
+   "id": 31,
+   "match_id": "match-0002",
+   "period": 2,
+   "clock_s": 5571.2,
+   "minute": 92,
+   "kind": "milestone",
+   "importance": 0.03,
+   "team_id": "PTH",
+   "player_ids": [
+    "PTH-10"
+   ],
+   "facts": {
+    "milestone": "match_top_speed",
+    "speed_kmh": 33.6
+   },
+   "source_event_ids": [
+    1648
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "id": 1,
+   "match_id": "match-0002",
+   "period": 1,
+   "start_clock_s": 180.0,
+   "duration_s": 8.0,
+   "template": "momentum_bar",
+   "priority": 50,
+   "anchor_player_id": null,
+   "data": {
+    "moment_kind": "momentum_swing",
+    "momentum": -100.0,
+    "final_third_actions": 12,
+    "opponent_final_third_actions": 0
+   },
+   "text": {},
+   "source_moment_ids": [
+    1
+   ],
+   "source_event_ids": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    22,
+    23,
+    43,
+    46,
+    57
+   ]
+  },
+  {
+   "id": 2,
+   "match_id": "match-0002",
+   "period": 1,
+   "start_clock_s": 302.6,
+   "duration_s": 5.0,
+   "template": "pass_quality",
+   "priority": 20,
+   "anchor_player_id": "HLA-9",
+   "data": {
+    "difficulty": 72.3,
+    "length_m": 34.1,
+    "ball_speed_kmh": 76.0,
+    "under_pressure": true,
+    "cross": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    90
+   ]
+  },
+  {
+   "id": 3,
+   "match_id": "match-0002",
+   "period": 1,
+   "start_clock_s": 398.0,
+   "duration_s": 6.0,
+   "template": "player_tag",
+   "priority": 40,
+   "anchor_player_id": "HLA-7",
+   "data": {
+    "moment_kind": "milestone",
+    "milestone": "top_speed",
+    "speed_kmh": 33.4
+   },
+   "text": {},
+   "source_moment_ids": [
+    2
+   ],
+   "source_event_ids": [
+    119
+   ]
+  },
+  {
+   "id": 4,
+   "match_id": "match-0002",
+   "period": 1,
+   "start_clock_s": 456.1,
+   "duration_s": 8.0,
+   "template": "momentum_bar",
+   "priority": 50,
+   "anchor_player_id": null,
+   "data": {
+    "moment_kind": "momentum_swing",
+    "momentum": 60.0,
+    "final_third_actions": 16,
+    "opponent_final_third_actions": 4
+   },
+   "text": {},
+   "source_moment_ids": [
+    3
+   ],
+   "source_event_ids": [
+    66,
+    67,
+    69,
+    90,
+    91,
+    92,
+    93,
+    128,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141
+   ]
+  },
+  {
+   "id": 5,
+   "match_id": "match-0002",
+   "period": 1,
+   "start_clock_s": 565.0,
+   "duration_s": 5.0,
+   "template": "pass_quality",
+   "priority": 20,
+   "anchor_player_id": "HLA-8",
+   "data": {
+    "difficulty": 73.4,
+    "length_m": 34.1,
+    "ball_speed_kmh": 90.5,
+    "under_pressure": false,
+    "cross": true
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    170
+   ]
+  },
+  {
+   "id": 6,
+   "match_id": "match-0002",
+   "period": 1,
+   "start_clock_s": 672.0,
+   "duration_s": 6.0,
+   "template": "player_tag",
+   "priority": 40,
+   "anchor_player_id": "PTH-10",
+   "data": {
+    "moment_kind": "milestone",
+    "milestone": "top_speed",
+    "speed_kmh": 33.6
+   },
+   "text": {},
+   "source_moment_ids": [
+    4
+   ],
+   "source_event_ids": [
+    194
+   ]
+  },
+  {
+   "id": 7,
+   "match_id": "match-0002",
+   "period": 1,
+   "start_clock_s": 972.1,
+   "duration_s": 5.0,
+   "template": "pass_quality",
+   "priority": 20,
+   "anchor_player_id": "PTH-10",
+   "data": {
+    "difficulty": 74.0,
+    "length_m": 22.1,
+    "ball_speed_kmh": 61.6,
+    "under_pressure": true,
+    "cross": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    291
+   ]
+  },
+  {
+   "id": 8,
+   "match_id": "match-0002",
+   "period": 1,
+   "start_clock_s": 1096.6,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": "PTH-6",
+   "data": {
+    "moment_kind": "card",
+    "card": "yellow",
+    "win_prob_home": 0.374,
+    "win_prob_draw": 0.372,
+    "win_prob_away": 0.255,
+    "win_prob_swing": 0.0
+   },
+   "text": {},
+   "source_moment_ids": [
+    5
+   ],
+   "source_event_ids": [
+    335,
+    336
+   ]
+  },
+  {
+   "id": 9,
+   "match_id": "match-0002",
+   "period": 1,
+   "start_clock_s": 1326.0,
+   "duration_s": 5.0,
+   "template": "shot_speed",
+   "priority": 30,
+   "anchor_player_id": "HLA-10",
+   "data": {
+    "shot_speed_kmh": 94.0,
+    "xg": 0.01,
+    "outcome": "saved",
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    390
+   ]
+  },
+  {
+   "id": 10,
+   "match_id": "match-0002",
+   "period": 1,
+   "start_clock_s": 1341.8,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": "PTH-6",
+   "data": {
+    "moment_kind": "card",
+    "card": "second_yellow",
+    "win_prob_home": 0.526,
+    "win_prob_draw": 0.285,
+    "win_prob_away": 0.19,
+    "win_prob_swing": 0.139
+   },
+   "text": {},
+   "source_moment_ids": [
+    6
+   ],
+   "source_event_ids": [
+    397,
+    398
+   ]
+  },
+  {
+   "id": 11,
+   "match_id": "match-0002",
+   "period": 1,
+   "start_clock_s": 1442.5,
+   "duration_s": 5.0,
+   "template": "pass_quality",
+   "priority": 20,
+   "anchor_player_id": "PTH-9",
+   "data": {
+    "difficulty": 72.8,
+    "length_m": 41.7,
+    "ball_speed_kmh": 107.8,
+    "under_pressure": false,
+    "cross": true
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    423
+   ]
+  },
+  {
+   "id": 12,
+   "match_id": "match-0002",
+   "period": 1,
+   "start_clock_s": 1869.3,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": null,
+   "data": {
+    "moment_kind": "pressure_spell",
+    "pressures": 8,
+    "window_minutes": 3.0
+   },
+   "text": {},
+   "source_moment_ids": [
+    7
+   ],
+   "source_event_ids": [
+    512,
+    514,
+    516,
+    536,
+    539,
+    562,
+    564,
+    575
+   ]
+  },
+  {
+   "id": 13,
+   "match_id": "match-0002",
+   "period": 1,
+   "start_clock_s": 1906.7,
+   "duration_s": 5.0,
+   "template": "shot_speed",
+   "priority": 30,
+   "anchor_player_id": "HLA-10",
+   "data": {
+    "shot_speed_kmh": 100.8,
+    "xg": 0.24,
+    "outcome": "goal",
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    587
+   ]
+  },
+  {
+   "id": 14,
+   "match_id": "match-0002",
+   "period": 1,
+   "start_clock_s": 1906.7,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": "HLA-10",
+   "data": {
+    "moment_kind": "goal",
+    "score_home": 1,
+    "score_away": 0,
+    "own_goal": false,
+    "first_goal": true,
+    "xg": 0.24,
+    "shot_speed_kmh": 100.8,
+    "penalty": false,
+    "win_prob_home": 0.854,
+    "win_prob_draw": 0.112,
+    "win_prob_away": 0.034,
+    "win_prob_swing": 0.268
+   },
+   "text": {},
+   "source_moment_ids": [
+    8
+   ],
+   "source_event_ids": [
+    587,
+    588
+   ]
+  },
+  {
+   "id": 15,
+   "match_id": "match-0002",
+   "period": 1,
+   "start_clock_s": 2082.7,
+   "duration_s": 5.0,
+   "template": "pass_quality",
+   "priority": 20,
+   "anchor_player_id": "PTH-11",
+   "data": {
+    "difficulty": 78.1,
+    "length_m": 28.6,
+    "ball_speed_kmh": 84.5,
+    "under_pressure": true,
+    "cross": true
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    625
+   ]
+  },
+  {
+   "id": 16,
+   "match_id": "match-0002",
+   "period": 1,
+   "start_clock_s": 2201.8,
+   "duration_s": 8.0,
+   "template": "momentum_bar",
+   "priority": 50,
+   "anchor_player_id": null,
+   "data": {
+    "moment_kind": "momentum_swing",
+    "momentum": -66.7,
+    "final_third_actions": 10,
+    "opponent_final_third_actions": 2
+   },
+   "text": {},
+   "source_moment_ids": [
+    9
+   ],
+   "source_event_ids": [
+    603,
+    622,
+    623,
+    625,
+    626,
+    627,
+    629,
+    630,
+    632,
+    633
+   ]
+  },
+  {
+   "id": 17,
+   "match_id": "match-0002",
+   "period": 1,
+   "start_clock_s": 2446.4,
+   "duration_s": 5.0,
+   "template": "shot_speed",
+   "priority": 30,
+   "anchor_player_id": "PTH-11",
+   "data": {
+    "shot_speed_kmh": 96.3,
+    "xg": 0.03,
+    "outcome": "saved",
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    718
+   ]
+  },
+  {
+   "id": 18,
+   "match_id": "match-0002",
+   "period": 1,
+   "start_clock_s": 2592.8,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": "PTH-9",
+   "data": {
+    "moment_kind": "card",
+    "card": "yellow",
+    "win_prob_home": 0.826,
+    "win_prob_draw": 0.141,
+    "win_prob_away": 0.034,
+    "win_prob_swing": 0.0
+   },
+   "text": {},
+   "source_moment_ids": [
+    10
+   ],
+   "source_event_ids": [
+    774,
+    775
+   ]
+  },
+  {
+   "id": 19,
+   "match_id": "match-0002",
+   "period": 1,
+   "start_clock_s": 2682.8,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": "HLA-10",
+   "data": {
+    "moment_kind": "big_chance",
+    "xg": 0.42,
+    "outcome": "off_target",
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [
+    11
+   ],
+   "source_event_ids": [
+    799
+   ]
+  },
+  {
+   "id": 20,
+   "match_id": "match-0002",
+   "period": 1,
+   "start_clock_s": 2746.9,
+   "duration_s": 8.0,
+   "template": "momentum_bar",
+   "priority": 50,
+   "anchor_player_id": null,
+   "data": {
+    "moment_kind": "momentum_swing",
+    "momentum": 66.7,
+    "final_third_actions": 10,
+    "opponent_final_third_actions": 2
+   },
+   "text": {},
+   "source_moment_ids": [
+    12
+   ],
+   "source_event_ids": [
+    747,
+    748,
+    749,
+    750,
+    797,
+    798,
+    799,
+    816,
+    817,
+    818
+   ]
+  },
+  {
+   "id": 21,
+   "match_id": "match-0002",
+   "period": 1,
+   "start_clock_s": 2791.8,
+   "duration_s": 5.0,
+   "template": "shot_speed",
+   "priority": 30,
+   "anchor_player_id": "PTH-9",
+   "data": {
+    "shot_speed_kmh": 99.5,
+    "xg": 0.06,
+    "outcome": "saved",
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    832
+   ]
+  },
+  {
+   "id": 22,
+   "match_id": "match-0002",
+   "period": 1,
+   "start_clock_s": 2801.6,
+   "duration_s": 15.0,
+   "template": "stat_compare",
+   "priority": 70,
+   "anchor_player_id": null,
+   "data": {
+    "period": 1,
+    "goals_home": 1,
+    "goals_away": 0,
+    "possession_home": 0.485,
+    "possession_away": 0.515,
+    "shots_home": 5,
+    "shots_away": 9,
+    "shots_on_target_home": 2,
+    "shots_on_target_away": 2,
+    "xg_home": 0.92,
+    "xg_away": 0.58,
+    "passes_home": 214,
+    "passes_away": 222,
+    "pass_accuracy_home": 0.827,
+    "pass_accuracy_away": 0.824,
+    "field_tilt_home": 0.473,
+    "field_tilt_away": 0.527
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    835
+   ]
+  },
+  {
+   "id": 23,
+   "match_id": "match-0002",
+   "period": 1,
+   "start_clock_s": 2801.6,
+   "duration_s": 20.0,
+   "template": "recap_card",
+   "priority": 80,
+   "anchor_player_id": null,
+   "data": {
+    "period": 1,
+    "score_home": 1,
+    "score_away": 0
+   },
+   "text": {},
+   "source_moment_ids": [
+    6,
+    8,
+    11
+   ],
+   "source_event_ids": [
+    835
+   ]
+  },
+  {
+   "id": 24,
+   "match_id": "match-0002",
+   "period": 2,
+   "start_clock_s": 3206.8,
+   "duration_s": 5.0,
+   "template": "pass_quality",
+   "priority": 20,
+   "anchor_player_id": "PTH-8",
+   "data": {
+    "difficulty": 71.2,
+    "length_m": 28.2,
+    "ball_speed_kmh": 70.2,
+    "under_pressure": true,
+    "cross": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    998
+   ]
+  },
+  {
+   "id": 25,
+   "match_id": "match-0002",
+   "period": 2,
+   "start_clock_s": 3231.8,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": "PTH-7",
+   "data": {
+    "moment_kind": "card",
+    "card": "yellow",
+    "win_prob_home": 0.897,
+    "win_prob_draw": 0.09,
+    "win_prob_away": 0.013,
+    "win_prob_swing": 0.0
+   },
+   "text": {},
+   "source_moment_ids": [
+    13
+   ],
+   "source_event_ids": [
+    1010,
+    1011
+   ]
+  },
+  {
+   "id": 26,
+   "match_id": "match-0002",
+   "period": 2,
+   "start_clock_s": 3315.2,
+   "duration_s": 5.0,
+   "template": "shot_speed",
+   "priority": 30,
+   "anchor_player_id": "HLA-10",
+   "data": {
+    "shot_speed_kmh": 97.6,
+    "xg": 0.04,
+    "outcome": "saved",
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    1033
+   ]
+  },
+  {
+   "id": 27,
+   "match_id": "match-0002",
+   "period": 2,
+   "start_clock_s": 3685.1,
+   "duration_s": 5.0,
+   "template": "pass_quality",
+   "priority": 20,
+   "anchor_player_id": "HLA-10",
+   "data": {
+    "difficulty": 73.5,
+    "length_m": 32.8,
+    "ball_speed_kmh": 70.3,
+    "under_pressure": true,
+    "cross": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    1136
+   ]
+  },
+  {
+   "id": 28,
+   "match_id": "match-0002",
+   "period": 2,
+   "start_clock_s": 4014.4,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": null,
+   "data": {
+    "moment_kind": "milestone",
+    "milestone": "team_shots",
+    "shots": 10
+   },
+   "text": {},
+   "source_moment_ids": [
+    14
+   ],
+   "source_event_ids": [
+    1224
+   ]
+  },
+  {
+   "id": 29,
+   "match_id": "match-0002",
+   "period": 2,
+   "start_clock_s": 4194.8,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": "HLA-13",
+   "data": {
+    "moment_kind": "card",
+    "card": "yellow",
+    "win_prob_home": 0.835,
+    "win_prob_draw": 0.147,
+    "win_prob_away": 0.018,
+    "win_prob_swing": 0.0
+   },
+   "text": {},
+   "source_moment_ids": [
+    15
+   ],
+   "source_event_ids": [
+    1262,
+    1263
+   ]
+  },
+  {
+   "id": 30,
+   "match_id": "match-0002",
+   "period": 2,
+   "start_clock_s": 4482.9,
+   "duration_s": 5.0,
+   "template": "shot_speed",
+   "priority": 30,
+   "anchor_player_id": "PTH-10",
+   "data": {
+    "shot_speed_kmh": 79.2,
+    "xg": 0.08,
+    "outcome": "saved",
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    1345
+   ]
+  },
+  {
+   "id": 31,
+   "match_id": "match-0002",
+   "period": 2,
+   "start_clock_s": 4524.1,
+   "duration_s": 6.0,
+   "template": "player_tag",
+   "priority": 40,
+   "anchor_player_id": "PTH-10",
+   "data": {
+    "moment_kind": "milestone",
+    "milestone": "passes",
+    "passes": 80
+   },
+   "text": {},
+   "source_moment_ids": [
+    16
+   ],
+   "source_event_ids": [
+    1356
+   ]
+  },
+  {
+   "id": 32,
+   "match_id": "match-0002",
+   "period": 2,
+   "start_clock_s": 4689.0,
+   "duration_s": 5.0,
+   "template": "pass_quality",
+   "priority": 20,
+   "anchor_player_id": "PTH-10",
+   "data": {
+    "difficulty": 85.6,
+    "length_m": 34.6,
+    "ball_speed_kmh": 88.4,
+    "under_pressure": true,
+    "cross": true
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    1411
+   ]
+  },
+  {
+   "id": 33,
+   "match_id": "match-0002",
+   "period": 2,
+   "start_clock_s": 4691.9,
+   "duration_s": 8.0,
+   "template": "momentum_bar",
+   "priority": 50,
+   "anchor_player_id": null,
+   "data": {
+    "moment_kind": "momentum_swing",
+    "momentum": -60.0,
+    "final_third_actions": 16,
+    "opponent_final_third_actions": 4
+   },
+   "text": {},
+   "source_moment_ids": [
+    17
+   ],
+   "source_event_ids": [
+    1315,
+    1316,
+    1332,
+    1333,
+    1334,
+    1336,
+    1345,
+    1353,
+    1354,
+    1355,
+    1356,
+    1357,
+    1358,
+    1359,
+    1411,
+    1413
+   ]
+  },
+  {
+   "id": 34,
+   "match_id": "match-0002",
+   "period": 2,
+   "start_clock_s": 4728.4,
+   "duration_s": 6.0,
+   "template": "player_tag",
+   "priority": 40,
+   "anchor_player_id": "HLA-10",
+   "data": {
+    "moment_kind": "milestone",
+    "milestone": "passes",
+    "passes": 80
+   },
+   "text": {},
+   "source_moment_ids": [
+    18
+   ],
+   "source_event_ids": [
+    1429
+   ]
+  },
+  {
+   "id": 35,
+   "match_id": "match-0002",
+   "period": 2,
+   "start_clock_s": 4750.6,
+   "duration_s": 6.0,
+   "template": "player_tag",
+   "priority": 40,
+   "anchor_player_id": "HLA-11",
+   "data": {
+    "moment_kind": "milestone",
+    "milestone": "passes",
+    "passes": 80
+   },
+   "text": {},
+   "source_moment_ids": [
+    19
+   ],
+   "source_event_ids": [
+    1440
+   ]
+  },
+  {
+   "id": 36,
+   "match_id": "match-0002",
+   "period": 2,
+   "start_clock_s": 4801.0,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": null,
+   "data": {
+    "moment_kind": "milestone",
+    "milestone": "clean_sheet",
+    "minute": 80
+   },
+   "text": {},
+   "source_moment_ids": [
+    20
+   ],
+   "source_event_ids": [
+    1450
+   ]
+  },
+  {
+   "id": 37,
+   "match_id": "match-0002",
+   "period": 2,
+   "start_clock_s": 4825.8,
+   "duration_s": 8.0,
+   "template": "momentum_bar",
+   "priority": 50,
+   "anchor_player_id": null,
+   "data": {
+    "moment_kind": "momentum_swing",
+    "momentum": 67.7,
+    "final_third_actions": 26,
+    "opponent_final_third_actions": 5
+   },
+   "text": {},
+   "source_moment_ids": [
+    21
+   ],
+   "source_event_ids": [
+    1384,
+    1385,
+    1386,
+    1388,
+    1426,
+    1427,
+    1428,
+    1429,
+    1430,
+    1431,
+    1432,
+    1438,
+    1439,
+    1440,
+    1441,
+    1442,
+    1443,
+    1445,
+    1446,
+    1448,
+    1450,
+    1451,
+    1452,
+    1453,
+    1454,
+    1455
+   ]
+  },
+  {
+   "id": 38,
+   "match_id": "match-0002",
+   "period": 2,
+   "start_clock_s": 5011.8,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": "PTH-10",
+   "data": {
+    "moment_kind": "big_chance",
+    "xg": 0.36,
+    "outcome": "off_target",
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [
+    22
+   ],
+   "source_event_ids": [
+    1497
+   ]
+  },
+  {
+   "id": 39,
+   "match_id": "match-0002",
+   "period": 2,
+   "start_clock_s": 5092.0,
+   "duration_s": 5.0,
+   "template": "shot_speed",
+   "priority": 30,
+   "anchor_player_id": "PTH-11",
+   "data": {
+    "shot_speed_kmh": 75.1,
+    "xg": 0.04,
+    "outcome": "saved",
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    1513
+   ]
+  },
+  {
+   "id": 40,
+   "match_id": "match-0002",
+   "period": 2,
+   "start_clock_s": 5114.4,
+   "duration_s": 8.0,
+   "template": "momentum_bar",
+   "priority": 50,
+   "anchor_player_id": null,
+   "data": {
+    "moment_kind": "momentum_swing",
+    "momentum": -73.3,
+    "final_third_actions": 13,
+    "opponent_final_third_actions": 2
+   },
+   "text": {},
+   "source_moment_ids": [
+    23
+   ],
+   "source_event_ids": [
+    1482,
+    1484,
+    1488,
+    1489,
+    1490,
+    1492,
+    1493,
+    1494,
+    1496,
+    1497,
+    1507,
+    1512,
+    1513
+   ]
+  },
+  {
+   "id": 41,
+   "match_id": "match-0002",
+   "period": 2,
+   "start_clock_s": 5209.8,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": "HLA-10",
+   "data": {
+    "moment_kind": "card",
+    "card": "yellow",
+    "win_prob_home": 0.95,
+    "win_prob_draw": 0.049,
+    "win_prob_away": 0.001,
+    "win_prob_swing": 0.0
+   },
+   "text": {},
+   "source_moment_ids": [
+    24
+   ],
+   "source_event_ids": [
+    1539,
+    1540
+   ]
+  },
+  {
+   "id": 42,
+   "match_id": "match-0002",
+   "period": 2,
+   "start_clock_s": 5282.5,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": "PTH-2",
+   "data": {
+    "moment_kind": "goal",
+    "score_home": 2,
+    "score_away": 0,
+    "own_goal": true,
+    "first_goal": false,
+    "xg": 0.01,
+    "shot_speed_kmh": 92.1,
+    "penalty": false,
+    "win_prob_home": 0.999,
+    "win_prob_draw": 0.001,
+    "win_prob_away": 0.0,
+    "win_prob_swing": 0.031
+   },
+   "text": {},
+   "source_moment_ids": [
+    25
+   ],
+   "source_event_ids": [
+    1563,
+    1564
+   ]
+  },
+  {
+   "id": 43,
+   "match_id": "match-0002",
+   "period": 2,
+   "start_clock_s": 5374.0,
+   "duration_s": 6.0,
+   "template": "player_tag",
+   "priority": 40,
+   "anchor_player_id": "PTH-10",
+   "data": {
+    "moment_kind": "milestone",
+    "milestone": "distance",
+    "distance_km": 11.0
+   },
+   "text": {},
+   "source_moment_ids": [
+    26
+   ],
+   "source_event_ids": [
+    1585
+   ]
+  },
+  {
+   "id": 44,
+   "match_id": "match-0002",
+   "period": 2,
+   "start_clock_s": 5431.6,
+   "duration_s": 8.0,
+   "template": "momentum_bar",
+   "priority": 50,
+   "anchor_player_id": null,
+   "data": {
+    "moment_kind": "momentum_swing",
+    "momentum": 66.7,
+    "final_third_actions": 10,
+    "opponent_final_third_actions": 2
+   },
+   "text": {},
+   "source_moment_ids": [
+    27
+   ],
+   "source_event_ids": [
+    1532,
+    1533,
+    1534,
+    1551,
+    1553,
+    1563,
+    1579,
+    1581,
+    1582,
+    1606
+   ]
+  },
+  {
+   "id": 45,
+   "match_id": "match-0002",
+   "period": 2,
+   "start_clock_s": 5468.0,
+   "duration_s": 6.0,
+   "template": "player_tag",
+   "priority": 40,
+   "anchor_player_id": "HLA-11",
+   "data": {
+    "moment_kind": "milestone",
+    "milestone": "distance",
+    "distance_km": 11.0
+   },
+   "text": {},
+   "source_moment_ids": [
+    28
+   ],
+   "source_event_ids": [
+    1622
+   ]
+  },
+  {
+   "id": 46,
+   "match_id": "match-0002",
+   "period": 2,
+   "start_clock_s": 5470.0,
+   "duration_s": 6.0,
+   "template": "player_tag",
+   "priority": 40,
+   "anchor_player_id": "PTH-9",
+   "data": {
+    "moment_kind": "milestone",
+    "milestone": "distance",
+    "distance_km": 11.0
+   },
+   "text": {},
+   "source_moment_ids": [
+    29
+   ],
+   "source_event_ids": [
+    1623
+   ]
+  },
+  {
+   "id": 47,
+   "match_id": "match-0002",
+   "period": 2,
+   "start_clock_s": 5494.0,
+   "duration_s": 6.0,
+   "template": "player_tag",
+   "priority": 40,
+   "anchor_player_id": "HLA-10",
+   "data": {
+    "moment_kind": "milestone",
+    "milestone": "distance",
+    "distance_km": 11.0
+   },
+   "text": {},
+   "source_moment_ids": [
+    30
+   ],
+   "source_event_ids": [
+    1631
+   ]
+  },
+  {
+   "id": 48,
+   "match_id": "match-0002",
+   "period": 2,
+   "start_clock_s": 5571.2,
+   "duration_s": 15.0,
+   "template": "stat_compare",
+   "priority": 70,
+   "anchor_player_id": null,
+   "data": {
+    "period": 2,
+    "goals_home": 2,
+    "goals_away": 0,
+    "possession_home": 0.523,
+    "possession_away": 0.477,
+    "shots_home": 9,
+    "shots_away": 14,
+    "shots_on_target_home": 3,
+    "shots_on_target_away": 4,
+    "xg_home": 0.99,
+    "xg_away": 1.31,
+    "passes_home": 454,
+    "passes_away": 414,
+    "pass_accuracy_home": 0.835,
+    "pass_accuracy_away": 0.819,
+    "field_tilt_home": 0.539,
+    "field_tilt_away": 0.461
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    1647
+   ]
+  },
+  {
+   "id": 49,
+   "match_id": "match-0002",
+   "period": 2,
+   "start_clock_s": 5571.2,
+   "duration_s": 20.0,
+   "template": "recap_card",
+   "priority": 80,
+   "anchor_player_id": null,
+   "data": {
+    "period": 2,
+    "score_home": 2,
+    "score_away": 0
+   },
+   "text": {},
+   "source_moment_ids": [
+    6,
+    8,
+    25
+   ],
+   "source_event_ids": [
+    1647
+   ]
+  },
+  {
+   "id": 50,
+   "match_id": "match-0002",
+   "period": 2,
+   "start_clock_s": 5571.2,
+   "duration_s": 6.0,
+   "template": "player_tag",
+   "priority": 40,
+   "anchor_player_id": "PTH-10",
+   "data": {
+    "moment_kind": "milestone",
+    "milestone": "match_top_speed",
+    "speed_kmh": 33.6
+   },
+   "text": {},
+   "source_moment_ids": [
+    31
+   ],
+   "source_event_ids": [
+    1648
+   ]
+  }
+ ],
+ "points": {
+  "HLA-1": 7,
+  "HLA-2": 1,
+  "HLA-3": 6,
+  "HLA-4": 6,
+  "HLA-5": 6,
+  "HLA-6": 5,
+  "HLA-7": 5,
+  "HLA-8": 5,
+  "HLA-9": 6,
+  "HLA-10": 8,
+  "HLA-11": 2,
+  "HLA-12": 1,
+  "HLA-13": 0,
+  "HLA-14": 1,
+  "PTH-1": 1,
+  "PTH-2": 1,
+  "PTH-3": 2,
+  "PTH-4": 1,
+  "PTH-5": 1,
+  "PTH-6": -2,
+  "PTH-7": 5,
+  "PTH-8": 4,
+  "PTH-9": 3,
+  "PTH-10": 2,
+  "PTH-11": 2,
+  "PTH-12": 1,
+  "PTH-13": 1,
+  "PTH-14": 1
+ },
+ "ledger": [
+  {
+   "id": "HLA-1:appearance:1",
+   "match_id": "match-0002",
+   "player_id": "HLA-1",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-2:appearance:1",
+   "match_id": "match-0002",
+   "player_id": "HLA-2",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-3:appearance:1",
+   "match_id": "match-0002",
+   "player_id": "HLA-3",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-4:appearance:1",
+   "match_id": "match-0002",
+   "player_id": "HLA-4",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-5:appearance:1",
+   "match_id": "match-0002",
+   "player_id": "HLA-5",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-6:appearance:1",
+   "match_id": "match-0002",
+   "player_id": "HLA-6",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-7:appearance:1",
+   "match_id": "match-0002",
+   "player_id": "HLA-7",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-8:appearance:1",
+   "match_id": "match-0002",
+   "player_id": "HLA-8",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-9:appearance:1",
+   "match_id": "match-0002",
+   "player_id": "HLA-9",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-10:appearance:1",
+   "match_id": "match-0002",
+   "player_id": "HLA-10",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-11:appearance:1",
+   "match_id": "match-0002",
+   "player_id": "HLA-11",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-1:appearance:1",
+   "match_id": "match-0002",
+   "player_id": "PTH-1",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-2:appearance:1",
+   "match_id": "match-0002",
+   "player_id": "PTH-2",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-3:appearance:1",
+   "match_id": "match-0002",
+   "player_id": "PTH-3",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-4:appearance:1",
+   "match_id": "match-0002",
+   "player_id": "PTH-4",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-5:appearance:1",
+   "match_id": "match-0002",
+   "player_id": "PTH-5",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-6:appearance:1",
+   "match_id": "match-0002",
+   "player_id": "PTH-6",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-7:appearance:1",
+   "match_id": "match-0002",
+   "player_id": "PTH-7",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-8:appearance:1",
+   "match_id": "match-0002",
+   "player_id": "PTH-8",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-9:appearance:1",
+   "match_id": "match-0002",
+   "player_id": "PTH-9",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-10:appearance:1",
+   "match_id": "match-0002",
+   "player_id": "PTH-10",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-11:appearance:1",
+   "match_id": "match-0002",
+   "player_id": "PTH-11",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-3:bonus",
+   "match_id": "match-0002",
+   "player_id": "HLA-3",
+   "minute": 92,
+   "delta": 0,
+   "running_total": 6,
+   "rule_id": "bonus",
+   "reason": "PitchPoints bonus (simplified)",
+   "source_event_ids": [
+    20,
+    200,
+    300,
+    696,
+    766,
+    1062,
+    1067,
+    1144,
+    1648
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-7:bonus",
+   "match_id": "match-0002",
+   "player_id": "HLA-7",
+   "minute": 92,
+   "delta": 0,
+   "running_total": 5,
+   "rule_id": "bonus",
+   "reason": "PitchPoints bonus (simplified)",
+   "source_event_ids": [
+    25,
+    210,
+    262,
+    502,
+    588,
+    1648
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-10:bonus",
+   "match_id": "match-0002",
+   "player_id": "PTH-10",
+   "minute": 92,
+   "delta": 0,
+   "running_total": 2,
+   "rule_id": "bonus",
+   "reason": "PitchPoints bonus (simplified)",
+   "source_event_ids": [
+    29,
+    160,
+    1648
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-6:bonus",
+   "match_id": "match-0002",
+   "player_id": "HLA-6",
+   "minute": 92,
+   "delta": 0,
+   "running_total": 5,
+   "rule_id": "bonus",
+   "reason": "PitchPoints bonus (simplified)",
+   "source_event_ids": [
+    32,
+    60,
+    104,
+    320,
+    549,
+    684,
+    731,
+    1165,
+    1188,
+    1648
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-4:bonus",
+   "match_id": "match-0002",
+   "player_id": "HLA-4",
+   "minute": 92,
+   "delta": 0,
+   "running_total": 6,
+   "rule_id": "bonus",
+   "reason": "PitchPoints bonus (simplified)",
+   "source_event_ids": [
+    48,
+    160,
+    1648
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-3:bonus",
+   "match_id": "match-0002",
+   "player_id": "PTH-3",
+   "minute": 92,
+   "delta": 0,
+   "running_total": 2,
+   "rule_id": "bonus",
+   "reason": "PitchPoints bonus (simplified)",
+   "source_event_ids": [
+    71,
+    160,
+    173,
+    188,
+    438,
+    524,
+    914,
+    1144,
+    1648
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-4:bonus",
+   "match_id": "match-0002",
+   "player_id": "PTH-4",
+   "minute": 92,
+   "delta": 0,
+   "running_total": 1,
+   "rule_id": "bonus",
+   "reason": "PitchPoints bonus (simplified)",
+   "source_event_ids": [
+    95,
+    144,
+    284,
+    344,
+    588,
+    1648
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-8:bonus",
+   "match_id": "match-0002",
+   "player_id": "PTH-8",
+   "minute": 92,
+   "delta": 0,
+   "running_total": 4,
+   "rule_id": "bonus",
+   "reason": "PitchPoints bonus (simplified)",
+   "source_event_ids": [
+    114,
+    160,
+    1648
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-5:bonus",
+   "match_id": "match-0002",
+   "player_id": "PTH-5",
+   "minute": 92,
+   "delta": 0,
+   "running_total": 1,
+   "rule_id": "bonus",
+   "reason": "PitchPoints bonus (simplified)",
+   "source_event_ids": [
+    130,
+    243,
+    316,
+    344,
+    1648
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-2:bonus",
+   "match_id": "match-0002",
+   "player_id": "PTH-2",
+   "minute": 92,
+   "delta": 0,
+   "running_total": 1,
+   "rule_id": "bonus",
+   "reason": "PitchPoints bonus (simplified)",
+   "source_event_ids": [
+    152,
+    473,
+    543,
+    783,
+    1019,
+    1054,
+    1122,
+    1177,
+    1188,
+    1648
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-5:bonus",
+   "match_id": "match-0002",
+   "player_id": "HLA-5",
+   "minute": 92,
+   "delta": 0,
+   "running_total": 6,
+   "rule_id": "bonus",
+   "reason": "PitchPoints bonus (simplified)",
+   "source_event_ids": [
+    206,
+    234,
+    262,
+    1648
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-6:yellow_card:336",
+   "match_id": "match-0002",
+   "player_id": "PTH-6",
+   "minute": 18,
+   "delta": -1,
+   "running_total": 0,
+   "rule_id": "yellow_card",
+   "reason": "Yellow card",
+   "source_event_ids": [
+    336
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-6:red_card:398",
+   "match_id": "match-0002",
+   "player_id": "PTH-6",
+   "minute": 22,
+   "delta": -2,
+   "running_total": -2,
+   "rule_id": "red_card",
+   "reason": "Sent off for a second yellow card",
+   "source_event_ids": [
+    398
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-10:goal:588",
+   "match_id": "match-0002",
+   "player_id": "HLA-10",
+   "minute": 31,
+   "delta": 4,
+   "running_total": 5,
+   "rule_id": "goal",
+   "reason": "Goal",
+   "source_event_ids": [
+    587,
+    588
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-9:assist:588",
+   "match_id": "match-0002",
+   "player_id": "HLA-9",
+   "minute": 31,
+   "delta": 3,
+   "running_total": 4,
+   "rule_id": "assist",
+   "reason": "Assist for Remy Pelt's goal",
+   "source_event_ids": [
+    586,
+    588
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-9:bonus",
+   "match_id": "match-0002",
+   "player_id": "HLA-9",
+   "minute": 92,
+   "delta": 1,
+   "running_total": 6,
+   "rule_id": "bonus",
+   "reason": "PitchPoints bonus (simplified)",
+   "source_event_ids": [
+    246,
+    358,
+    588,
+    746,
+    1257,
+    1648
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-10:bonus",
+   "match_id": "match-0002",
+   "player_id": "HLA-10",
+   "minute": 92,
+   "delta": 3,
+   "running_total": 8,
+   "rule_id": "bonus",
+   "reason": "PitchPoints bonus (simplified)",
+   "source_event_ids": [
+    588,
+    1648
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-7:defensive_contribution:648",
+   "match_id": "match-0002",
+   "player_id": "PTH-7",
+   "minute": 36,
+   "delta": 2,
+   "running_total": 3,
+   "rule_id": "defensive_contribution",
+   "reason": "12 defensive actions",
+   "source_event_ids": [
+    6,
+    96,
+    285,
+    345,
+    361,
+    408,
+    409,
+    439,
+    525,
+    571,
+    618,
+    648
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-7:bonus",
+   "match_id": "match-0002",
+   "player_id": "PTH-7",
+   "minute": 92,
+   "delta": 2,
+   "running_total": 5,
+   "rule_id": "bonus",
+   "reason": "PitchPoints bonus (simplified)",
+   "source_event_ids": [
+    361,
+    408,
+    571,
+    618,
+    648,
+    679,
+    820,
+    954,
+    972,
+    1009,
+    1011,
+    1144,
+    1188,
+    1220,
+    1242,
+    1252,
+    1648
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-9:yellow_card:775",
+   "match_id": "match-0002",
+   "player_id": "PTH-9",
+   "minute": 43,
+   "delta": -1,
+   "running_total": 0,
+   "rule_id": "yellow_card",
+   "reason": "Yellow card",
+   "source_event_ids": [
+    775
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-8:bonus",
+   "match_id": "match-0002",
+   "player_id": "HLA-8",
+   "minute": 92,
+   "delta": 0,
+   "running_total": 5,
+   "rule_id": "bonus",
+   "reason": "PitchPoints bonus (simplified)",
+   "source_event_ids": [
+    183,
+    396,
+    574,
+    651,
+    789,
+    811,
+    947,
+    1144,
+    1648
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-8:defensive_contribution:961",
+   "match_id": "match-0002",
+   "player_id": "HLA-8",
+   "minute": 51,
+   "delta": 2,
+   "running_total": 3,
+   "rule_id": "defensive_contribution",
+   "reason": "12 defensive actions",
+   "source_event_ids": [
+    183,
+    396,
+    459,
+    480,
+    503,
+    574,
+    651,
+    662,
+    789,
+    811,
+    947,
+    961
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-6:defensive_contribution:1002",
+   "match_id": "match-0002",
+   "player_id": "HLA-6",
+   "minute": 53,
+   "delta": 2,
+   "running_total": 3,
+   "rule_id": "defensive_contribution",
+   "reason": "12 defensive actions",
+   "source_event_ids": [
+    32,
+    60,
+    104,
+    110,
+    320,
+    431,
+    549,
+    684,
+    731,
+    732,
+    857,
+    1002
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-7:yellow_card:1011",
+   "match_id": "match-0002",
+   "player_id": "PTH-7",
+   "minute": 53,
+   "delta": -1,
+   "running_total": 3,
+   "rule_id": "yellow_card",
+   "reason": "Yellow card",
+   "source_event_ids": [
+    1011
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-7:defensive_contribution:1068",
+   "match_id": "match-0002",
+   "player_id": "HLA-7",
+   "minute": 57,
+   "delta": 2,
+   "running_total": 3,
+   "rule_id": "defensive_contribution",
+   "reason": "12 defensive actions",
+   "source_event_ids": [
+    25,
+    26,
+    49,
+    210,
+    211,
+    262,
+    502,
+    594,
+    767,
+    842,
+    927,
+    1068
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-8:defensive_contribution:1075",
+   "match_id": "match-0002",
+   "player_id": "PTH-8",
+   "minute": 57,
+   "delta": 2,
+   "running_total": 3,
+   "rule_id": "defensive_contribution",
+   "reason": "12 defensive actions",
+   "source_event_ids": [
+    38,
+    114,
+    215,
+    317,
+    619,
+    686,
+    735,
+    849,
+    850,
+    882,
+    938,
+    1075
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-12:appearance:1091",
+   "match_id": "match-0002",
+   "player_id": "HLA-12",
+   "minute": 59,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1091
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-1:sixty_minutes:1108",
+   "match_id": "match-0002",
+   "player_id": "HLA-1",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 2,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1108
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-1:clean_sheet",
+   "match_id": "match-0002",
+   "player_id": "HLA-1",
+   "minute": 92,
+   "delta": 4,
+   "running_total": 7,
+   "rule_id": "clean_sheet",
+   "reason": "Clean sheet",
+   "source_event_ids": [
+    1108,
+    1648
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-3:sixty_minutes:1108",
+   "match_id": "match-0002",
+   "player_id": "HLA-3",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 3,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1108
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-3:clean_sheet",
+   "match_id": "match-0002",
+   "player_id": "HLA-3",
+   "minute": 92,
+   "delta": 4,
+   "running_total": 6,
+   "rule_id": "clean_sheet",
+   "reason": "Clean sheet",
+   "source_event_ids": [
+    1108,
+    1648
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-4:sixty_minutes:1108",
+   "match_id": "match-0002",
+   "player_id": "HLA-4",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 2,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1108
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-4:clean_sheet",
+   "match_id": "match-0002",
+   "player_id": "HLA-4",
+   "minute": 92,
+   "delta": 4,
+   "running_total": 6,
+   "rule_id": "clean_sheet",
+   "reason": "Clean sheet",
+   "source_event_ids": [
+    1108,
+    1648
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-5:sixty_minutes:1108",
+   "match_id": "match-0002",
+   "player_id": "HLA-5",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 2,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1108
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-5:clean_sheet",
+   "match_id": "match-0002",
+   "player_id": "HLA-5",
+   "minute": 92,
+   "delta": 4,
+   "running_total": 6,
+   "rule_id": "clean_sheet",
+   "reason": "Clean sheet",
+   "source_event_ids": [
+    1108,
+    1648
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-6:sixty_minutes:1108",
+   "match_id": "match-0002",
+   "player_id": "HLA-6",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 5,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1108
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-6:clean_sheet",
+   "match_id": "match-0002",
+   "player_id": "HLA-6",
+   "minute": 92,
+   "delta": 1,
+   "running_total": 5,
+   "rule_id": "clean_sheet",
+   "reason": "Clean sheet",
+   "source_event_ids": [
+    1108,
+    1648
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-7:sixty_minutes:1108",
+   "match_id": "match-0002",
+   "player_id": "HLA-7",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 4,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1108
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-7:clean_sheet",
+   "match_id": "match-0002",
+   "player_id": "HLA-7",
+   "minute": 92,
+   "delta": 1,
+   "running_total": 5,
+   "rule_id": "clean_sheet",
+   "reason": "Clean sheet",
+   "source_event_ids": [
+    1108,
+    1648
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-8:sixty_minutes:1108",
+   "match_id": "match-0002",
+   "player_id": "HLA-8",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 5,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1108
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-8:clean_sheet",
+   "match_id": "match-0002",
+   "player_id": "HLA-8",
+   "minute": 92,
+   "delta": 1,
+   "running_total": 5,
+   "rule_id": "clean_sheet",
+   "reason": "Clean sheet",
+   "source_event_ids": [
+    1108,
+    1648
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-9:sixty_minutes:1108",
+   "match_id": "match-0002",
+   "player_id": "HLA-9",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 7,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1108
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-10:sixty_minutes:1108",
+   "match_id": "match-0002",
+   "player_id": "HLA-10",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 9,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1108
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-11:sixty_minutes:1108",
+   "match_id": "match-0002",
+   "player_id": "HLA-11",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 2,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1108
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-1:sixty_minutes:1108",
+   "match_id": "match-0002",
+   "player_id": "PTH-1",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 2,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1108
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-2:sixty_minutes:1108",
+   "match_id": "match-0002",
+   "player_id": "PTH-2",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 2,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1108
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-3:sixty_minutes:1108",
+   "match_id": "match-0002",
+   "player_id": "PTH-3",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 3,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1108
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-4:sixty_minutes:1108",
+   "match_id": "match-0002",
+   "player_id": "PTH-4",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 2,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1108
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-5:sixty_minutes:1108",
+   "match_id": "match-0002",
+   "player_id": "PTH-5",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 2,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1108
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-7:sixty_minutes:1108",
+   "match_id": "match-0002",
+   "player_id": "PTH-7",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 4,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1108
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-8:sixty_minutes:1108",
+   "match_id": "match-0002",
+   "player_id": "PTH-8",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 4,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1108
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-9:sixty_minutes:1108",
+   "match_id": "match-0002",
+   "player_id": "PTH-9",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1108
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-10:sixty_minutes:1108",
+   "match_id": "match-0002",
+   "player_id": "PTH-10",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 2,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1108
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-11:sixty_minutes:1108",
+   "match_id": "match-0002",
+   "player_id": "PTH-11",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 2,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1108
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-13:appearance:1109",
+   "match_id": "match-0002",
+   "player_id": "HLA-13",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1109
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-12:appearance:1110",
+   "match_id": "match-0002",
+   "player_id": "PTH-12",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1110
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-13:appearance:1247",
+   "match_id": "match-0002",
+   "player_id": "PTH-13",
+   "minute": 69,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1247
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-13:yellow_card:1263",
+   "match_id": "match-0002",
+   "player_id": "HLA-13",
+   "minute": 69,
+   "delta": -1,
+   "running_total": 0,
+   "rule_id": "yellow_card",
+   "reason": "Yellow card",
+   "source_event_ids": [
+    1263
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-1:saves:1346",
+   "match_id": "match-0002",
+   "player_id": "HLA-1",
+   "minute": 74,
+   "delta": 1,
+   "running_total": 7,
+   "rule_id": "saves",
+   "reason": "3 saves",
+   "source_event_ids": [
+    719,
+    833,
+    1346
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-2:defensive_contribution:1434",
+   "match_id": "match-0002",
+   "player_id": "PTH-2",
+   "minute": 78,
+   "delta": 2,
+   "running_total": 4,
+   "rule_id": "defensive_contribution",
+   "reason": "10 defensive actions",
+   "source_event_ids": [
+    152,
+    473,
+    543,
+    783,
+    1019,
+    1054,
+    1122,
+    1177,
+    1286,
+    1434
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-9:defensive_contribution:1470",
+   "match_id": "match-0002",
+   "player_id": "PTH-9",
+   "minute": 81,
+   "delta": 2,
+   "running_total": 3,
+   "rule_id": "defensive_contribution",
+   "reason": "12 defensive actions",
+   "source_event_ids": [
+    55,
+    204,
+    487,
+    602,
+    773,
+    1123,
+    1324,
+    1352,
+    1370,
+    1402,
+    1419,
+    1470
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-14:appearance:1503",
+   "match_id": "match-0002",
+   "player_id": "PTH-14",
+   "minute": 84,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1503
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-14:appearance:1516",
+   "match_id": "match-0002",
+   "player_id": "HLA-14",
+   "minute": 85,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1516
+   ],
+   "provisional": false
+  },
+  {
+   "id": "HLA-10:yellow_card:1540",
+   "match_id": "match-0002",
+   "player_id": "HLA-10",
+   "minute": 86,
+   "delta": -1,
+   "running_total": 8,
+   "rule_id": "yellow_card",
+   "reason": "Yellow card",
+   "source_event_ids": [
+    1540
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-2:own_goal:1564",
+   "match_id": "match-0002",
+   "player_id": "PTH-2",
+   "minute": 88,
+   "delta": -2,
+   "running_total": 2,
+   "rule_id": "own_goal",
+   "reason": "Own goal",
+   "source_event_ids": [
+    1564
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-1:goals_conceded",
+   "match_id": "match-0002",
+   "player_id": "PTH-1",
+   "minute": 92,
+   "delta": -1,
+   "running_total": 1,
+   "rule_id": "goals_conceded",
+   "reason": "2 goals conceded",
+   "source_event_ids": [
+    588,
+    1564,
+    1648
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-2:goals_conceded",
+   "match_id": "match-0002",
+   "player_id": "PTH-2",
+   "minute": 92,
+   "delta": -1,
+   "running_total": 1,
+   "rule_id": "goals_conceded",
+   "reason": "2 goals conceded",
+   "source_event_ids": [
+    588,
+    1564,
+    1648
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-4:goals_conceded",
+   "match_id": "match-0002",
+   "player_id": "PTH-4",
+   "minute": 92,
+   "delta": -1,
+   "running_total": 1,
+   "rule_id": "goals_conceded",
+   "reason": "2 goals conceded",
+   "source_event_ids": [
+    588,
+    1564,
+    1648
+   ],
+   "provisional": false
+  },
+  {
+   "id": "PTH-5:goals_conceded",
+   "match_id": "match-0002",
+   "player_id": "PTH-5",
+   "minute": 92,
+   "delta": -1,
+   "running_total": 1,
+   "rule_id": "goals_conceded",
+   "reason": "2 goals conceded",
+   "source_event_ids": [
+    588,
+    1564,
+    1648
+   ],
+   "provisional": false
+  }
+ ]
+}

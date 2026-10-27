@@ -1,0 +1,4013 @@
+{
+ "stats": {
+  "match_id": "match-0007",
+  "period": 2,
+  "clock_s": 5630.8,
+  "minute": 93,
+  "last_event_id": 1622,
+  "home": {
+   "team_id": "NCA",
+   "goals": 4,
+   "possession": 0.531,
+   "passes": 455,
+   "pass_accuracy": 0.857,
+   "shots": 19,
+   "shots_on_target": 10,
+   "xg": 2.21,
+   "field_tilt": 0.674,
+   "pressures": 82,
+   "ppda": 6.97,
+   "corners": 7,
+   "fouls": 13,
+   "yellow_cards": 1,
+   "red_cards": 2
+  },
+  "away": {
+   "team_id": "SLW",
+   "goals": 2,
+   "possession": 0.469,
+   "passes": 396,
+   "pass_accuracy": 0.833,
+   "shots": 17,
+   "shots_on_target": 7,
+   "xg": 2.01,
+   "field_tilt": 0.326,
+   "pressures": 74,
+   "ppda": 11.0,
+   "corners": 5,
+   "fouls": 6,
+   "yellow_cards": 1,
+   "red_cards": 0
+  },
+  "players": [
+   {
+    "player_id": "NCA-1",
+    "team_id": "NCA",
+    "minutes": 90,
+    "passes": 12,
+    "pass_accuracy": 0.75,
+    "avg_pass_difficulty": 28.1,
+    "distance_km": 7.78,
+    "top_speed_kmh": 14.0,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 0,
+    "pressures": 0
+   },
+   {
+    "player_id": "NCA-2",
+    "team_id": "NCA",
+    "minutes": 90,
+    "passes": 4,
+    "pass_accuracy": 1.0,
+    "avg_pass_difficulty": 19.4,
+    "distance_km": 9.42,
+    "top_speed_kmh": 31.4,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 3,
+    "pressures": 2
+   },
+   {
+    "player_id": "NCA-3",
+    "team_id": "NCA",
+    "minutes": 70,
+    "passes": 3,
+    "pass_accuracy": 1.0,
+    "avg_pass_difficulty": 23.7,
+    "distance_km": 7.2,
+    "top_speed_kmh": 32.2,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 6,
+    "pressures": 3
+   },
+   {
+    "player_id": "NCA-4",
+    "team_id": "NCA",
+    "minutes": 62,
+    "passes": 1,
+    "pass_accuracy": 1.0,
+    "avg_pass_difficulty": 25.2,
+    "distance_km": 6.23,
+    "top_speed_kmh": 31.6,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 5,
+    "pressures": 1
+   },
+   {
+    "player_id": "NCA-5",
+    "team_id": "NCA",
+    "minutes": 90,
+    "passes": 10,
+    "pass_accuracy": 0.7,
+    "avg_pass_difficulty": 20.6,
+    "distance_km": 9.42,
+    "top_speed_kmh": 30.2,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 2,
+    "pressures": 9
+   },
+   {
+    "player_id": "NCA-6",
+    "team_id": "NCA",
+    "minutes": 90,
+    "passes": 58,
+    "pass_accuracy": 0.914,
+    "avg_pass_difficulty": 28.8,
+    "distance_km": 10.52,
+    "top_speed_kmh": 30.7,
+    "shots": 1,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.02,
+    "defensive_actions": 12,
+    "pressures": 6
+   },
+   {
+    "player_id": "NCA-7",
+    "team_id": "NCA",
+    "minutes": 90,
+    "passes": 35,
+    "pass_accuracy": 0.886,
+    "avg_pass_difficulty": 20.6,
+    "distance_km": 10.26,
+    "top_speed_kmh": 30.7,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 20,
+    "pressures": 9
+   },
+   {
+    "player_id": "NCA-8",
+    "team_id": "NCA",
+    "minutes": 68,
+    "passes": 76,
+    "pass_accuracy": 0.855,
+    "avg_pass_difficulty": 30.4,
+    "distance_km": 8.53,
+    "top_speed_kmh": 31.9,
+    "shots": 1,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.01,
+    "defensive_actions": 18,
+    "pressures": 9
+   },
+   {
+    "player_id": "NCA-9",
+    "team_id": "NCA",
+    "minutes": 90,
+    "passes": 79,
+    "pass_accuracy": 0.886,
+    "avg_pass_difficulty": 33.0,
+    "distance_km": 11.62,
+    "top_speed_kmh": 31.3,
+    "shots": 6,
+    "shots_on_target": 3,
+    "goals": 1,
+    "assists": 1,
+    "xg": 0.97,
+    "defensive_actions": 9,
+    "pressures": 15
+   },
+   {
+    "player_id": "NCA-10",
+    "team_id": "NCA",
+    "minutes": 34,
+    "passes": 31,
+    "pass_accuracy": 0.839,
+    "avg_pass_difficulty": 29.8,
+    "distance_km": 3.93,
+    "top_speed_kmh": 30.3,
+    "shots": 3,
+    "shots_on_target": 1,
+    "goals": 1,
+    "assists": 1,
+    "xg": 0.31,
+    "defensive_actions": 4,
+    "pressures": 7
+   },
+   {
+    "player_id": "NCA-11",
+    "team_id": "NCA",
+    "minutes": 90,
+    "passes": 120,
+    "pass_accuracy": 0.825,
+    "avg_pass_difficulty": 30.2,
+    "distance_km": 12.02,
+    "top_speed_kmh": 32.5,
+    "shots": 8,
+    "shots_on_target": 6,
+    "goals": 2,
+    "assists": 1,
+    "xg": 0.9,
+    "defensive_actions": 13,
+    "pressures": 17
+   },
+   {
+    "player_id": "NCA-12",
+    "team_id": "NCA",
+    "minutes": 27,
+    "passes": 3,
+    "pass_accuracy": 1.0,
+    "avg_pass_difficulty": 28.9,
+    "distance_km": 3.01,
+    "top_speed_kmh": 29.5,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 2,
+    "pressures": 2
+   },
+   {
+    "player_id": "NCA-13",
+    "team_id": "NCA",
+    "minutes": 1,
+    "passes": 0,
+    "pass_accuracy": 0.0,
+    "avg_pass_difficulty": 0.0,
+    "distance_km": 0.2,
+    "top_speed_kmh": 17.5,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 0,
+    "pressures": 0
+   },
+   {
+    "player_id": "NCA-14",
+    "team_id": "NCA",
+    "minutes": 19,
+    "passes": 23,
+    "pass_accuracy": 0.826,
+    "avg_pass_difficulty": 36.7,
+    "distance_km": 2.72,
+    "top_speed_kmh": 31.4,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 1,
+    "xg": 0.0,
+    "defensive_actions": 3,
+    "pressures": 2
+   },
+   {
+    "player_id": "SLW-1",
+    "team_id": "SLW",
+    "minutes": 90,
+    "passes": 13,
+    "pass_accuracy": 0.615,
+    "avg_pass_difficulty": 24.2,
+    "distance_km": 7.63,
+    "top_speed_kmh": 17.0,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 0,
+    "pressures": 0
+   },
+   {
+    "player_id": "SLW-2",
+    "team_id": "SLW",
+    "minutes": 90,
+    "passes": 20,
+    "pass_accuracy": 0.9,
+    "avg_pass_difficulty": 18.9,
+    "distance_km": 9.3,
+    "top_speed_kmh": 31.6,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 11,
+    "pressures": 6
+   },
+   {
+    "player_id": "SLW-3",
+    "team_id": "SLW",
+    "minutes": 59,
+    "passes": 2,
+    "pass_accuracy": 1.0,
+    "avg_pass_difficulty": 10.9,
+    "distance_km": 6.02,
+    "top_speed_kmh": 29.3,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 3,
+    "pressures": 6
+   },
+   {
+    "player_id": "SLW-4",
+    "team_id": "SLW",
+    "minutes": 90,
+    "passes": 6,
+    "pass_accuracy": 0.833,
+    "avg_pass_difficulty": 16.2,
+    "distance_km": 9.06,
+    "top_speed_kmh": 29.4,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 12,
+    "pressures": 6
+   },
+   {
+    "player_id": "SLW-5",
+    "team_id": "SLW",
+    "minutes": 90,
+    "passes": 13,
+    "pass_accuracy": 0.923,
+    "avg_pass_difficulty": 24.0,
+    "distance_km": 9.18,
+    "top_speed_kmh": 31.5,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 9,
+    "pressures": 5
+   },
+   {
+    "player_id": "SLW-6",
+    "team_id": "SLW",
+    "minutes": 90,
+    "passes": 80,
+    "pass_accuracy": 0.887,
+    "avg_pass_difficulty": 21.9,
+    "distance_km": 10.69,
+    "top_speed_kmh": 31.4,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 1,
+    "xg": 0.0,
+    "defensive_actions": 17,
+    "pressures": 14
+   },
+   {
+    "player_id": "SLW-7",
+    "team_id": "SLW",
+    "minutes": 60,
+    "passes": 42,
+    "pass_accuracy": 0.833,
+    "avg_pass_difficulty": 22.5,
+    "distance_km": 6.86,
+    "top_speed_kmh": 30.3,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 17,
+    "pressures": 1
+   },
+   {
+    "player_id": "SLW-8",
+    "team_id": "SLW",
+    "minutes": 78,
+    "passes": 40,
+    "pass_accuracy": 0.8,
+    "avg_pass_difficulty": 26.2,
+    "distance_km": 8.92,
+    "top_speed_kmh": 31.1,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 4,
+    "pressures": 6
+   },
+   {
+    "player_id": "SLW-9",
+    "team_id": "SLW",
+    "minutes": 90,
+    "passes": 65,
+    "pass_accuracy": 0.785,
+    "avg_pass_difficulty": 31.9,
+    "distance_km": 10.86,
+    "top_speed_kmh": 31.8,
+    "shots": 3,
+    "shots_on_target": 3,
+    "goals": 1,
+    "assists": 0,
+    "xg": 0.82,
+    "defensive_actions": 7,
+    "pressures": 10
+   },
+   {
+    "player_id": "SLW-10",
+    "team_id": "SLW",
+    "minutes": 90,
+    "passes": 71,
+    "pass_accuracy": 0.803,
+    "avg_pass_difficulty": 28.2,
+    "distance_km": 11.18,
+    "top_speed_kmh": 32.1,
+    "shots": 7,
+    "shots_on_target": 3,
+    "goals": 1,
+    "assists": 0,
+    "xg": 0.54,
+    "defensive_actions": 7,
+    "pressures": 11
+   },
+   {
+    "player_id": "SLW-11",
+    "team_id": "SLW",
+    "minutes": 90,
+    "passes": 27,
+    "pass_accuracy": 0.852,
+    "avg_pass_difficulty": 36.7,
+    "distance_km": 10.57,
+    "top_speed_kmh": 32.1,
+    "shots": 7,
+    "shots_on_target": 1,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.65,
+    "defensive_actions": 2,
+    "pressures": 4
+   },
+   {
+    "player_id": "SLW-12",
+    "team_id": "SLW",
+    "minutes": 30,
+    "passes": 0,
+    "pass_accuracy": 0.0,
+    "avg_pass_difficulty": 0.0,
+    "distance_km": 3.21,
+    "top_speed_kmh": 29.9,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 7,
+    "pressures": 3
+   },
+   {
+    "player_id": "SLW-13",
+    "team_id": "SLW",
+    "minutes": 29,
+    "passes": 15,
+    "pass_accuracy": 0.933,
+    "avg_pass_difficulty": 25.8,
+    "distance_km": 3.59,
+    "top_speed_kmh": 31.5,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 5,
+    "pressures": 2
+   },
+   {
+    "player_id": "SLW-14",
+    "team_id": "SLW",
+    "minutes": 11,
+    "passes": 2,
+    "pass_accuracy": 1.0,
+    "avg_pass_difficulty": 18.5,
+    "distance_km": 1.62,
+    "top_speed_kmh": 28.0,
+    "shots": 0,
+    "shots_on_target": 0,
+    "goals": 0,
+    "assists": 0,
+    "xg": 0.0,
+    "defensive_actions": 1,
+    "pressures": 0
+   }
+  ]
+ },
+ "tactical_state": {
+  "match_id": "match-0007",
+  "period": 2,
+  "clock_s": 5630.8,
+  "minute": 93,
+  "last_event_id": 1622,
+  "momentum": 75.0,
+  "control_chaos_index": 100.0,
+  "pressing_intensity": {
+   "home": 1.0,
+   "away": 1.25
+  },
+  "tempo": 8.2,
+  "win_probability": {
+   "home": 1.0,
+   "draw": 0.0,
+   "away": 0.0
+  }
+ },
+ "moments": [
+  {
+   "id": 1,
+   "match_id": "match-0007",
+   "period": 1,
+   "clock_s": 359.6,
+   "minute": 5,
+   "kind": "momentum_swing",
+   "importance": 0.06,
+   "team_id": "NCA",
+   "player_ids": [],
+   "facts": {
+    "momentum": 60.0,
+    "final_third_actions": 12,
+    "opponent_final_third_actions": 3
+   },
+   "source_event_ids": [
+    45,
+    46,
+    48,
+    49,
+    50,
+    51,
+    53,
+    54,
+    61,
+    63,
+    64,
+    77
+   ]
+  },
+  {
+   "id": 2,
+   "match_id": "match-0007",
+   "period": 1,
+   "clock_s": 728.2,
+   "minute": 12,
+   "kind": "goal",
+   "importance": 0.352,
+   "team_id": "NCA",
+   "player_ids": [
+    "NCA-10",
+    "NCA-11"
+   ],
+   "facts": {
+    "score_home": 1,
+    "score_away": 0,
+    "own_goal": false,
+    "first_goal": true,
+    "xg": 0.1,
+    "shot_speed_kmh": 91.8,
+    "penalty": false,
+    "win_prob_home": 0.734,
+    "win_prob_draw": 0.191,
+    "win_prob_away": 0.076,
+    "win_prob_swing": 0.352
+   },
+   "source_event_ids": [
+    208,
+    209
+   ]
+  },
+  {
+   "id": 3,
+   "match_id": "match-0007",
+   "period": 1,
+   "clock_s": 1159.6,
+   "minute": 19,
+   "kind": "card",
+   "importance": 0.04,
+   "team_id": "NCA",
+   "player_ids": [
+    "NCA-7",
+    "SLW-10"
+   ],
+   "facts": {
+    "card": "yellow",
+    "win_prob_home": 0.525,
+    "win_prob_draw": 0.255,
+    "win_prob_away": 0.22,
+    "win_prob_swing": 0.0
+   },
+   "source_event_ids": [
+    304,
+    305
+   ]
+  },
+  {
+   "id": 4,
+   "match_id": "match-0007",
+   "period": 1,
+   "clock_s": 1416.1,
+   "minute": 23,
+   "kind": "goal",
+   "importance": 0.192,
+   "team_id": "NCA",
+   "player_ids": [
+    "NCA-9",
+    "NCA-10"
+   ],
+   "facts": {
+    "score_home": 2,
+    "score_away": 0,
+    "own_goal": false,
+    "first_goal": false,
+    "xg": 0.42,
+    "shot_speed_kmh": 98.2,
+    "penalty": false,
+    "win_prob_home": 0.783,
+    "win_prob_draw": 0.122,
+    "win_prob_away": 0.095,
+    "win_prob_swing": 0.192
+   },
+   "source_event_ids": [
+    381,
+    382
+   ]
+  },
+  {
+   "id": 5,
+   "match_id": "match-0007",
+   "period": 1,
+   "clock_s": 2044.0,
+   "minute": 34,
+   "kind": "card",
+   "importance": 0.04,
+   "team_id": "SLW",
+   "player_ids": [
+    "SLW-4",
+    "NCA-6"
+   ],
+   "facts": {
+    "card": "yellow",
+    "win_prob_home": 0.908,
+    "win_prob_draw": 0.065,
+    "win_prob_away": 0.026,
+    "win_prob_swing": 0.0
+   },
+   "source_event_ids": [
+    558,
+    559
+   ]
+  },
+  {
+   "id": 6,
+   "match_id": "match-0007",
+   "period": 1,
+   "clock_s": 2094.2,
+   "minute": 34,
+   "kind": "card",
+   "importance": 0.08,
+   "team_id": "NCA",
+   "player_ids": [
+    "NCA-10",
+    "SLW-1"
+   ],
+   "facts": {
+    "card": "red",
+    "win_prob_home": 0.831,
+    "win_prob_draw": 0.112,
+    "win_prob_away": 0.057,
+    "win_prob_swing": 0.08
+   },
+   "source_event_ids": [
+    565,
+    566
+   ]
+  },
+  {
+   "id": 7,
+   "match_id": "match-0007",
+   "period": 1,
+   "clock_s": 2143.7,
+   "minute": 35,
+   "kind": "big_chance",
+   "importance": 0.08,
+   "team_id": "NCA",
+   "player_ids": [
+    "NCA-11"
+   ],
+   "facts": {
+    "xg": 0.31,
+    "outcome": "blocked",
+    "penalty": false
+   },
+   "source_event_ids": [
+    575
+   ]
+  },
+  {
+   "id": 8,
+   "match_id": "match-0007",
+   "period": 2,
+   "clock_s": 3075.2,
+   "minute": 51,
+   "kind": "pressure_spell",
+   "importance": 0.05,
+   "team_id": "NCA",
+   "player_ids": [],
+   "facts": {
+    "pressures": 8,
+    "window_minutes": 3.0
+   },
+   "source_event_ids": [
+    898,
+    906,
+    909,
+    932,
+    934,
+    940,
+    943,
+    954
+   ]
+  },
+  {
+   "id": 9,
+   "match_id": "match-0007",
+   "period": 2,
+   "clock_s": 3473.9,
+   "minute": 57,
+   "kind": "milestone",
+   "importance": 0.03,
+   "team_id": "SLW",
+   "player_ids": [],
+   "facts": {
+    "milestone": "team_shots",
+    "shots": 10
+   },
+   "source_event_ids": [
+    1066
+   ]
+  },
+  {
+   "id": 10,
+   "match_id": "match-0007",
+   "period": 2,
+   "clock_s": 3539.7,
+   "minute": 58,
+   "kind": "goal",
+   "importance": 0.332,
+   "team_id": "SLW",
+   "player_ids": [
+    "SLW-9"
+   ],
+   "facts": {
+    "score_home": 2,
+    "score_away": 1,
+    "own_goal": false,
+    "first_goal": false,
+    "xg": 0.76,
+    "shot_speed_kmh": 99.4,
+    "penalty": true,
+    "win_prob_home": 0.319,
+    "win_prob_draw": 0.331,
+    "win_prob_away": 0.349,
+    "win_prob_swing": 0.332
+   },
+   "source_event_ids": [
+    1078,
+    1079
+   ]
+  },
+  {
+   "id": 11,
+   "match_id": "match-0007",
+   "period": 2,
+   "clock_s": 3582.4,
+   "minute": 59,
+   "kind": "momentum_swing",
+   "importance": 0.06,
+   "team_id": "SLW",
+   "player_ids": [],
+   "facts": {
+    "momentum": -62.5,
+    "final_third_actions": 13,
+    "opponent_final_third_actions": 3
+   },
+   "source_event_ids": [
+    1023,
+    1043,
+    1044,
+    1045,
+    1046,
+    1047,
+    1048,
+    1050,
+    1058,
+    1059,
+    1066,
+    1069,
+    1078
+   ]
+  },
+  {
+   "id": 12,
+   "match_id": "match-0007",
+   "period": 2,
+   "clock_s": 3625.2,
+   "minute": 60,
+   "kind": "milestone",
+   "importance": 0.03,
+   "team_id": "NCA",
+   "player_ids": [],
+   "facts": {
+    "milestone": "team_shots",
+    "shots": 10
+   },
+   "source_event_ids": [
+    1098
+   ]
+  },
+  {
+   "id": 13,
+   "match_id": "match-0007",
+   "period": 2,
+   "clock_s": 3625.2,
+   "minute": 60,
+   "kind": "save",
+   "importance": 0.08,
+   "team_id": "SLW",
+   "player_ids": [
+    "SLW-1",
+    "NCA-9"
+   ],
+   "facts": {
+    "xg": 0.17,
+    "shot_speed_kmh": 76.3,
+    "penalty": false
+   },
+   "source_event_ids": [
+    1098,
+    1099
+   ]
+  },
+  {
+   "id": 14,
+   "match_id": "match-0007",
+   "period": 2,
+   "clock_s": 3647.8,
+   "minute": 60,
+   "kind": "milestone",
+   "importance": 0.03,
+   "team_id": "NCA",
+   "player_ids": [
+    "NCA-11"
+   ],
+   "facts": {
+    "milestone": "passes",
+    "passes": 80
+   },
+   "source_event_ids": [
+    1104
+   ]
+  },
+  {
+   "id": 15,
+   "match_id": "match-0007",
+   "period": 2,
+   "clock_s": 4201.3,
+   "minute": 70,
+   "kind": "card",
+   "importance": 0.087,
+   "team_id": "NCA",
+   "player_ids": [
+    "NCA-3",
+    "SLW-6"
+   ],
+   "facts": {
+    "card": "red",
+    "win_prob_home": 0.319,
+    "win_prob_draw": 0.337,
+    "win_prob_away": 0.344,
+    "win_prob_swing": 0.087
+   },
+   "source_event_ids": [
+    1262,
+    1263
+   ]
+  },
+  {
+   "id": 16,
+   "match_id": "match-0007",
+   "period": 2,
+   "clock_s": 4307.2,
+   "minute": 71,
+   "kind": "goal",
+   "importance": 0.336,
+   "team_id": "NCA",
+   "player_ids": [
+    "NCA-11",
+    "NCA-9"
+   ],
+   "facts": {
+    "score_home": 3,
+    "score_away": 1,
+    "own_goal": false,
+    "first_goal": false,
+    "xg": 0.19,
+    "shot_speed_kmh": 83.8,
+    "penalty": false,
+    "win_prob_home": 0.704,
+    "win_prob_draw": 0.193,
+    "win_prob_away": 0.103,
+    "win_prob_swing": 0.336
+   },
+   "source_event_ids": [
+    1291,
+    1292
+   ]
+  },
+  {
+   "id": 17,
+   "match_id": "match-0007",
+   "period": 2,
+   "clock_s": 4353.0,
+   "minute": 72,
+   "kind": "momentum_swing",
+   "importance": 0.06,
+   "team_id": "NCA",
+   "player_ids": [],
+   "facts": {
+    "momentum": 100.0,
+    "final_third_actions": 26,
+    "opponent_final_third_actions": 0
+   },
+   "source_event_ids": [
+    1216,
+    1217,
+    1229,
+    1230,
+    1232,
+    1233,
+    1234,
+    1235,
+    1236,
+    1246,
+    1247,
+    1248,
+    1249,
+    1254,
+    1255,
+    1268,
+    1270,
+    1283,
+    1284,
+    1285,
+    1286,
+    1287,
+    1288,
+    1289,
+    1290,
+    1291
+   ]
+  },
+  {
+   "id": 18,
+   "match_id": "match-0007",
+   "period": 2,
+   "clock_s": 4498.9,
+   "minute": 74,
+   "kind": "goal",
+   "importance": 0.15,
+   "team_id": "NCA",
+   "player_ids": [
+    "NCA-11",
+    "NCA-14"
+   ],
+   "facts": {
+    "score_home": 4,
+    "score_away": 1,
+    "own_goal": false,
+    "first_goal": false,
+    "xg": 0.12,
+    "shot_speed_kmh": 79.0,
+    "penalty": false,
+    "win_prob_home": 0.995,
+    "win_prob_draw": 0.005,
+    "win_prob_away": 0.0,
+    "win_prob_swing": 0.04
+   },
+   "source_event_ids": [
+    1327,
+    1328
+   ]
+  },
+  {
+   "id": 19,
+   "match_id": "match-0007",
+   "period": 2,
+   "clock_s": 4498.9,
+   "minute": 74,
+   "kind": "milestone",
+   "importance": 0.03,
+   "team_id": "NCA",
+   "player_ids": [
+    "NCA-11"
+   ],
+   "facts": {
+    "milestone": "brace",
+    "goals": 2
+   },
+   "source_event_ids": [
+    1292,
+    1328
+   ]
+  },
+  {
+   "id": 20,
+   "match_id": "match-0007",
+   "period": 2,
+   "clock_s": 4804.1,
+   "minute": 80,
+   "kind": "big_chance",
+   "importance": 0.08,
+   "team_id": "NCA",
+   "player_ids": [
+    "NCA-9"
+   ],
+   "facts": {
+    "xg": 0.34,
+    "outcome": "blocked",
+    "penalty": false
+   },
+   "source_event_ids": [
+    1407
+   ]
+  },
+  {
+   "id": 21,
+   "match_id": "match-0007",
+   "period": 2,
+   "clock_s": 5108.0,
+   "minute": 85,
+   "kind": "milestone",
+   "importance": 0.03,
+   "team_id": "NCA",
+   "player_ids": [
+    "NCA-11"
+   ],
+   "facts": {
+    "milestone": "distance",
+    "distance_km": 11.01
+   },
+   "source_event_ids": [
+    1486
+   ]
+  },
+  {
+   "id": 22,
+   "match_id": "match-0007",
+   "period": 2,
+   "clock_s": 5288.8,
+   "minute": 88,
+   "kind": "goal",
+   "importance": 0.15,
+   "team_id": "SLW",
+   "player_ids": [
+    "SLW-10",
+    "SLW-6"
+   ],
+   "facts": {
+    "score_home": 4,
+    "score_away": 2,
+    "own_goal": false,
+    "first_goal": false,
+    "xg": 0.18,
+    "shot_speed_kmh": 90.1,
+    "penalty": false,
+    "win_prob_home": 0.999,
+    "win_prob_draw": 0.001,
+    "win_prob_away": 0.0,
+    "win_prob_swing": 0.001
+   },
+   "source_event_ids": [
+    1549,
+    1550
+   ]
+  },
+  {
+   "id": 23,
+   "match_id": "match-0007",
+   "period": 2,
+   "clock_s": 5344.0,
+   "minute": 89,
+   "kind": "milestone",
+   "importance": 0.03,
+   "team_id": "NCA",
+   "player_ids": [
+    "NCA-9"
+   ],
+   "facts": {
+    "milestone": "distance",
+    "distance_km": 11.01
+   },
+   "source_event_ids": [
+    1552
+   ]
+  },
+  {
+   "id": 24,
+   "match_id": "match-0007",
+   "period": 2,
+   "clock_s": 5555.9,
+   "minute": 92,
+   "kind": "milestone",
+   "importance": 0.03,
+   "team_id": "SLW",
+   "player_ids": [
+    "SLW-6"
+   ],
+   "facts": {
+    "milestone": "passes",
+    "passes": 80
+   },
+   "source_event_ids": [
+    1601
+   ]
+  },
+  {
+   "id": 25,
+   "match_id": "match-0007",
+   "period": 2,
+   "clock_s": 5558.0,
+   "minute": 92,
+   "kind": "milestone",
+   "importance": 0.03,
+   "team_id": "SLW",
+   "player_ids": [
+    "SLW-10"
+   ],
+   "facts": {
+    "milestone": "distance",
+    "distance_km": 11.01
+   },
+   "source_event_ids": [
+    1603
+   ]
+  },
+  {
+   "id": 26,
+   "match_id": "match-0007",
+   "period": 2,
+   "clock_s": 5630.8,
+   "minute": 93,
+   "kind": "milestone",
+   "importance": 0.03,
+   "team_id": "NCA",
+   "player_ids": [
+    "NCA-11"
+   ],
+   "facts": {
+    "milestone": "match_top_speed",
+    "speed_kmh": 32.5
+   },
+   "source_event_ids": [
+    1622
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "id": 1,
+   "match_id": "match-0007",
+   "period": 1,
+   "start_clock_s": 69.5,
+   "duration_s": 5.0,
+   "template": "shot_speed",
+   "priority": 30,
+   "anchor_player_id": "SLW-10",
+   "data": {
+    "shot_speed_kmh": 93.5,
+    "xg": 0.02,
+    "outcome": "saved",
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    27
+   ]
+  },
+  {
+   "id": 2,
+   "match_id": "match-0007",
+   "period": 1,
+   "start_clock_s": 178.3,
+   "duration_s": 5.0,
+   "template": "shot_speed",
+   "priority": 30,
+   "anchor_player_id": "NCA-11",
+   "data": {
+    "shot_speed_kmh": 88.0,
+    "xg": 0.01,
+    "outcome": "saved",
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    54
+   ]
+  },
+  {
+   "id": 3,
+   "match_id": "match-0007",
+   "period": 1,
+   "start_clock_s": 359.6,
+   "duration_s": 8.0,
+   "template": "momentum_bar",
+   "priority": 50,
+   "anchor_player_id": null,
+   "data": {
+    "moment_kind": "momentum_swing",
+    "momentum": 60.0,
+    "final_third_actions": 12,
+    "opponent_final_third_actions": 3
+   },
+   "text": {},
+   "source_moment_ids": [
+    1
+   ],
+   "source_event_ids": [
+    45,
+    46,
+    48,
+    49,
+    50,
+    51,
+    53,
+    54,
+    61,
+    63,
+    64,
+    77
+   ]
+  },
+  {
+   "id": 4,
+   "match_id": "match-0007",
+   "period": 1,
+   "start_clock_s": 728.2,
+   "duration_s": 5.0,
+   "template": "shot_speed",
+   "priority": 30,
+   "anchor_player_id": "NCA-10",
+   "data": {
+    "shot_speed_kmh": 91.8,
+    "xg": 0.1,
+    "outcome": "goal",
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    208
+   ]
+  },
+  {
+   "id": 5,
+   "match_id": "match-0007",
+   "period": 1,
+   "start_clock_s": 728.2,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": "NCA-10",
+   "data": {
+    "moment_kind": "goal",
+    "score_home": 1,
+    "score_away": 0,
+    "own_goal": false,
+    "first_goal": true,
+    "xg": 0.1,
+    "shot_speed_kmh": 91.8,
+    "penalty": false,
+    "win_prob_home": 0.734,
+    "win_prob_draw": 0.191,
+    "win_prob_away": 0.076,
+    "win_prob_swing": 0.352
+   },
+   "text": {},
+   "source_moment_ids": [
+    2
+   ],
+   "source_event_ids": [
+    208,
+    209
+   ]
+  },
+  {
+   "id": 6,
+   "match_id": "match-0007",
+   "period": 1,
+   "start_clock_s": 1159.6,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": "NCA-7",
+   "data": {
+    "moment_kind": "card",
+    "card": "yellow",
+    "win_prob_home": 0.525,
+    "win_prob_draw": 0.255,
+    "win_prob_away": 0.22,
+    "win_prob_swing": 0.0
+   },
+   "text": {},
+   "source_moment_ids": [
+    3
+   ],
+   "source_event_ids": [
+    304,
+    305
+   ]
+  },
+  {
+   "id": 7,
+   "match_id": "match-0007",
+   "period": 1,
+   "start_clock_s": 1188.9,
+   "duration_s": 5.0,
+   "template": "pass_quality",
+   "priority": 20,
+   "anchor_player_id": "NCA-9",
+   "data": {
+    "difficulty": 81.5,
+    "length_m": 37.3,
+    "ball_speed_kmh": 96.5,
+    "under_pressure": true,
+    "cross": true
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    313
+   ]
+  },
+  {
+   "id": 8,
+   "match_id": "match-0007",
+   "period": 1,
+   "start_clock_s": 1416.1,
+   "duration_s": 5.0,
+   "template": "shot_speed",
+   "priority": 30,
+   "anchor_player_id": "NCA-9",
+   "data": {
+    "shot_speed_kmh": 98.2,
+    "xg": 0.42,
+    "outcome": "goal",
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    381
+   ]
+  },
+  {
+   "id": 9,
+   "match_id": "match-0007",
+   "period": 1,
+   "start_clock_s": 1416.1,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": "NCA-9",
+   "data": {
+    "moment_kind": "goal",
+    "score_home": 2,
+    "score_away": 0,
+    "own_goal": false,
+    "first_goal": false,
+    "xg": 0.42,
+    "shot_speed_kmh": 98.2,
+    "penalty": false,
+    "win_prob_home": 0.783,
+    "win_prob_draw": 0.122,
+    "win_prob_away": 0.095,
+    "win_prob_swing": 0.192
+   },
+   "text": {},
+   "source_moment_ids": [
+    4
+   ],
+   "source_event_ids": [
+    381,
+    382
+   ]
+  },
+  {
+   "id": 10,
+   "match_id": "match-0007",
+   "period": 1,
+   "start_clock_s": 1496.2,
+   "duration_s": 5.0,
+   "template": "pass_quality",
+   "priority": 20,
+   "anchor_player_id": "SLW-9",
+   "data": {
+    "difficulty": 74.1,
+    "length_m": 24.3,
+    "ball_speed_kmh": 86.4,
+    "under_pressure": true,
+    "cross": true
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    391
+   ]
+  },
+  {
+   "id": 11,
+   "match_id": "match-0007",
+   "period": 1,
+   "start_clock_s": 1505.1,
+   "duration_s": 5.0,
+   "template": "shot_speed",
+   "priority": 30,
+   "anchor_player_id": "SLW-9",
+   "data": {
+    "shot_speed_kmh": 68.9,
+    "xg": 0.05,
+    "outcome": "saved",
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    394
+   ]
+  },
+  {
+   "id": 12,
+   "match_id": "match-0007",
+   "period": 1,
+   "start_clock_s": 2044.0,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": "SLW-4",
+   "data": {
+    "moment_kind": "card",
+    "card": "yellow",
+    "win_prob_home": 0.908,
+    "win_prob_draw": 0.065,
+    "win_prob_away": 0.026,
+    "win_prob_swing": 0.0
+   },
+   "text": {},
+   "source_moment_ids": [
+    5
+   ],
+   "source_event_ids": [
+    558,
+    559
+   ]
+  },
+  {
+   "id": 13,
+   "match_id": "match-0007",
+   "period": 1,
+   "start_clock_s": 2094.2,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": "NCA-10",
+   "data": {
+    "moment_kind": "card",
+    "card": "red",
+    "win_prob_home": 0.831,
+    "win_prob_draw": 0.112,
+    "win_prob_away": 0.057,
+    "win_prob_swing": 0.08
+   },
+   "text": {},
+   "source_moment_ids": [
+    6
+   ],
+   "source_event_ids": [
+    565,
+    566
+   ]
+  },
+  {
+   "id": 14,
+   "match_id": "match-0007",
+   "period": 1,
+   "start_clock_s": 2143.7,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": "NCA-11",
+   "data": {
+    "moment_kind": "big_chance",
+    "xg": 0.31,
+    "outcome": "blocked",
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [
+    7
+   ],
+   "source_event_ids": [
+    575
+   ]
+  },
+  {
+   "id": 15,
+   "match_id": "match-0007",
+   "period": 1,
+   "start_clock_s": 2415.6,
+   "duration_s": 5.0,
+   "template": "shot_speed",
+   "priority": 30,
+   "anchor_player_id": "NCA-11",
+   "data": {
+    "shot_speed_kmh": 67.0,
+    "xg": 0.1,
+    "outcome": "saved",
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    649
+   ]
+  },
+  {
+   "id": 16,
+   "match_id": "match-0007",
+   "period": 1,
+   "start_clock_s": 2850.5,
+   "duration_s": 5.0,
+   "template": "pass_quality",
+   "priority": 20,
+   "anchor_player_id": "NCA-8",
+   "data": {
+    "difficulty": 70.5,
+    "length_m": 27.3,
+    "ball_speed_kmh": 75.5,
+    "under_pressure": true,
+    "cross": true
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    785
+   ]
+  },
+  {
+   "id": 17,
+   "match_id": "match-0007",
+   "period": 1,
+   "start_clock_s": 2957.6,
+   "duration_s": 15.0,
+   "template": "stat_compare",
+   "priority": 70,
+   "anchor_player_id": null,
+   "data": {
+    "period": 1,
+    "goals_home": 2,
+    "goals_away": 0,
+    "possession_home": 0.526,
+    "possession_away": 0.474,
+    "shots_home": 9,
+    "shots_away": 8,
+    "shots_on_target_home": 4,
+    "shots_on_target_away": 2,
+    "xg_home": 1.24,
+    "xg_away": 0.68,
+    "passes_home": 227,
+    "passes_away": 199,
+    "pass_accuracy_home": 0.855,
+    "pass_accuracy_away": 0.824,
+    "field_tilt_home": 0.696,
+    "field_tilt_away": 0.304
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    824
+   ]
+  },
+  {
+   "id": 18,
+   "match_id": "match-0007",
+   "period": 1,
+   "start_clock_s": 2957.6,
+   "duration_s": 20.0,
+   "template": "recap_card",
+   "priority": 80,
+   "anchor_player_id": null,
+   "data": {
+    "period": 1,
+    "score_home": 2,
+    "score_away": 0
+   },
+   "text": {},
+   "source_moment_ids": [
+    2,
+    4,
+    6
+   ],
+   "source_event_ids": [
+    824
+   ]
+  },
+  {
+   "id": 19,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 3075.2,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": null,
+   "data": {
+    "moment_kind": "pressure_spell",
+    "pressures": 8,
+    "window_minutes": 3.0
+   },
+   "text": {},
+   "source_moment_ids": [
+    8
+   ],
+   "source_event_ids": [
+    898,
+    906,
+    909,
+    932,
+    934,
+    940,
+    943,
+    954
+   ]
+  },
+  {
+   "id": 20,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 3448.0,
+   "duration_s": 5.0,
+   "template": "shot_speed",
+   "priority": 30,
+   "anchor_player_id": "SLW-11",
+   "data": {
+    "shot_speed_kmh": 95.2,
+    "xg": 0.05,
+    "outcome": "saved",
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    1059
+   ]
+  },
+  {
+   "id": 21,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 3473.9,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": null,
+   "data": {
+    "moment_kind": "milestone",
+    "milestone": "team_shots",
+    "shots": 10
+   },
+   "text": {},
+   "source_moment_ids": [
+    9
+   ],
+   "source_event_ids": [
+    1066
+   ]
+  },
+  {
+   "id": 22,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 3539.7,
+   "duration_s": 5.0,
+   "template": "shot_speed",
+   "priority": 30,
+   "anchor_player_id": "SLW-9",
+   "data": {
+    "shot_speed_kmh": 99.4,
+    "xg": 0.76,
+    "outcome": "goal",
+    "penalty": true
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    1078
+   ]
+  },
+  {
+   "id": 23,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 3539.7,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": "SLW-9",
+   "data": {
+    "moment_kind": "goal",
+    "score_home": 2,
+    "score_away": 1,
+    "own_goal": false,
+    "first_goal": false,
+    "xg": 0.76,
+    "shot_speed_kmh": 99.4,
+    "penalty": true,
+    "win_prob_home": 0.319,
+    "win_prob_draw": 0.331,
+    "win_prob_away": 0.349,
+    "win_prob_swing": 0.332
+   },
+   "text": {},
+   "source_moment_ids": [
+    10
+   ],
+   "source_event_ids": [
+    1078,
+    1079
+   ]
+  },
+  {
+   "id": 24,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 3582.4,
+   "duration_s": 8.0,
+   "template": "momentum_bar",
+   "priority": 50,
+   "anchor_player_id": null,
+   "data": {
+    "moment_kind": "momentum_swing",
+    "momentum": -62.5,
+    "final_third_actions": 13,
+    "opponent_final_third_actions": 3
+   },
+   "text": {},
+   "source_moment_ids": [
+    11
+   ],
+   "source_event_ids": [
+    1023,
+    1043,
+    1044,
+    1045,
+    1046,
+    1047,
+    1048,
+    1050,
+    1058,
+    1059,
+    1066,
+    1069,
+    1078
+   ]
+  },
+  {
+   "id": 25,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 3625.2,
+   "duration_s": 5.0,
+   "template": "shot_speed",
+   "priority": 30,
+   "anchor_player_id": "NCA-9",
+   "data": {
+    "shot_speed_kmh": 76.3,
+    "xg": 0.17,
+    "outcome": "saved",
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    1098
+   ]
+  },
+  {
+   "id": 26,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 3625.2,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": null,
+   "data": {
+    "moment_kind": "milestone",
+    "milestone": "team_shots",
+    "shots": 10
+   },
+   "text": {},
+   "source_moment_ids": [
+    12
+   ],
+   "source_event_ids": [
+    1098
+   ]
+  },
+  {
+   "id": 27,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 3625.2,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": "SLW-1",
+   "data": {
+    "moment_kind": "save",
+    "xg": 0.17,
+    "shot_speed_kmh": 76.3,
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [
+    13
+   ],
+   "source_event_ids": [
+    1098,
+    1099
+   ]
+  },
+  {
+   "id": 28,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 3647.8,
+   "duration_s": 6.0,
+   "template": "player_tag",
+   "priority": 40,
+   "anchor_player_id": "NCA-11",
+   "data": {
+    "moment_kind": "milestone",
+    "milestone": "passes",
+    "passes": 80
+   },
+   "text": {},
+   "source_moment_ids": [
+    14
+   ],
+   "source_event_ids": [
+    1104
+   ]
+  },
+  {
+   "id": 29,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 4201.3,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": "NCA-3",
+   "data": {
+    "moment_kind": "card",
+    "card": "red",
+    "win_prob_home": 0.319,
+    "win_prob_draw": 0.337,
+    "win_prob_away": 0.344,
+    "win_prob_swing": 0.087
+   },
+   "text": {},
+   "source_moment_ids": [
+    15
+   ],
+   "source_event_ids": [
+    1262,
+    1263
+   ]
+  },
+  {
+   "id": 30,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 4307.2,
+   "duration_s": 5.0,
+   "template": "shot_speed",
+   "priority": 30,
+   "anchor_player_id": "NCA-11",
+   "data": {
+    "shot_speed_kmh": 83.8,
+    "xg": 0.19,
+    "outcome": "goal",
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    1291
+   ]
+  },
+  {
+   "id": 31,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 4307.2,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": "NCA-11",
+   "data": {
+    "moment_kind": "goal",
+    "score_home": 3,
+    "score_away": 1,
+    "own_goal": false,
+    "first_goal": false,
+    "xg": 0.19,
+    "shot_speed_kmh": 83.8,
+    "penalty": false,
+    "win_prob_home": 0.704,
+    "win_prob_draw": 0.193,
+    "win_prob_away": 0.103,
+    "win_prob_swing": 0.336
+   },
+   "text": {},
+   "source_moment_ids": [
+    16
+   ],
+   "source_event_ids": [
+    1291,
+    1292
+   ]
+  },
+  {
+   "id": 32,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 4353.0,
+   "duration_s": 8.0,
+   "template": "momentum_bar",
+   "priority": 50,
+   "anchor_player_id": null,
+   "data": {
+    "moment_kind": "momentum_swing",
+    "momentum": 100.0,
+    "final_third_actions": 26,
+    "opponent_final_third_actions": 0
+   },
+   "text": {},
+   "source_moment_ids": [
+    17
+   ],
+   "source_event_ids": [
+    1216,
+    1217,
+    1229,
+    1230,
+    1232,
+    1233,
+    1234,
+    1235,
+    1236,
+    1246,
+    1247,
+    1248,
+    1249,
+    1254,
+    1255,
+    1268,
+    1270,
+    1283,
+    1284,
+    1285,
+    1286,
+    1287,
+    1288,
+    1289,
+    1290,
+    1291
+   ]
+  },
+  {
+   "id": 33,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 4439.5,
+   "duration_s": 5.0,
+   "template": "shot_speed",
+   "priority": 30,
+   "anchor_player_id": "NCA-11",
+   "data": {
+    "shot_speed_kmh": 93.7,
+    "xg": 0.05,
+    "outcome": "saved",
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    1312
+   ]
+  },
+  {
+   "id": 34,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 4498.9,
+   "duration_s": 5.0,
+   "template": "shot_speed",
+   "priority": 30,
+   "anchor_player_id": "NCA-11",
+   "data": {
+    "shot_speed_kmh": 79.0,
+    "xg": 0.12,
+    "outcome": "goal",
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    1327
+   ]
+  },
+  {
+   "id": 35,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 4498.9,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": "NCA-11",
+   "data": {
+    "moment_kind": "goal",
+    "score_home": 4,
+    "score_away": 1,
+    "own_goal": false,
+    "first_goal": false,
+    "xg": 0.12,
+    "shot_speed_kmh": 79.0,
+    "penalty": false,
+    "win_prob_home": 0.995,
+    "win_prob_draw": 0.005,
+    "win_prob_away": 0.0,
+    "win_prob_swing": 0.04
+   },
+   "text": {},
+   "source_moment_ids": [
+    18
+   ],
+   "source_event_ids": [
+    1327,
+    1328
+   ]
+  },
+  {
+   "id": 36,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 4498.9,
+   "duration_s": 6.0,
+   "template": "player_tag",
+   "priority": 40,
+   "anchor_player_id": "NCA-11",
+   "data": {
+    "moment_kind": "milestone",
+    "milestone": "brace",
+    "goals": 2
+   },
+   "text": {},
+   "source_moment_ids": [
+    19
+   ],
+   "source_event_ids": [
+    1292,
+    1328
+   ]
+  },
+  {
+   "id": 37,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 4596.6,
+   "duration_s": 5.0,
+   "template": "shot_speed",
+   "priority": 30,
+   "anchor_player_id": "NCA-9",
+   "data": {
+    "shot_speed_kmh": 88.0,
+    "xg": 0.02,
+    "outcome": "saved",
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    1348
+   ]
+  },
+  {
+   "id": 38,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 4801.4,
+   "duration_s": 5.0,
+   "template": "pass_quality",
+   "priority": 20,
+   "anchor_player_id": "NCA-11",
+   "data": {
+    "difficulty": 71.3,
+    "length_m": 33.6,
+    "ball_speed_kmh": 89.0,
+    "under_pressure": false,
+    "cross": true
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    1406
+   ]
+  },
+  {
+   "id": 39,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 4804.1,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": "NCA-9",
+   "data": {
+    "moment_kind": "big_chance",
+    "xg": 0.34,
+    "outcome": "blocked",
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [
+    20
+   ],
+   "source_event_ids": [
+    1407
+   ]
+  },
+  {
+   "id": 40,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 4970.7,
+   "duration_s": 5.0,
+   "template": "shot_speed",
+   "priority": 30,
+   "anchor_player_id": "SLW-9",
+   "data": {
+    "shot_speed_kmh": 95.2,
+    "xg": 0.01,
+    "outcome": "saved",
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    1451
+   ]
+  },
+  {
+   "id": 41,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 5081.0,
+   "duration_s": 5.0,
+   "template": "shot_speed",
+   "priority": 30,
+   "anchor_player_id": "NCA-11",
+   "data": {
+    "shot_speed_kmh": 101.2,
+    "xg": 0.04,
+    "outcome": "saved",
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    1480
+   ]
+  },
+  {
+   "id": 42,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 5108.0,
+   "duration_s": 6.0,
+   "template": "player_tag",
+   "priority": 40,
+   "anchor_player_id": "NCA-11",
+   "data": {
+    "moment_kind": "milestone",
+    "milestone": "distance",
+    "distance_km": 11.01
+   },
+   "text": {},
+   "source_moment_ids": [
+    21
+   ],
+   "source_event_ids": [
+    1486
+   ]
+  },
+  {
+   "id": 43,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 5284.9,
+   "duration_s": 5.0,
+   "template": "pass_quality",
+   "priority": 20,
+   "anchor_player_id": "SLW-6",
+   "data": {
+    "difficulty": 70.0,
+    "length_m": 51.0,
+    "ball_speed_kmh": 104.4,
+    "under_pressure": false,
+    "cross": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    1548
+   ]
+  },
+  {
+   "id": 44,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 5288.8,
+   "duration_s": 5.0,
+   "template": "shot_speed",
+   "priority": 30,
+   "anchor_player_id": "SLW-10",
+   "data": {
+    "shot_speed_kmh": 90.1,
+    "xg": 0.18,
+    "outcome": "goal",
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    1549
+   ]
+  },
+  {
+   "id": 45,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 5288.8,
+   "duration_s": 8.0,
+   "template": "key_moment",
+   "priority": 90,
+   "anchor_player_id": "SLW-10",
+   "data": {
+    "moment_kind": "goal",
+    "score_home": 4,
+    "score_away": 2,
+    "own_goal": false,
+    "first_goal": false,
+    "xg": 0.18,
+    "shot_speed_kmh": 90.1,
+    "penalty": false,
+    "win_prob_home": 0.999,
+    "win_prob_draw": 0.001,
+    "win_prob_away": 0.0,
+    "win_prob_swing": 0.001
+   },
+   "text": {},
+   "source_moment_ids": [
+    22
+   ],
+   "source_event_ids": [
+    1549,
+    1550
+   ]
+  },
+  {
+   "id": 46,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 5344.0,
+   "duration_s": 6.0,
+   "template": "player_tag",
+   "priority": 40,
+   "anchor_player_id": "NCA-9",
+   "data": {
+    "moment_kind": "milestone",
+    "milestone": "distance",
+    "distance_km": 11.01
+   },
+   "text": {},
+   "source_moment_ids": [
+    23
+   ],
+   "source_event_ids": [
+    1552
+   ]
+  },
+  {
+   "id": 47,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 5555.9,
+   "duration_s": 6.0,
+   "template": "player_tag",
+   "priority": 40,
+   "anchor_player_id": "SLW-6",
+   "data": {
+    "moment_kind": "milestone",
+    "milestone": "passes",
+    "passes": 80
+   },
+   "text": {},
+   "source_moment_ids": [
+    24
+   ],
+   "source_event_ids": [
+    1601
+   ]
+  },
+  {
+   "id": 48,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 5558.0,
+   "duration_s": 6.0,
+   "template": "player_tag",
+   "priority": 40,
+   "anchor_player_id": "SLW-10",
+   "data": {
+    "moment_kind": "milestone",
+    "milestone": "distance",
+    "distance_km": 11.01
+   },
+   "text": {},
+   "source_moment_ids": [
+    25
+   ],
+   "source_event_ids": [
+    1603
+   ]
+  },
+  {
+   "id": 49,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 5574.2,
+   "duration_s": 5.0,
+   "template": "shot_speed",
+   "priority": 30,
+   "anchor_player_id": "SLW-10",
+   "data": {
+    "shot_speed_kmh": 62.9,
+    "xg": 0.01,
+    "outcome": "saved",
+    "penalty": false
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    1608
+   ]
+  },
+  {
+   "id": 50,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 5630.8,
+   "duration_s": 15.0,
+   "template": "stat_compare",
+   "priority": 70,
+   "anchor_player_id": null,
+   "data": {
+    "period": 2,
+    "goals_home": 4,
+    "goals_away": 2,
+    "possession_home": 0.531,
+    "possession_away": 0.469,
+    "shots_home": 19,
+    "shots_away": 17,
+    "shots_on_target_home": 10,
+    "shots_on_target_away": 7,
+    "xg_home": 2.21,
+    "xg_away": 2.01,
+    "passes_home": 455,
+    "passes_away": 396,
+    "pass_accuracy_home": 0.857,
+    "pass_accuracy_away": 0.833,
+    "field_tilt_home": 0.674,
+    "field_tilt_away": 0.326
+   },
+   "text": {},
+   "source_moment_ids": [],
+   "source_event_ids": [
+    1621
+   ]
+  },
+  {
+   "id": 51,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 5630.8,
+   "duration_s": 20.0,
+   "template": "recap_card",
+   "priority": 80,
+   "anchor_player_id": null,
+   "data": {
+    "period": 2,
+    "score_home": 4,
+    "score_away": 2
+   },
+   "text": {},
+   "source_moment_ids": [
+    2,
+    10,
+    16
+   ],
+   "source_event_ids": [
+    1621
+   ]
+  },
+  {
+   "id": 52,
+   "match_id": "match-0007",
+   "period": 2,
+   "start_clock_s": 5630.8,
+   "duration_s": 6.0,
+   "template": "player_tag",
+   "priority": 40,
+   "anchor_player_id": "NCA-11",
+   "data": {
+    "moment_kind": "milestone",
+    "milestone": "match_top_speed",
+    "speed_kmh": 32.5
+   },
+   "text": {},
+   "source_moment_ids": [
+    26
+   ],
+   "source_event_ids": [
+    1622
+   ]
+  }
+ ],
+ "points": {
+  "NCA-1": 2,
+  "NCA-2": 1,
+  "NCA-3": -2,
+  "NCA-4": 2,
+  "NCA-5": 1,
+  "NCA-6": 4,
+  "NCA-7": 3,
+  "NCA-8": 4,
+  "NCA-9": 11,
+  "NCA-10": 5,
+  "NCA-11": 18,
+  "NCA-12": 1,
+  "NCA-13": 1,
+  "NCA-14": 4,
+  "SLW-1": 2,
+  "SLW-2": 0,
+  "SLW-3": 0,
+  "SLW-4": 1,
+  "SLW-5": 0,
+  "SLW-6": 7,
+  "SLW-7": 4,
+  "SLW-8": 2,
+  "SLW-9": 7,
+  "SLW-10": 6,
+  "SLW-11": 2,
+  "SLW-12": 0,
+  "SLW-13": 1,
+  "SLW-14": 1
+ },
+ "ledger": [
+  {
+   "id": "NCA-1:appearance:1",
+   "match_id": "match-0007",
+   "player_id": "NCA-1",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-2:appearance:1",
+   "match_id": "match-0007",
+   "player_id": "NCA-2",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-3:appearance:1",
+   "match_id": "match-0007",
+   "player_id": "NCA-3",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-4:appearance:1",
+   "match_id": "match-0007",
+   "player_id": "NCA-4",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-5:appearance:1",
+   "match_id": "match-0007",
+   "player_id": "NCA-5",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-6:appearance:1",
+   "match_id": "match-0007",
+   "player_id": "NCA-6",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-7:appearance:1",
+   "match_id": "match-0007",
+   "player_id": "NCA-7",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-8:appearance:1",
+   "match_id": "match-0007",
+   "player_id": "NCA-8",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-9:appearance:1",
+   "match_id": "match-0007",
+   "player_id": "NCA-9",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-10:appearance:1",
+   "match_id": "match-0007",
+   "player_id": "NCA-10",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-11:appearance:1",
+   "match_id": "match-0007",
+   "player_id": "NCA-11",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-1:appearance:1",
+   "match_id": "match-0007",
+   "player_id": "SLW-1",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-2:appearance:1",
+   "match_id": "match-0007",
+   "player_id": "SLW-2",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-3:appearance:1",
+   "match_id": "match-0007",
+   "player_id": "SLW-3",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-4:appearance:1",
+   "match_id": "match-0007",
+   "player_id": "SLW-4",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-5:appearance:1",
+   "match_id": "match-0007",
+   "player_id": "SLW-5",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-6:appearance:1",
+   "match_id": "match-0007",
+   "player_id": "SLW-6",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-7:appearance:1",
+   "match_id": "match-0007",
+   "player_id": "SLW-7",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-8:appearance:1",
+   "match_id": "match-0007",
+   "player_id": "SLW-8",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-9:appearance:1",
+   "match_id": "match-0007",
+   "player_id": "SLW-9",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-10:appearance:1",
+   "match_id": "match-0007",
+   "player_id": "SLW-10",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-11:appearance:1",
+   "match_id": "match-0007",
+   "player_id": "SLW-11",
+   "minute": 0,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-7:bonus",
+   "match_id": "match-0007",
+   "player_id": "SLW-7",
+   "minute": 93,
+   "delta": 0,
+   "running_total": 4,
+   "rule_id": "bonus",
+   "reason": "PitchPoints bonus (simplified)",
+   "source_event_ids": [
+    7,
+    136,
+    176,
+    339,
+    1622
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-10:bonus",
+   "match_id": "match-0007",
+   "player_id": "NCA-10",
+   "minute": 93,
+   "delta": 0,
+   "running_total": 5,
+   "rule_id": "bonus",
+   "reason": "PitchPoints bonus (simplified)",
+   "source_event_ids": [
+    12,
+    60,
+    209,
+    382,
+    566,
+    1292,
+    1622
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-6:bonus",
+   "match_id": "match-0007",
+   "player_id": "SLW-6",
+   "minute": 93,
+   "delta": 0,
+   "running_total": 7,
+   "rule_id": "bonus",
+   "reason": "PitchPoints bonus (simplified)",
+   "source_event_ids": [
+    16,
+    66,
+    301,
+    339,
+    382,
+    1622
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-1:bonus",
+   "match_id": "match-0007",
+   "player_id": "NCA-1",
+   "minute": 93,
+   "delta": 0,
+   "running_total": 2,
+   "rule_id": "bonus",
+   "reason": "PitchPoints bonus (simplified)",
+   "source_event_ids": [
+    28,
+    209,
+    1622
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-8:bonus",
+   "match_id": "match-0007",
+   "player_id": "SLW-8",
+   "minute": 93,
+   "delta": 0,
+   "running_total": 2,
+   "rule_id": "bonus",
+   "reason": "PitchPoints bonus (simplified)",
+   "source_event_ids": [
+    35,
+    60,
+    1622
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-6:bonus",
+   "match_id": "match-0007",
+   "player_id": "NCA-6",
+   "minute": 93,
+   "delta": 0,
+   "running_total": 4,
+   "rule_id": "bonus",
+   "reason": "PitchPoints bonus (simplified)",
+   "source_event_ids": [
+    40,
+    142,
+    307,
+    339,
+    1622
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-1:bonus",
+   "match_id": "match-0007",
+   "player_id": "SLW-1",
+   "minute": 93,
+   "delta": 0,
+   "running_total": 2,
+   "rule_id": "bonus",
+   "reason": "PitchPoints bonus (simplified)",
+   "source_event_ids": [
+    55,
+    209,
+    1622
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-8:bonus",
+   "match_id": "match-0007",
+   "player_id": "NCA-8",
+   "minute": 93,
+   "delta": 0,
+   "running_total": 4,
+   "rule_id": "bonus",
+   "reason": "PitchPoints bonus (simplified)",
+   "source_event_ids": [
+    71,
+    104,
+    209,
+    1622
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-10:goal:209",
+   "match_id": "match-0007",
+   "player_id": "NCA-10",
+   "minute": 12,
+   "delta": 4,
+   "running_total": 7,
+   "rule_id": "goal",
+   "reason": "Goal",
+   "source_event_ids": [
+    208,
+    209
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-11:assist:209",
+   "match_id": "match-0007",
+   "player_id": "NCA-11",
+   "minute": 12,
+   "delta": 3,
+   "running_total": 4,
+   "rule_id": "assist",
+   "reason": "Assist for Femi Brask's goal",
+   "source_event_ids": [
+    207,
+    209
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-11:bonus",
+   "match_id": "match-0007",
+   "player_id": "NCA-11",
+   "minute": 93,
+   "delta": 3,
+   "running_total": 18,
+   "rule_id": "bonus",
+   "reason": "PitchPoints bonus (simplified)",
+   "source_event_ids": [
+    173,
+    209,
+    548,
+    638,
+    925,
+    1292,
+    1328,
+    1622
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-7:yellow_card:305",
+   "match_id": "match-0007",
+   "player_id": "NCA-7",
+   "minute": 19,
+   "delta": -1,
+   "running_total": 0,
+   "rule_id": "yellow_card",
+   "reason": "Yellow card",
+   "source_event_ids": [
+    305
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-9:goal:382",
+   "match_id": "match-0007",
+   "player_id": "NCA-9",
+   "minute": 23,
+   "delta": 4,
+   "running_total": 5,
+   "rule_id": "goal",
+   "reason": "Goal",
+   "source_event_ids": [
+    381,
+    382
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-10:assist:382",
+   "match_id": "match-0007",
+   "player_id": "NCA-10",
+   "minute": 23,
+   "delta": 3,
+   "running_total": 11,
+   "rule_id": "assist",
+   "reason": "Assist for Tomas Brask's goal",
+   "source_event_ids": [
+    380,
+    382
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-1:goals_conceded",
+   "match_id": "match-0007",
+   "player_id": "SLW-1",
+   "minute": 93,
+   "delta": -2,
+   "running_total": 2,
+   "rule_id": "goals_conceded",
+   "reason": "4 goals conceded",
+   "source_event_ids": [
+    209,
+    382,
+    1292,
+    1328,
+    1622
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-2:goals_conceded",
+   "match_id": "match-0007",
+   "player_id": "SLW-2",
+   "minute": 93,
+   "delta": -2,
+   "running_total": 0,
+   "rule_id": "goals_conceded",
+   "reason": "4 goals conceded",
+   "source_event_ids": [
+    209,
+    382,
+    1292,
+    1328,
+    1622
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-3:goals_conceded",
+   "match_id": "match-0007",
+   "player_id": "SLW-3",
+   "minute": 93,
+   "delta": -1,
+   "running_total": 0,
+   "rule_id": "goals_conceded",
+   "reason": "2 goals conceded",
+   "source_event_ids": [
+    209,
+    382,
+    1622
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-4:goals_conceded",
+   "match_id": "match-0007",
+   "player_id": "SLW-4",
+   "minute": 93,
+   "delta": -2,
+   "running_total": 1,
+   "rule_id": "goals_conceded",
+   "reason": "4 goals conceded",
+   "source_event_ids": [
+    209,
+    382,
+    1292,
+    1328,
+    1622
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-5:goals_conceded",
+   "match_id": "match-0007",
+   "player_id": "SLW-5",
+   "minute": 93,
+   "delta": -2,
+   "running_total": 0,
+   "rule_id": "goals_conceded",
+   "reason": "4 goals conceded",
+   "source_event_ids": [
+    209,
+    382,
+    1292,
+    1328,
+    1622
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-9:bonus",
+   "match_id": "match-0007",
+   "player_id": "NCA-9",
+   "minute": 93,
+   "delta": 2,
+   "running_total": 11,
+   "rule_id": "bonus",
+   "reason": "PitchPoints bonus (simplified)",
+   "source_event_ids": [
+    88,
+    382,
+    610,
+    680,
+    912,
+    1225,
+    1244,
+    1292,
+    1328,
+    1622
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-4:yellow_card:559",
+   "match_id": "match-0007",
+   "player_id": "SLW-4",
+   "minute": 34,
+   "delta": -1,
+   "running_total": -1,
+   "rule_id": "yellow_card",
+   "reason": "Yellow card",
+   "source_event_ids": [
+    559
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-10:red_card:566",
+   "match_id": "match-0007",
+   "player_id": "NCA-10",
+   "minute": 34,
+   "delta": -3,
+   "running_total": 8,
+   "rule_id": "red_card",
+   "reason": "Red card",
+   "source_event_ids": [
+    566
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-7:defensive_contribution:792",
+   "match_id": "match-0007",
+   "player_id": "SLW-7",
+   "minute": 47,
+   "delta": 2,
+   "running_total": 3,
+   "rule_id": "defensive_contribution",
+   "reason": "12 defensive actions",
+   "source_event_ids": [
+    7,
+    136,
+    137,
+    176,
+    445,
+    488,
+    525,
+    552,
+    553,
+    665,
+    715,
+    792
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-7:defensive_contribution:801",
+   "match_id": "match-0007",
+   "player_id": "NCA-7",
+   "minute": 48,
+   "delta": 2,
+   "running_total": 2,
+   "rule_id": "defensive_contribution",
+   "reason": "12 defensive actions",
+   "source_event_ids": [
+    294,
+    353,
+    399,
+    400,
+    467,
+    468,
+    516,
+    592,
+    593,
+    723,
+    745,
+    801
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-8:defensive_contribution:834",
+   "match_id": "match-0007",
+   "player_id": "NCA-8",
+   "minute": 45,
+   "delta": 2,
+   "running_total": 3,
+   "rule_id": "defensive_contribution",
+   "reason": "12 defensive actions",
+   "source_event_ids": [
+    71,
+    96,
+    104,
+    183,
+    345,
+    419,
+    436,
+    458,
+    495,
+    661,
+    756,
+    834
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-6:defensive_contribution:1033",
+   "match_id": "match-0007",
+   "player_id": "SLW-6",
+   "minute": 55,
+   "delta": 2,
+   "running_total": 3,
+   "rule_id": "defensive_contribution",
+   "reason": "12 defensive actions",
+   "source_event_ids": [
+    16,
+    66,
+    187,
+    301,
+    339,
+    404,
+    655,
+    700,
+    874,
+    890,
+    895,
+    1033
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-1:saves:1060",
+   "match_id": "match-0007",
+   "player_id": "NCA-1",
+   "minute": 57,
+   "delta": 1,
+   "running_total": 2,
+   "rule_id": "saves",
+   "reason": "3 saves",
+   "source_event_ids": [
+    28,
+    395,
+    1060
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-9:goal:1079",
+   "match_id": "match-0007",
+   "player_id": "SLW-9",
+   "minute": 58,
+   "delta": 4,
+   "running_total": 5,
+   "rule_id": "goal",
+   "reason": "Goal",
+   "source_event_ids": [
+    1078,
+    1079
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-9:bonus",
+   "match_id": "match-0007",
+   "player_id": "SLW-9",
+   "minute": 93,
+   "delta": 1,
+   "running_total": 7,
+   "rule_id": "bonus",
+   "reason": "PitchPoints bonus (simplified)",
+   "source_event_ids": [
+    101,
+    349,
+    498,
+    726,
+    1079,
+    1292,
+    1622
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-12:appearance:1082",
+   "match_id": "match-0007",
+   "player_id": "SLW-12",
+   "minute": 59,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1082
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-1:sixty_minutes:1092",
+   "match_id": "match-0007",
+   "player_id": "NCA-1",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 3,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1092
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-2:sixty_minutes:1092",
+   "match_id": "match-0007",
+   "player_id": "NCA-2",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 2,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1092
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-3:sixty_minutes:1092",
+   "match_id": "match-0007",
+   "player_id": "NCA-3",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 2,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1092
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-4:sixty_minutes:1092",
+   "match_id": "match-0007",
+   "player_id": "NCA-4",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 2,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1092
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-5:sixty_minutes:1092",
+   "match_id": "match-0007",
+   "player_id": "NCA-5",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 2,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1092
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-6:sixty_minutes:1092",
+   "match_id": "match-0007",
+   "player_id": "NCA-6",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 2,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1092
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-7:sixty_minutes:1092",
+   "match_id": "match-0007",
+   "player_id": "NCA-7",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 3,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1092
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-8:sixty_minutes:1092",
+   "match_id": "match-0007",
+   "player_id": "NCA-8",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 4,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1092
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-9:sixty_minutes:1092",
+   "match_id": "match-0007",
+   "player_id": "NCA-9",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 9,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1092
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-11:sixty_minutes:1092",
+   "match_id": "match-0007",
+   "player_id": "NCA-11",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 5,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1092
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-1:sixty_minutes:1092",
+   "match_id": "match-0007",
+   "player_id": "SLW-1",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1092
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-2:sixty_minutes:1092",
+   "match_id": "match-0007",
+   "player_id": "SLW-2",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1092
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-4:sixty_minutes:1092",
+   "match_id": "match-0007",
+   "player_id": "SLW-4",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 0,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1092
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-5:sixty_minutes:1092",
+   "match_id": "match-0007",
+   "player_id": "SLW-5",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1092
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-6:sixty_minutes:1092",
+   "match_id": "match-0007",
+   "player_id": "SLW-6",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 4,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1092
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-7:sixty_minutes:1092",
+   "match_id": "match-0007",
+   "player_id": "SLW-7",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 4,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1092
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-8:sixty_minutes:1092",
+   "match_id": "match-0007",
+   "player_id": "SLW-8",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 2,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1092
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-9:sixty_minutes:1092",
+   "match_id": "match-0007",
+   "player_id": "SLW-9",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 9,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1092
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-10:sixty_minutes:1092",
+   "match_id": "match-0007",
+   "player_id": "SLW-10",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 2,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1092
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-11:sixty_minutes:1092",
+   "match_id": "match-0007",
+   "player_id": "SLW-11",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 2,
+   "rule_id": "sixty_minutes",
+   "reason": "Played 60 minutes",
+   "source_event_ids": [
+    1092
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-13:appearance:1093",
+   "match_id": "match-0007",
+   "player_id": "SLW-13",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1093
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-1:saves:1099",
+   "match_id": "match-0007",
+   "player_id": "SLW-1",
+   "minute": 60,
+   "delta": 1,
+   "running_total": 2,
+   "rule_id": "saves",
+   "reason": "3 saves",
+   "source_event_ids": [
+    55,
+    650,
+    1099
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-12:appearance:1128",
+   "match_id": "match-0007",
+   "player_id": "NCA-12",
+   "minute": 62,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1128
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-13:appearance:1221",
+   "match_id": "match-0007",
+   "player_id": "NCA-13",
+   "minute": 68,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1221
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-14:appearance:1261",
+   "match_id": "match-0007",
+   "player_id": "NCA-14",
+   "minute": 70,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1261
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-3:red_card:1263",
+   "match_id": "match-0007",
+   "player_id": "NCA-3",
+   "minute": 70,
+   "delta": -3,
+   "running_total": -1,
+   "rule_id": "red_card",
+   "reason": "Red card",
+   "source_event_ids": [
+    1263
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-11:goal:1292",
+   "match_id": "match-0007",
+   "player_id": "NCA-11",
+   "minute": 71,
+   "delta": 4,
+   "running_total": 9,
+   "rule_id": "goal",
+   "reason": "Goal",
+   "source_event_ids": [
+    1291,
+    1292
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-9:assist:1292",
+   "match_id": "match-0007",
+   "player_id": "NCA-9",
+   "minute": 71,
+   "delta": 3,
+   "running_total": 12,
+   "rule_id": "assist",
+   "reason": "Assist for Kofi Abernath's goal",
+   "source_event_ids": [
+    1289,
+    1292
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-11:goal:1328",
+   "match_id": "match-0007",
+   "player_id": "NCA-11",
+   "minute": 74,
+   "delta": 4,
+   "running_total": 15,
+   "rule_id": "goal",
+   "reason": "Goal",
+   "source_event_ids": [
+    1327,
+    1328
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-14:assist:1328",
+   "match_id": "match-0007",
+   "player_id": "NCA-14",
+   "minute": 74,
+   "delta": 3,
+   "running_total": 4,
+   "rule_id": "assist",
+   "reason": "Assist for Kofi Abernath's goal",
+   "source_event_ids": [
+    1326,
+    1328
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-12:goals_conceded",
+   "match_id": "match-0007",
+   "player_id": "SLW-12",
+   "minute": 93,
+   "delta": -1,
+   "running_total": 0,
+   "rule_id": "goals_conceded",
+   "reason": "2 goals conceded",
+   "source_event_ids": [
+    1292,
+    1328,
+    1622
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-14:appearance:1375",
+   "match_id": "match-0007",
+   "player_id": "SLW-14",
+   "minute": 78,
+   "delta": 1,
+   "running_total": 1,
+   "rule_id": "appearance",
+   "reason": "Appearance",
+   "source_event_ids": [
+    1375
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-11:defensive_contribution:1403",
+   "match_id": "match-0007",
+   "player_id": "NCA-11",
+   "minute": 79,
+   "delta": 2,
+   "running_total": 18,
+   "rule_id": "defensive_contribution",
+   "reason": "12 defensive actions",
+   "source_event_ids": [
+    173,
+    548,
+    569,
+    638,
+    775,
+    925,
+    1103,
+    1118,
+    1266,
+    1352,
+    1394,
+    1403
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-1:saves:1481",
+   "match_id": "match-0007",
+   "player_id": "SLW-1",
+   "minute": 84,
+   "delta": 1,
+   "running_total": 2,
+   "rule_id": "saves",
+   "reason": "6 saves",
+   "source_event_ids": [
+    1313,
+    1349,
+    1481
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-6:defensive_contribution:1542",
+   "match_id": "match-0007",
+   "player_id": "NCA-6",
+   "minute": 87,
+   "delta": 2,
+   "running_total": 4,
+   "rule_id": "defensive_contribution",
+   "reason": "12 defensive actions",
+   "source_event_ids": [
+    40,
+    123,
+    142,
+    151,
+    307,
+    556,
+    694,
+    867,
+    1300,
+    1322,
+    1526,
+    1542
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-10:goal:1550",
+   "match_id": "match-0007",
+   "player_id": "SLW-10",
+   "minute": 88,
+   "delta": 4,
+   "running_total": 6,
+   "rule_id": "goal",
+   "reason": "Goal",
+   "source_event_ids": [
+    1549,
+    1550
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-6:assist:1550",
+   "match_id": "match-0007",
+   "player_id": "SLW-6",
+   "minute": 88,
+   "delta": 3,
+   "running_total": 7,
+   "rule_id": "assist",
+   "reason": "Assist for Sami Ulmer's goal",
+   "source_event_ids": [
+    1548,
+    1550
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-1:goals_conceded",
+   "match_id": "match-0007",
+   "player_id": "NCA-1",
+   "minute": 93,
+   "delta": -1,
+   "running_total": 2,
+   "rule_id": "goals_conceded",
+   "reason": "2 goals conceded",
+   "source_event_ids": [
+    1079,
+    1550,
+    1622
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-2:goals_conceded",
+   "match_id": "match-0007",
+   "player_id": "NCA-2",
+   "minute": 93,
+   "delta": -1,
+   "running_total": 1,
+   "rule_id": "goals_conceded",
+   "reason": "2 goals conceded",
+   "source_event_ids": [
+    1079,
+    1550,
+    1622
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-3:goals_conceded",
+   "match_id": "match-0007",
+   "player_id": "NCA-3",
+   "minute": 93,
+   "delta": -1,
+   "running_total": -2,
+   "rule_id": "goals_conceded",
+   "reason": "2 goals conceded",
+   "source_event_ids": [
+    1079,
+    1550,
+    1622
+   ],
+   "provisional": false
+  },
+  {
+   "id": "NCA-5:goals_conceded",
+   "match_id": "match-0007",
+   "player_id": "NCA-5",
+   "minute": 93,
+   "delta": -1,
+   "running_total": 1,
+   "rule_id": "goals_conceded",
+   "reason": "2 goals conceded",
+   "source_event_ids": [
+    1079,
+    1550,
+    1622
+   ],
+   "provisional": false
+  },
+  {
+   "id": "SLW-4:defensive_contribution:1579",
+   "match_id": "match-0007",
+   "player_id": "SLW-4",
+   "minute": 90,
+   "delta": 2,
+   "running_total": 1,
+   "rule_id": "defensive_contribution",
+   "reason": "10 defensive actions",
+   "source_event_ids": [
+    430,
+    444,
+    524,
+    544,
+    576,
+    624,
+    791,
+    1251,
+    1272,
+    1579
+   ],
+   "provisional": false
+  }
+ ]
+}

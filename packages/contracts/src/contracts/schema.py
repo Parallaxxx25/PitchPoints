@@ -7,12 +7,22 @@ import json
 from pathlib import Path
 from typing import Any
 
-from pydantic import TypeAdapter
-from pydantic.json_schema import GenerateJsonSchema
+from pydantic import BaseModel, TypeAdapter
+from pydantic.json_schema import GenerateJsonSchema, models_json_schema
 
+from contracts.fantasy import FantasySquad, LedgerEntry
+from contracts.insights import KeyMoment, OverlayCue, StatSnapshot, TacticalState
 from contracts.match import SimulatorMessage
 
 SCHEMA_PATH = Path(__file__).parents[2] / "pitchpoints.schema.json"
+ENGINE_OUTPUTS: tuple[type[BaseModel], ...] = (
+    StatSnapshot,
+    TacticalState,
+    KeyMoment,
+    OverlayCue,
+    LedgerEntry,
+    FantasySquad,
+)
 
 
 class _NoFieldTitles(GenerateJsonSchema):
@@ -23,10 +33,19 @@ class _NoFieldTitles(GenerateJsonSchema):
 
 
 def json_schema() -> dict[str, Any]:
-    """Return the serialization-mode JSON Schema of every simulator message."""
-    return TypeAdapter(SimulatorMessage).json_schema(
+    """Serialization-mode JSON Schema; the root is a union of every top-level contract, each named in `$defs`."""
+    _, schema = models_json_schema(
+        [(m, "serialization") for m in ENGINE_OUTPUTS], schema_generator=_NoFieldTitles
+    )
+    union = TypeAdapter(SimulatorMessage).json_schema(
         mode="serialization", schema_generator=_NoFieldTitles
     )
+    defs = {**schema["$defs"], **union.pop("$defs"), "SimulatorMessage": union}
+    names = ["SimulatorMessage", *(m.__name__ for m in ENGINE_OUTPUTS)]
+    return {
+        "anyOf": [{"$ref": f"#/$defs/{n}"} for n in names],
+        "$defs": dict(sorted(defs.items())),
+    }
 
 
 def main() -> None:

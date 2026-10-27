@@ -8,14 +8,13 @@ import math
 import random
 from typing import Any, Literal
 
-from contracts import PITCH_LENGTH, PITCH_WIDTH, EventType, MatchEvent, Period
+from contracts import HALF_S, PITCH_LENGTH, PITCH_WIDTH, EventType, MatchEvent, Period
 from simulator.director import DirectorScript, Moment
 from simulator.teams import Player, Team
 from simulator.xg import expected_goals
 
 ShotOutcome = Literal["goal", "saved", "blocked", "off_target"]
 Possession = tuple[Team, Player, float, float]  # team on the ball, carrier, x, y
-HALF_S = 45 * 60.0
 _DECIMALS = {"end_x": 1, "end_y": 1, "ball_speed_kmh": 1, "shot_speed_kmh": 1}
 
 

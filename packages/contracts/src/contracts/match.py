@@ -11,6 +11,8 @@ from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 PITCH_LENGTH = 105.0
 PITCH_WIDTH = 68.0
+HALF_S = 45 * 60.0
+"""Nominal length of a half; the second half's clock starts here."""
 
 Position = Literal["GK", "DEF", "MID", "FWD"]
 Period = Literal[1, 2]
@@ -124,6 +126,14 @@ REQUIRED_FIELDS: dict[EventType, tuple[str, ...]] = {
     "match_end": ("score",),
 }
 """Fields each event type must set; every other optional field may be null."""
+
+
+def nominal_seconds(period: int, clock_s: float) -> float:
+    """Match seconds elapsed with stoppage time excluded: 0 to 2700 in the first half, 2700 to 5400 in the second.
+
+    Minutes played use this clock, so a full match is 90 minutes.
+    """
+    return min(clock_s, HALF_S * period)
 
 
 class MatchEvent(Contract):

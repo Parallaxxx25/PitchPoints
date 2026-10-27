@@ -11,7 +11,7 @@ const outputPath = new URL("../src/contracts.gen.ts", import.meta.url);
 
 const generated = await compile(
   JSON.parse(readFileSync(schemaPath, "utf8")),
-  "SimulatorMessage",
+  "PitchPointsContract",
   {
     bannerComment:
       "// Generated from packages/contracts by `make contracts`. Do not edit.",

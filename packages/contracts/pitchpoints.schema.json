@@ -1,5 +1,199 @@
 {
+  "anyOf": [
+    {
+      "$ref": "#/$defs/SimulatorMessage"
+    },
+    {
+      "$ref": "#/$defs/StatSnapshot"
+    },
+    {
+      "$ref": "#/$defs/TacticalState"
+    },
+    {
+      "$ref": "#/$defs/KeyMoment"
+    },
+    {
+      "$ref": "#/$defs/OverlayCue"
+    },
+    {
+      "$ref": "#/$defs/LedgerEntry"
+    },
+    {
+      "$ref": "#/$defs/FantasySquad"
+    }
+  ],
   "$defs": {
+    "FantasySquad": {
+      "additionalProperties": false,
+      "description": "Eleven players from the match; the captain's points count twice.",
+      "properties": {
+        "players": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 11,
+          "minItems": 11,
+          "type": "array"
+        },
+        "captain_id": {
+          "type": "string"
+        },
+        "vice_captain_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "players",
+        "captain_id",
+        "vice_captain_id"
+      ],
+      "title": "FantasySquad",
+      "type": "object"
+    },
+    "KeyMoment": {
+      "additionalProperties": false,
+      "description": "A moment worth explaining. `importance` (0 to 1) is the win-probability swing it caused,\nor the kind's base importance when that is larger. `facts` holds every number an agent\nmay quote about it.",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "match_id": {
+          "type": "string"
+        },
+        "period": {
+          "enum": [
+            1,
+            2
+          ],
+          "type": "integer"
+        },
+        "clock_s": {
+          "type": "number"
+        },
+        "minute": {
+          "type": "integer"
+        },
+        "kind": {
+          "enum": [
+            "goal",
+            "big_chance",
+            "save",
+            "card",
+            "momentum_swing",
+            "pressure_spell",
+            "milestone"
+          ],
+          "type": "string"
+        },
+        "importance": {
+          "type": "number"
+        },
+        "team_id": {
+          "type": "string"
+        },
+        "player_ids": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "facts": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "boolean"
+              }
+            ]
+          },
+          "type": "object"
+        },
+        "source_event_ids": {
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 1,
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "match_id",
+        "period",
+        "clock_s",
+        "minute",
+        "kind",
+        "importance",
+        "team_id",
+        "player_ids",
+        "facts",
+        "source_event_ids"
+      ],
+      "title": "KeyMoment",
+      "type": "object"
+    },
+    "LedgerEntry": {
+      "additionalProperties": false,
+      "description": "One change to a player's fantasy points.\n\nEntries that can still change (clean sheet, goals conceded, bonus) are\n`provisional` and keep a stable `id`: a later entry with the same id replaces\nthe earlier one, and its `running_total` already reflects the replacement.\nAt full time every provisional entry is issued again with `provisional` false.",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "match_id": {
+          "type": "string"
+        },
+        "player_id": {
+          "type": "string"
+        },
+        "minute": {
+          "type": "integer"
+        },
+        "delta": {
+          "type": "integer"
+        },
+        "running_total": {
+          "type": "integer"
+        },
+        "rule_id": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "source_event_ids": {
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "provisional": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "match_id",
+        "player_id",
+        "minute",
+        "delta",
+        "running_total",
+        "rule_id",
+        "reason",
+        "source_event_ids",
+        "provisional"
+      ],
+      "title": "LedgerEntry",
+      "type": "object"
+    },
     "MatchEvent": {
       "additionalProperties": false,
       "description": "One match event. Type-specific fields are null unless the type uses them.\n\n`opponent_id` is the other-team player involved: the player pressed, tackled,\nor fouled, or the shooter for `block` and `save`. `possession_change` is\nemitted just before the event that wins the ball. A penalty miss is a `shot`\nwith `penalty` true and an outcome other than `goal`.",
@@ -393,6 +587,111 @@
       "title": "MatchMetadata",
       "type": "object"
     },
+    "OverlayCue": {
+      "additionalProperties": false,
+      "description": "A timed broadcast graphic. Timing and `data` come from the insights engine; `text`\n(language code to text) is filled later by templates or fact-checked agents.",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "match_id": {
+          "type": "string"
+        },
+        "period": {
+          "enum": [
+            1,
+            2
+          ],
+          "type": "integer"
+        },
+        "start_clock_s": {
+          "type": "number"
+        },
+        "duration_s": {
+          "type": "number"
+        },
+        "template": {
+          "enum": [
+            "player_tag",
+            "pass_quality",
+            "shot_speed",
+            "momentum_bar",
+            "key_moment",
+            "stat_compare",
+            "recap_card"
+          ],
+          "type": "string"
+        },
+        "priority": {
+          "type": "integer"
+        },
+        "anchor_player_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "data": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "boolean"
+              }
+            ]
+          },
+          "type": "object"
+        },
+        "text": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "type": "object"
+        },
+        "source_moment_ids": {
+          "items": {
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "source_event_ids": {
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 1,
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "match_id",
+        "period",
+        "start_clock_s",
+        "duration_s",
+        "template",
+        "priority",
+        "anchor_player_id",
+        "data",
+        "text",
+        "source_moment_ids",
+        "source_event_ids"
+      ],
+      "title": "OverlayCue",
+      "type": "object"
+    },
     "PlayerInfo": {
       "additionalProperties": false,
       "properties": {
@@ -453,6 +752,76 @@
       "title": "PlayerPosition",
       "type": "object"
     },
+    "PlayerStats": {
+      "additionalProperties": false,
+      "description": "One player's match totals; distance and top speed come from position frames.",
+      "properties": {
+        "player_id": {
+          "type": "string"
+        },
+        "team_id": {
+          "type": "string"
+        },
+        "minutes": {
+          "type": "integer"
+        },
+        "passes": {
+          "type": "integer"
+        },
+        "pass_accuracy": {
+          "type": "number"
+        },
+        "avg_pass_difficulty": {
+          "type": "number"
+        },
+        "distance_km": {
+          "type": "number"
+        },
+        "top_speed_kmh": {
+          "type": "number"
+        },
+        "shots": {
+          "type": "integer"
+        },
+        "shots_on_target": {
+          "type": "integer"
+        },
+        "goals": {
+          "type": "integer"
+        },
+        "assists": {
+          "type": "integer"
+        },
+        "xg": {
+          "type": "number"
+        },
+        "defensive_actions": {
+          "type": "integer"
+        },
+        "pressures": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "player_id",
+        "team_id",
+        "minutes",
+        "passes",
+        "pass_accuracy",
+        "avg_pass_difficulty",
+        "distance_km",
+        "top_speed_kmh",
+        "shots",
+        "shots_on_target",
+        "goals",
+        "assists",
+        "xg",
+        "defensive_actions",
+        "pressures"
+      ],
+      "title": "PlayerStats",
+      "type": "object"
+    },
     "PositionFrame": {
       "additionalProperties": false,
       "description": "Approximate positions of the ball and every on-pitch player, about every 2 seconds.",
@@ -504,6 +873,147 @@
       "title": "PositionFrame",
       "type": "object"
     },
+    "SimulatorMessage": {
+      "discriminator": {
+        "mapping": {
+          "event": "#/$defs/MatchEvent",
+          "metadata": "#/$defs/MatchMetadata",
+          "positions": "#/$defs/PositionFrame"
+        },
+        "propertyName": "kind"
+      },
+      "oneOf": [
+        {
+          "$ref": "#/$defs/MatchMetadata"
+        },
+        {
+          "$ref": "#/$defs/MatchEvent"
+        },
+        {
+          "$ref": "#/$defs/PositionFrame"
+        }
+      ]
+    },
+    "StatSnapshot": {
+      "additionalProperties": false,
+      "description": "Match stats up to and including `last_event_id`; players who have not appeared are omitted.",
+      "properties": {
+        "match_id": {
+          "type": "string"
+        },
+        "period": {
+          "enum": [
+            1,
+            2
+          ],
+          "type": "integer"
+        },
+        "clock_s": {
+          "type": "number"
+        },
+        "minute": {
+          "type": "integer"
+        },
+        "last_event_id": {
+          "type": "integer"
+        },
+        "home": {
+          "$ref": "#/$defs/TeamStats"
+        },
+        "away": {
+          "$ref": "#/$defs/TeamStats"
+        },
+        "players": {
+          "items": {
+            "$ref": "#/$defs/PlayerStats"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "match_id",
+        "period",
+        "clock_s",
+        "minute",
+        "last_event_id",
+        "home",
+        "away",
+        "players"
+      ],
+      "title": "StatSnapshot",
+      "type": "object"
+    },
+    "TacticalState": {
+      "additionalProperties": false,
+      "description": "Rolling-window tactical indices; windows and formulas live in `insights.constants`.",
+      "properties": {
+        "match_id": {
+          "type": "string"
+        },
+        "period": {
+          "enum": [
+            1,
+            2
+          ],
+          "type": "integer"
+        },
+        "clock_s": {
+          "type": "number"
+        },
+        "minute": {
+          "type": "integer"
+        },
+        "last_event_id": {
+          "type": "integer"
+        },
+        "momentum": {
+          "type": "number"
+        },
+        "control_chaos_index": {
+          "type": "number"
+        },
+        "pressing_intensity": {
+          "$ref": "#/$defs/TeamPair"
+        },
+        "tempo": {
+          "type": "number"
+        },
+        "win_probability": {
+          "$ref": "#/$defs/WinProbability"
+        }
+      },
+      "required": [
+        "match_id",
+        "period",
+        "clock_s",
+        "minute",
+        "last_event_id",
+        "momentum",
+        "control_chaos_index",
+        "pressing_intensity",
+        "tempo",
+        "win_probability"
+      ],
+      "title": "TacticalState",
+      "type": "object"
+    },
+    "TeamPair": {
+      "additionalProperties": false,
+      "properties": {
+        "home": {
+          "type": "number"
+        },
+        "away": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "home",
+        "away"
+      ],
+      "title": "TeamPair",
+      "type": "object"
+    },
     "TeamSheet": {
       "additionalProperties": false,
       "properties": {
@@ -550,25 +1060,104 @@
       ],
       "title": "TeamSheet",
       "type": "object"
+    },
+    "TeamStats": {
+      "additionalProperties": false,
+      "description": "One team's match totals. Shares (possession, pass accuracy, field tilt) are 0 to 1.",
+      "properties": {
+        "team_id": {
+          "type": "string"
+        },
+        "goals": {
+          "type": "integer"
+        },
+        "possession": {
+          "type": "number"
+        },
+        "passes": {
+          "type": "integer"
+        },
+        "pass_accuracy": {
+          "type": "number"
+        },
+        "shots": {
+          "type": "integer"
+        },
+        "shots_on_target": {
+          "type": "integer"
+        },
+        "xg": {
+          "type": "number"
+        },
+        "field_tilt": {
+          "type": "number"
+        },
+        "pressures": {
+          "type": "integer"
+        },
+        "ppda": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "corners": {
+          "type": "integer"
+        },
+        "fouls": {
+          "type": "integer"
+        },
+        "yellow_cards": {
+          "type": "integer"
+        },
+        "red_cards": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "team_id",
+        "goals",
+        "possession",
+        "passes",
+        "pass_accuracy",
+        "shots",
+        "shots_on_target",
+        "xg",
+        "field_tilt",
+        "pressures",
+        "ppda",
+        "corners",
+        "fouls",
+        "yellow_cards",
+        "red_cards"
+      ],
+      "title": "TeamStats",
+      "type": "object"
+    },
+    "WinProbability": {
+      "additionalProperties": false,
+      "properties": {
+        "home": {
+          "type": "number"
+        },
+        "draw": {
+          "type": "number"
+        },
+        "away": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "home",
+        "draw",
+        "away"
+      ],
+      "title": "WinProbability",
+      "type": "object"
     }
-  },
-  "discriminator": {
-    "mapping": {
-      "event": "#/$defs/MatchEvent",
-      "metadata": "#/$defs/MatchMetadata",
-      "positions": "#/$defs/PositionFrame"
-    },
-    "propertyName": "kind"
-  },
-  "oneOf": [
-    {
-      "$ref": "#/$defs/MatchMetadata"
-    },
-    {
-      "$ref": "#/$defs/MatchEvent"
-    },
-    {
-      "$ref": "#/$defs/PositionFrame"
-    }
-  ]
+  }
 }
