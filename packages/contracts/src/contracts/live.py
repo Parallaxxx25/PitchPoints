@@ -72,6 +72,15 @@ class SquadTotal(Contract):
     total: int
 
 
+class Replay(Contract):
+    """The events and position frames around some source events, for replaying them on the pitch."""
+
+    match_id: str
+    source_event_ids: list[int]  # the requested events that exist so far; the rest is context
+    events: list[MatchEvent]
+    frames: list[PositionFrame]
+
+
 LiveMessage = Annotated[
     MatchMetadata
     | MatchState

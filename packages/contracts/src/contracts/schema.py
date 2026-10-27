@@ -11,7 +11,14 @@ from pydantic import BaseModel, TypeAdapter
 from pydantic.json_schema import GenerateJsonSchema, models_json_schema
 
 from contracts.fantasy import FantasySquad
-from contracts.live import LiveMessage, MatchControl, NewProfile, StartMatch, ViewerProfile
+from contracts.live import (
+    LiveMessage,
+    MatchControl,
+    NewProfile,
+    Replay,
+    StartMatch,
+    ViewerProfile,
+)
 from contracts.match import SimulatorMessage
 
 SCHEMA_PATH = Path(__file__).parents[2] / "pitchpoints.schema.json"
@@ -22,6 +29,7 @@ MODELS: tuple[type[BaseModel], ...] = (
     ViewerProfile,
     StartMatch,
     MatchControl,
+    Replay,
 )
 """Top-level contracts that are not union members."""
 

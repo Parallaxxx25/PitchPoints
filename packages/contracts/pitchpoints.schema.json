@@ -20,6 +20,9 @@
     },
     {
       "$ref": "#/$defs/MatchControl"
+    },
+    {
+      "$ref": "#/$defs/Replay"
     }
   ],
   "$defs": {
@@ -1145,6 +1148,41 @@
         "players"
       ],
       "title": "PositionFrame",
+      "type": "object"
+    },
+    "Replay": {
+      "additionalProperties": false,
+      "description": "The events and position frames around some source events, for replaying them on the pitch.",
+      "properties": {
+        "match_id": {
+          "type": "string"
+        },
+        "source_event_ids": {
+          "items": {
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "events": {
+          "items": {
+            "$ref": "#/$defs/MatchEvent"
+          },
+          "type": "array"
+        },
+        "frames": {
+          "items": {
+            "$ref": "#/$defs/PositionFrame"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "match_id",
+        "source_event_ids",
+        "events",
+        "frames"
+      ],
+      "title": "Replay",
       "type": "object"
     },
     "SimulatorMessage": {

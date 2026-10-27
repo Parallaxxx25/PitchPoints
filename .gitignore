@@ -29,3 +29,6 @@ Thumbs.db
 /*.md
 !/README.md
 /notes/
+
+# Google Stitch design exports (screens, generated HTML, DESIGN.md) stay local.
+/stitch_pitchpoints_live_companion/

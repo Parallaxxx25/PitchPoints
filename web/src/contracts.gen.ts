@@ -1,7 +1,7 @@
 // Generated from packages/contracts by `make contracts`. Do not edit.
 
 export type PitchPointsContract =
-  SimulatorMessage | LiveMessage | FantasySquad | NewProfile | ViewerProfile | StartMatch | MatchControl;
+  SimulatorMessage | LiveMessage | FantasySquad | NewProfile | ViewerProfile | StartMatch | MatchControl | Replay;
 export type SimulatorMessage = MatchMetadata | MatchEvent | PositionFrame;
 export type LiveMessage =
   | MatchMetadata
@@ -358,4 +358,13 @@ export interface MatchControl {
   seek_minute: number | null;
   paused: boolean | null;
   speed: (1 | 6 | 18 | 60) | null;
+}
+/**
+ * The events and position frames around some source events, for replaying them on the pitch.
+ */
+export interface Replay {
+  match_id: string;
+  source_event_ids: number[];
+  events: MatchEvent[];
+  frames: PositionFrame[];
 }

@@ -3,9 +3,10 @@
 import asyncio
 from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
+from typing import Annotated
 from uuid import uuid4
 
-from fastapi import FastAPI, HTTPException, WebSocket, WebSocketDisconnect
+from fastapi import FastAPI, HTTPException, Query, WebSocket, WebSocketDisconnect
 
 from contracts import (
     KeyMoment,
@@ -14,6 +15,7 @@ from contracts import (
     MatchState,
     NewProfile,
     OverlayCue,
+    Replay,
     StartMatch,
     StatSnapshot,
     ViewerProfile,
@@ -21,6 +23,7 @@ from contracts import (
 from devserver.adapters.memory import MemoryEventBus, MemoryStore
 from devserver.adapters.websocket import WebSocketPush
 from devserver.ports import EventBus, Store
+from devserver.replay import MAX_SOURCE_EVENTS, build_replay
 from devserver.runner import MatchRunner
 from simulator import SCRIPTS_DIR, load_script, simulate
 
@@ -94,6 +97,20 @@ def create_app(
         """Every overlay cue so far, for export to a graphics system."""
         get_runner(match_id)
         return await store.get(match_id, OverlayCue)
+
+    @app.get("/matches/{match_id}/replay")
+    async def replay(
+        match_id: str, event_ids: Annotated[list[int], Query(max_length=MAX_SOURCE_EVENTS)]
+    ) -> Replay:
+        """The events and position frames around some events, to replay them on the pitch."""
+        r = get_runner(match_id)
+        return build_replay(match_id, r.feed, event_ids, r.state().last_event_id)
+
+    @app.get("/matches/{match_id}/ledger")
+    async def ledger_all(match_id: str) -> list[LedgerEntry]:
+        """The current version of every ledger entry."""
+        get_runner(match_id)
+        return await store.get(match_id, LedgerEntry)
 
     @app.get("/matches/{match_id}/ledger/{player_id}")
     async def ledger(match_id: str, player_id: str) -> list[LedgerEntry]:
