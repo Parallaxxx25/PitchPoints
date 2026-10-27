@@ -4,7 +4,7 @@ AI match insights engine on Azure: turns synthetic football events into real-tim
 
 Built for the Microsoft x Premier League "Inside the Game" hackathon. All clubs, players, and matches are synthetic and fictional.
 
-> Work in progress. See [PLAN.md](PLAN.md) for the build plan and progress log.
+> Work in progress.
 
 ## Run locally
 

@@ -23,10 +23,9 @@ local.settings.json
 .DS_Store
 Thumbs.db
 
-# Local notes: markdown at the repo root and anything in notes/ stay private.
-# Public root docs are listed below; markdown elsewhere (docs/, packages/) is public.
+# Local notes: markdown at the repo root (build plan, Claude instructions, notes) and
+# anything in notes/ stay private. Only README is public at the root; markdown
+# elsewhere (docs/, packages/) is public.
 /*.md
 !/README.md
-!/PLAN.md
-!/CLAUDE.md
 /notes/

@@ -1,5 +1,5 @@
 # Fantasy point values for the PitchPoints scoring engine.
-# Starting point from PLAN.md section 5: verify every value against the official
+# Starting values: verify every value against the official
 # current-season Fantasy Premier League rules before the demo.
 # Per-position values are keyed GK, DEF, MID, FWD; 0 means the rule does not apply.
 
